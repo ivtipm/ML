@@ -1,4 +1,4 @@
-# ML
+# Введение в ИИ
 
 # Ссылки
 - [stepik:Deep Learning (семестр 1)](https://stepik.org/course/65389/syllabus)
