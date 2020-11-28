@@ -1,5 +1,7 @@
 # Введение в ИИ
 
+## [Занятия 30 ноября - 9 декабря](https://github.com/ivtipm/ML/dist2020/lessons.md)
+
 ## План
 0. Введение
 1. Python. NumPy. Pandas.
