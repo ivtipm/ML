@@ -12,4 +12,4 @@
 [google colaboratory](https://colab.research.google.com) -- для запуска кода на python и обучения НС на GPU
 
 ### Датасеты
-[Ирисы Фишера -- задача классикации](https://archive.ics.uci.edu/ml/datasets/iris)
+[Ирисы Фишера -- задача классификации](https://archive.ics.uci.edu/ml/datasets/iris)
