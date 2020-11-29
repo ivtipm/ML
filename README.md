@@ -4,8 +4,8 @@
 
 
 # Ссылки
-- [stepik:Deep Learning (семестр 1)](https://stepik.org/course/65389/syllabus)
-- [stepik:Deep Learning (семестр 1)](https://stepik.org/course/65855/syllabus)
+- [stepik:Deep Learning (семестр 1, осень 2020)](https://stepik.org/course/82177/promo)
+- [stepik:Deep Learning (семестр 2)](https://stepik.org/course/65855/syllabus)
 - Основы нейрокомпьютерных систем [Текст] : учебное пособие / Д. А. Семигузов
 
 ***
