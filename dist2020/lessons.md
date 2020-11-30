@@ -4,7 +4,7 @@
 
 - Лекция 2. Предварительная обработка и анализ данных. \
   Слайды: https://docs.google.com/presentation/d/1ntxZ6LqDoeBoSahQigQTSnVUHGT-zZ4UdMRDda78OCk/edit?usp=sharing \
-  Пример: https://colab.research.google.com/drive/1cFPQskHYAeo8LH0UBNbFVa8FiWz5Zhdg?usp=sharing
+  Пример: https://colab.research.google.com/drive/1frRsmAqYfYHpc4BjC_7iRyAQrx94eCgH?usp=sharing
 
 # декабрь 1
 - лекция 3. Нейросети (продолжение). Многослойные персептрон. Стохастический градиентный спуск. pyTorch. 
