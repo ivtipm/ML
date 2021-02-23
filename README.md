@@ -24,7 +24,7 @@
 ## Задания (tasks\tasks.md)
 
 
-## [Занятия 30 ноября - 9 декабря](https://github.com/ivtipm/ML/blob/main/dist2020/lessons.md) (заочное)
+[Заочное: занятия 30 ноября - 9 декабря 2020](https://github.com/ivtipm/ML/blob/main/dist2020/lessons.md) (заочное)
 
 
 # Ссылки
