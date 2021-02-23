@@ -21,7 +21,7 @@
   - случайный лес.
 
 
-## Задания (tasks\tasks.md)
+## [Задания](tasks\tasks.md)
 
 
 [Заочное: занятия 30 ноября - 9 декабря 2020](https://github.com/ivtipm/ML/blob/main/dist2020/lessons.md) (заочное)
