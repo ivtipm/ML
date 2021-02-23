@@ -36,8 +36,14 @@
 ## Для практики
 - [Dive into Deep Learning](http://d2l.ai/index.html)
 
-***
-[google colaboratory](https://colab.research.google.com) -- для запуска кода на python и обучения НС на GPU
+## ПО
+- [google colaboratory](https://colab.research.google.com) -- для запуска кода на python и обучения НС на GPU
+- [Anaconda](https://www.anaconda.com/products/individual) -- дистрибутив для научных вычислений на Python
 
-### Датасеты
+### Библиотеки
+- [sklearn](https://scikit-learn.org/stable/) -- классические мтоды МО (python)
+- [keras](https://keras.io/) -- глубокое обучение (python)
+- [pytorch](https://pytorch.org/) -- популярный и гибкий фреимвок для МО
+
+## Датасеты
 [Ирисы Фишера -- задача классификации](https://archive.ics.uci.edu/ml/datasets/iris)
