@@ -16,7 +16,7 @@ Python -- язык программирования общего назначе�
 Рекомендованная среда разработки для этих заданий - [PyCharm](https://www.jetbrains.com/ru-ru/pycharm/download/).
 
 ## Ссылки
-- Python. Слайды: https://github.com/VetrovSV/Programming/blob/master/README.md
+- Python. Слайды: https://github.com/VetrovSV/Programming
 - Марк Лутц. Изучаем Python.
 - Марк Лутц. Программируем на Python.
 
