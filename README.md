@@ -34,7 +34,7 @@
 
 ### Python
 - Изучаем Python. Лутц Марк
-- Программируем Python. Лутц Марк
+- Программируем на Python. Лутц Марк
 - https://stepik.org/course/67/syllabus
 - https://github.com/VetrovSV/Programming
 
@@ -46,7 +46,7 @@
 - [Dive into Deep Learning](http://d2l.ai/index.html)
 
 ## ПО
-- PyCahrm
+- [PyCahrm](https://www.jetbrains.com/ru-ru/pycharm/download/)
 - [google colaboratory](https://colab.research.google.com) -- для запуска кода на python и обучения НС на GPU
 - [Anaconda](https://www.anaconda.com/products/individual) -- дистрибутив для научных вычислений на Python
 
