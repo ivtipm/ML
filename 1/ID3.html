@@ -1,0 +1,335 @@
+
+<!-- saved from url=(0064)https://www.cise.ufl.edu/~ddd/cap6635/Fall-97/Short-papers/2.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>ID3</title>
+
+<meta name="Template" content="E:\Program Files\Microsoft Office\Templates\Normal.dot">
+<meta name="GENERATOR" content="Internet Assistant for Microsoft Word 2.03z">
+</head>
+<body>
+<h2><center>The ID3 Algorithm </center></h2>
+<p>
+<font size="2">&nbsp; </font>
+</p><hr>
+<h3>Abstract </h3>
+<p>
+This paper details the ID3 classification algorithm. Very simply,
+ID3 builds a decision tree from a fixed set of examples. The resulting
+tree is used to classify future samples. The example has several
+attributes and belongs to a class (like yes or no). The leaf nodes
+of the decision tree contain the class name whereas a non-leaf
+node is a decision node. The decision node is an attribute test
+with each branch (to another decision tree) being a possible value
+of the attribute. ID3 uses information gain to help it decide
+which attribute goes into a decision node. The advantage of learning
+a decision tree is that a program, rather than a knowledge engineer,
+elicits knowledge from an expert.</p> 
+<h3>Introduction </h3>
+<p>
+J. Ross Quinlan originally developed ID3 at the University of
+Sydney. He first presented ID3 in 1975 in a book, <i>Machine Learning</i>,
+vol. 1, no. 1. ID3 is based off the Concept Learning System (CLS)
+algorithm. The basic CLS algorithm over a set of training instances
+C:</p> 
+<p>
+Step 1: If all instances in C are positive, then create YES node
+and halt.</p>
+<p>
+If all instances in C are negative, create a NO node and halt.</p>
+<p>
+Otherwise select a feature, F with values v1, ..., vn and create
+a decision node.</p>
+<p>
+Step 2: Partition the training instances in C into subsets C1,
+C2, ..., Cn according to the values of V.</p>
+<p>
+Step 3: apply the algorithm recursively to each of the sets Ci.</p>
+<p>
+Note, the trainer (the expert) decides which feature to select.</p>
+<p>
+ID3 improves on CLS by adding a feature selection heuristic. ID3
+searches through the attributes of the training instances and
+extracts the attribute that best separates the given examples.
+If the attribute perfectly classifies the training sets then ID3
+stops; otherwise it recursively operates on the n (where n = number
+of possible values of an attribute) partitioned subsets to get
+their "best" attribute. The algorithm uses a greedy
+search, that is, it picks the best attribute and never looks back
+to reconsider earlier choices.</p> 
+<h3>Discussion </h3>
+<p>
+ID3 is a nonincremental algorithm, meaning it derives its classes
+from a fixed set of training instances. An incremental algorithm
+revises the current concept definition, if necessary, with a new
+sample. The classes created by ID3 are inductive, that is, given
+a small set of training instances, the specific classes created
+by ID3 are expected to work for all future instances. The distribution
+of the unknowns must be the same as the test cases. Induction
+classes cannot be proven to work in every case since they may
+classify an infinite number of instances. Note that ID3 (or any
+inductive algorithm) may misclassify data.</p> 
+<h4>Data Description<p></p> </h4>
+<p>
+The sample data used by ID3 has certain requirements, which are:</p>
+<ul>
+<li>Attribute-value description - the same attributes must describe
+each example and have a fixed number of values. 
+</li></ul>
+<ul>
+<li>Predefined classes - an example's attributes must already
+be defined, that is, they are not learned by ID3. 
+</li></ul>
+<ul>
+<li>Discrete classes - classes must be sharply delineated. Continuous
+classes broken up into vague categories such as a metal being
+"hard, quite hard, flexible, soft, quite soft" are suspect.
+</li></ul>
+<ul>
+<li>Sufficient examples - since inductive generalization is used
+(i.e. not provable) there must be enough test cases to distinguish
+valid patterns from chance occurrences. 
+</li></ul>
+<h4>Attribute Selection<p></p> </h4>
+<p>
+How does ID3 decide which attribute is the best? A statistical
+property, called information gain, is used. Gain measures how
+well a given attribute separates training examples into targeted
+classes. The one with the highest information (information being
+the most useful for classification) is selected. In order to define
+gain, we first borrow an idea from information theory called entropy.
+Entropy measures the amount of information in an attribute. </p>
+<p>
+Given a collection S of c outcomes</p>
+<p align="CENTER">
+</p><center>Entropy(S) = <font face="Symbol">S</font> -p(I) log2 p(I)<p></p></center>
+<p>
+where p(I) is the proportion of S belonging to class I. <font face="Symbol">S</font>
+is over c. Log2 is log base 2.</p>
+<p>
+Note that S is not an attribute but the entire sample set.</p>
+<h4>Example 1<p></p> </h4>
+<p>
+If S is a collection of 14 examples with 9 YES and 5 NO examples
+then</p>
+<p align="CENTER">
+</p><center>Entropy(S) = - (9/14) Log2 (9/14) - (5/14) Log2 (5/14)
+= 0.940<p></p></center>
+<p>
+Notice entropy is 0 if all members of S belong to the same class
+(the data is perfectly classified). The range of entropy is 0
+("perfectly classified") to 1 ("totally random").</p>
+<p>
+Gain(S, A) is information gain of example set S on attribute A
+is defined as</p>
+<p align="CENTER">
+</p><center>Gain(S, A) = Entropy(S) - <font face="Symbol">S</font>
+((|S<sub>v</sub>| / |S|) * Entropy(S<sub>v</sub>))<p></p></center>
+<p>
+Where:</p>
+<p>
+<font face="Symbol">S</font> is each value v of all possible values
+of attribute A</p>
+<p>
+S<sub>v</sub> = subset of S for which attribute A has value v</p>
+<p>
+|S<sub>v</sub>| = number of elements in S<sub>v</sub></p> 
+<p>
+|S| = number of elements in S</p> 
+<h4>Example 2<p></p> </h4>
+<p>
+Suppose S is a set of 14 examples in which one of the attributes
+is wind speed. The values of Wind can be <i>Weak</i> or <i>Strong</i>.
+The classification of these 14 examples are 9 YES and 5 NO. For
+attribute Wind, suppose there are 8 occurrences of Wind = Weak
+and 6 occurrences of Wind = Strong. For Wind = Weak, 6 of the
+examples are YES and 2 are NO. For Wind = Strong, 3 are YES and
+3 are NO. Therefore</p> 
+<p align="CENTER">
+</p><center><tt>Gain(S,Wind)=Entropy(S)-(8/14)*Entropy(S<sub><font size="2" face="Courier New">weak</font></sub>)-(6/14)*Entropy(S<sub><font size="2" face="Courier New">strong</font></sub>)<p></p></tt></center>
+<p>
+<tt>= 0.940 - (8/14)*0.811 - (6/14)*1.00</tt></p>
+<p>
+<tt>= 0.048</tt></p><tt> </tt>
+<p>
+Entropy(S<sub>weak</sub>) = <tt>-</tt> (6/8)*log2(6/8) - (2/8)*log2(2/8)
+= 0.811</p>
+<p>
+Entropy(S<sub>strong</sub>) = <tt>-</tt> (3/6)*log2(3/6) - (3/6)*log2(3/6)
+= 1.00</p>
+<p>
+For each attribute, the gain is calculated and the highest gain
+is used in the decision node.</p> 
+<h4>Example of ID3<p></p> </h4>
+<p>
+Suppose we want ID3 to decide whether the weather is amenable
+to playing baseball. Over the course of 2 weeks, data is collected
+to help ID3 build a decision tree (see table 1).</p>
+<p>
+The target classification is "should we play baseball?"
+which can be yes or no.</p>
+<p>
+The weather attributes are outlook, temperature, humidity, and
+wind speed. They can have the following values:</p>
+<p>
+outlook = { sunny, overcast, rain }</p>
+<p>
+temperature = {hot, mild, cool }</p>
+<p>
+humidity = { high, normal }</p>
+<p>
+wind = {weak, strong }</p>
+<p>
+Examples of set S are:</p>
+<p>
+<table border="2" cellspacing="1" cellpadding="7" width="499">
+<tbody><tr><td valign="TOP" width="55"><center><p align="CENTER"><font size="2">Day</font></p></center>
+</td><td valign="TOP" width="95"><center><p align="CENTER"><font size="2">Outlook</font></p></center>
+</td><td valign="TOP" width="95"><center><p align="CENTER"><font size="2">Temperature</font></p></center>
+</td><td valign="TOP" width="85"><center><p align="CENTER"><font size="2">Humidity</font></p></center>
+</td><td valign="TOP" width="70"><center><p align="CENTER"><font size="2">Wind</font></p></center>
+</td><td valign="TOP" width="95"><center><p align="CENTER"><font size="2">Play ball</font></p></center>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D1</font></td><td valign="TOP" width="95"><font size="2">Sunny</font>
+</td><td valign="TOP" width="95"><font size="2">Hot</font></td><td valign="TOP" width="85"><font size="2">High</font>
+</td><td valign="TOP" width="70"><font size="2">Weak</font></td><td valign="TOP" width="95"><font size="2">No</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D2</font></td><td valign="TOP" width="95"><font size="2">Sunny</font>
+</td><td valign="TOP" width="95"><font size="2">Hot</font></td><td valign="TOP" width="85"><font size="2">High</font>
+</td><td valign="TOP" width="70"><font size="2">Strong</font></td><td valign="TOP" width="95"><font size="2">No</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D3</font></td><td valign="TOP" width="95"><font size="2">Overcast</font>
+</td><td valign="TOP" width="95"><font size="2">Hot</font></td><td valign="TOP" width="85"><font size="2">High</font>
+</td><td valign="TOP" width="70"><font size="2">Weak</font></td><td valign="TOP" width="95"><font size="2">Yes</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D4</font></td><td valign="TOP" width="95"><font size="2">Rain</font>
+</td><td valign="TOP" width="95"><font size="2">Mild</font></td><td valign="TOP" width="85"><font size="2">High</font>
+</td><td valign="TOP" width="70"><font size="2">Weak</font></td><td valign="TOP" width="95"><font size="2">Yes</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D5</font></td><td valign="TOP" width="95"><font size="2">Rain</font>
+</td><td valign="TOP" width="95"><font size="2">Cool</font></td><td valign="TOP" width="85"><font size="2">Normal</font>
+</td><td valign="TOP" width="70"><font size="2">Weak</font></td><td valign="TOP" width="95"><font size="2">Yes</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D6</font></td><td valign="TOP" width="95"><font size="2">Rain</font>
+</td><td valign="TOP" width="95"><font size="2">Cool</font></td><td valign="TOP" width="85"><font size="2">Normal</font>
+</td><td valign="TOP" width="70"><font size="2">Strong</font></td><td valign="TOP" width="95"><font size="2">No</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D7</font></td><td valign="TOP" width="95"><font size="2">Overcast</font>
+</td><td valign="TOP" width="95"><font size="2">Cool</font></td><td valign="TOP" width="85"><font size="2">Normal</font>
+</td><td valign="TOP" width="70"><font size="2">Strong</font></td><td valign="TOP" width="95"><font size="2">Yes</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D8</font></td><td valign="TOP" width="95"><font size="2">Sunny</font>
+</td><td valign="TOP" width="95"><font size="2">Mild</font></td><td valign="TOP" width="85"><font size="2">High</font>
+</td><td valign="TOP" width="70"><font size="2">Weak</font></td><td valign="TOP" width="95"><font size="2">No</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D9</font></td><td valign="TOP" width="95"><font size="2">Sunny</font>
+</td><td valign="TOP" width="95"><font size="2">Cool</font></td><td valign="TOP" width="85"><font size="2">Normal</font>
+</td><td valign="TOP" width="70"><font size="2">Weak</font></td><td valign="TOP" width="95"><font size="2">Yes</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D10</font></td><td valign="TOP" width="95"><font size="2">Rain</font>
+</td><td valign="TOP" width="95"><font size="2">Mild</font></td><td valign="TOP" width="85"><font size="2">Normal</font>
+</td><td valign="TOP" width="70"><font size="2">Weak</font></td><td valign="TOP" width="95"><font size="2">Yes</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D11</font></td><td valign="TOP" width="95"><font size="2">Sunny</font>
+</td><td valign="TOP" width="95"><font size="2">Mild</font></td><td valign="TOP" width="85"><font size="2">Normal</font>
+</td><td valign="TOP" width="70"><font size="2">Strong</font></td><td valign="TOP" width="95"><font size="2">Yes</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D12</font></td><td valign="TOP" width="95"><font size="2">Overcast</font>
+</td><td valign="TOP" width="95"><font size="2">Mild</font></td><td valign="TOP" width="85"><font size="2">High</font>
+</td><td valign="TOP" width="70"><font size="2">Strong</font></td><td valign="TOP" width="95"><font size="2">Yes</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D13</font></td><td valign="TOP" width="95"><font size="2">Overcast</font>
+</td><td valign="TOP" width="95"><font size="2">Hot</font></td><td valign="TOP" width="85"><font size="2">Normal</font>
+</td><td valign="TOP" width="70"><font size="2">Weak</font></td><td valign="TOP" width="95"><font size="2">Yes</font>
+</td></tr>
+<tr><td valign="TOP" width="55"><font size="2">D14</font></td><td valign="TOP" width="95"><font size="2">Rain</font>
+</td><td valign="TOP" width="95"><font size="2">Mild</font></td><td valign="TOP" width="85"><font size="2">High</font>
+</td><td valign="TOP" width="70"><font size="2">Strong</font></td><td valign="TOP" width="95"><font size="2">No</font>
+</td></tr>
+</tbody></table>
+</p><p>
+</p><center><b>Table 1<p></p> </b></center>
+<p>
+We need to find which attribute will be the root node in our decision
+tree. The gain is calculated for all four attributes:</p>
+<p>
+Gain(S, Outlook) = 0.246</p>
+<p>
+Gain(S, Temperature) = 0.029</p>
+<p>
+Gain(S, Humidity) = 0.151</p>
+<p>
+Gain(S, Wind) = 0.048 (calculated in example 2)</p>
+<p>
+Outlook attribute has the highest gain, therefore it is used as
+the decision attribute in the root node.</p>
+<p>
+Since Outlook has three possible values, the root node has three
+branches (sunny, overcast, rain). The next question is "what
+attribute should be tested at the Sunny branch node?" Since
+we=92ve used Outlook at the root, we only decide on the remaining
+three attributes: Humidity, Temperature, or Wind.</p>
+<p>
+S<sub>sunny</sub> = {D1, D2, D8, D9, D11} = 5 examples from table
+1 with outlook = sunny</p>
+<p>
+Gain(S<sub>sunny</sub>, Humidity) = 0.970</p>
+<p>
+Gain(S<sub>sunny</sub>, Temperature) = 0.570</p>
+<p>
+Gain(S<sub>sunny</sub>, Wind) = 0.019</p>
+<p>
+Humidity has the highest gain; therefore, it is used as the decision
+node. This process goes on until all data is classified perfectly
+or we run out of attributes.</p> 
+<p>
+<img src="./ID3_files/Image3.gif" width="640" height="306"></p> 
+<p>
+The final decision = tree</p> 
+<p>
+The decision tree can also be expressed in rule format:</p>
+<p>
+IF outlook = sunny AND humidity = high THEN playball = no</p>
+<p>
+IF outlook = rain AND humidity = high THEN playball = no</p>
+<p>
+IF outlook = rain AND wind = strong THEN playball = yes</p>
+<p>
+IF outlook = overcast THEN playball = yes</p>
+<p>
+IF outlook = rain AND wind = weak THEN playball = yes</p> 
+<p>
+ID3 has been incorporated in a number of commercial rule-induction
+packages. Some specific applications include medical diagnosis,
+credit risk assessment of loan applications, equipment malfunctions
+by their cause, classification of soybean diseases, and web search
+classification.</p> 
+<h3>Conclusion </h3>
+<p>
+The discussion and examples given show that ID3 is easy to use.
+Its primary use is replacing the expert who would normally build
+a classification tree by hand. As industry has shown, ID3 has
+been effective.</p> 
+<h3>Bibliography </h3>
+<p>
+"Building Decision Trees with the ID3 Algorithm", by:
+Andrew Colin, Dr. Dobbs Journal, June 1996</p>
+<p>
+"Incremental Induction of Decision Trees", by Paul E.
+Utgoff, Kluwer Academic Publishers, 1989</p>
+<p>
+"Machine Learning", by Tom Mitchell, McGraw-Hill, 1997
+pp. 52-81</p>
+<p>
+"C4.5 Programs for Machine Learning", by J. Ross Quinlan,
+Morgan Kaufmann, 1993</p>
+<p>
+"Algorithm Alley Column: C4.5", by Lynn Monson, Dr.
+Dobbs Journal, Jan 1997</p> 
+<p>
+<font size="2" face="Wingdings">v</font></p>
+<p>
+<font size="1"> </font>
+
+
+</p></body><div></div></html>

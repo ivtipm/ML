@@ -1,0 +1,25 @@
+# https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.spatial.distance.euclidean.html
+from scipy.spatial.distance import euclidean
+from numpy import *
+# X = [[4.7,3.2], [4.9, 3.1], [5, 3], [5.9, 3.2], [6, 3], [6.2, 2.8]]
+X = [[4.7,3.2], [4.9, 3.1], [5.9, 3.2], [6, 3]]
+# centroids = [[5.5, 3.2], [6.5, 3]]
+# centroids = [[ 5.16666667,  3.16666667], [6, 3]]
+centroids = [[ 4.8 ,  3.15], [ 5.95,  3.1 ]]
+
+assig = []
+for x in X:
+    buf = []
+    for centr in centroids:
+        print("centr:", centr, "distance:",  euclidean(centr, x))
+        buf.append(euclidean(centr, x))
+    assig.append(np.argmin(buf))
+print(assig)
+
+# [0, 0, 0, 1]
+# cent1 = array([ 5.16666667,  3.16666667])
+# centt2 = [6, 3]
+
+# [0, 0, 1, 1]
+# cent1 = array([ 4.8 ,  3.15])
+# cent2 = array([ 5.95,  3.1 ])

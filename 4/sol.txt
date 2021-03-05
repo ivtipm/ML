@@ -1,0 +1,7 @@
+from sklearn import metrics
+
+pred = clf.predict(X_test)
+print(metrics.accuracy_score(y_test, pred))
+print(metrics.f1_score(y_test, pred, average = 'macro'))
+print(metrics.precision_score(y_test, pred, average = 'macro'))
+print(metrics.recall_score(y_test, pred, average = 'macro'))
