@@ -57,3 +57,4 @@
 
 ## Датасеты
 [Ирисы Фишера -- задача классификации](https://archive.ics.uci.edu/ml/datasets/iris)
+[Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)
