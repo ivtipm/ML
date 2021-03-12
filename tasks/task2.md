@@ -2,7 +2,9 @@
 
 Выполняйте в google collab
 
-https://archive.ics.uci.edu/ml/datasets/adult
+https://archive.ics.uci.edu/ml/datasets/adult\
+альтернативная ссылка
+https://www.kaggle.com/wenruliu/adult-income-dataset?select=adult.csv
 
 1. Скачайте данные по ссылке. Можно предложить свой датасет по согласованию с преподавателем.
 3. Загрузите данные в DataFrame. Много ли данных? Сколько столбцов. Какие признаки?
