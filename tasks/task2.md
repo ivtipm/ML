@@ -21,4 +21,5 @@ https://www.kaggle.com/wenruliu/adult-income-dataset?select=adult.csv
 
 
 
-Пример: тут будет ссылка
+Примеры:
+- https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing
