@@ -3,8 +3,8 @@
 Выполняйте в [google collab](https://colab.research.google.com/)
 
 1. Скачайте данные
-    - https://archive.ics.uci.edu/ml/datasets/adult
-    - https://www.kaggle.com/wenruliu/adult-income-dataset?select=adult.csv
+    - тут https://archive.ics.uci.edu/ml/datasets/adult
+    - или тут https://www.kaggle.com/wenruliu/adult-income-dataset?select=adult.csv
     - Можно предложить свой датасет по согласованию с преподавателем. Его должно быть интесресно обрабатывать: пропуски, выбросы, нечисловые признаки.
 1. Загрузите данные в DataFrame. 
     - Много ли данных? Сколько признаков? Какие из них нечисловые? Опишите смысл всех признаков.
