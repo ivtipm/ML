@@ -7,6 +7,10 @@
 
 - Максимальный балл за создание своего класса (унаследовавщись от nn.Module) нейросети на pYtorch. Но можно сделать с помошью класса sequential из pytorch или keras.
 
+#### Шаблон
+https://colab.research.google.com/drive/1uHh0K5IDiV3MHLNmaD2FM-R8sQLzGyEo?usp=sharing
+Вместо написание кода с нуля, можно воспользоваться шаблоном кода, где решается задача регресии.
+Допишите код, получите приемлемую точность предсказания, сделайте выводы и получите необходимый минимум баллов.
 
 # Примеры
 [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing)
