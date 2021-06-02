@@ -24,6 +24,7 @@
 1. Обработка данных: https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing
 2. Классификация, персептрон (Keras, pytorch): https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing
 3. Классикация изображений, CNN, предобученные сети (keras): https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing
+4. Отслеживание метрик моделей: [wanbd.md](wanbd.md])
 
 ## [Задания](tasks/tasks.md)
 
