@@ -25,6 +25,7 @@
 2. Классификация, персептрон (Keras, pytorch): https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing
 3. Классикация изображений, CNN, предобученные сети (keras): https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing
 4. Отслеживание метрик моделей: [wanbd.md](wanbd.md])
+5. Простые примеры использования RNN: https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing
 
 ## [Задания](tasks/tasks.md)
 
