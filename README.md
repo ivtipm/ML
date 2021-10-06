@@ -26,6 +26,7 @@
 3. Классикация изображений, CNN, предобученные сети (keras): https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing
 4. Отслеживание метрик моделей: [wanbd.md](wanbd.md])
 5. Простые примеры использования RNN: https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing
+6. Обработка данных, деревья решений, случайный лес, апсемлинг (ADASYN) и андерсемплинг (TomekLinks): https://colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7?usp=sharing
 
 ## [Задания](tasks/tasks.md)
 
