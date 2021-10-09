@@ -23,10 +23,11 @@
   Позаций игроков в датасете много, но предлагается их сгруппировать таким образом:
   ```python
   forward_player = ["ST", "LW", "RW", "LF", "RF", "RS","LS", "CF"]
-midfielder_player = ["CM","RCM","LCM", "CDM","RDM","LDM", "CAM", "LAM", "RAM", "RM", "LM"]
-defender_player = ["CB", "RCB", "LCB", "LWB", "RWB", "LB", "RB"]
-goalkeeper = ["GK"]
-```
+  midfielder_player = ["CM","RCM","LCM", "CDM","RDM","LDM", "CAM", "LAM", "RAM", "RM", "LM"]
+  defender_player = ["CB", "RCB", "LCB", "LWB", "RWB", "LB", "RB"]
+  goalkeeper = ["GK"]
+  ```
+  
 - Свой вариант ...
 
 ## Примеры
