@@ -1,7 +1,7 @@
 # RNN и временные ряды
 
 Используйте рекуррентную нейронную сеть для предсказания временных рядов.
-  - Данные: 
+  - Данные:
     - максимальный балл: используйте данные о курсе валюты
     - альтернатива: используйте данные с заметной сезонностью http://sophist.hse.ru/hse/1/tables/WAG_M.htm (средняя заработная плата); https://www.kaggle.com/robikscube/hourly-energy-consumption (энергопотребление; можно выбрать любой файл)
   - Проанализируйте данные: есть ли сезонность, тренд, цикличность
@@ -13,7 +13,12 @@
     - Используйте многослойный персептрон и CNN сеть для решения той же задачи
     - Используйте сервис wandb для отслеживания обучения моделей и сравнения результатов
   - Сделайте выводы
-  
+
 **Примеры**
+- Прогнозирование временных рядов -- https://www.youtube.com/watch?v=RdTxLXmbvjY
+- Анализ временных рядов (неделя 1): https://www.coursera.org/learn/data-analysis-applications#syllabus
 - Простые примеры использования RNN: https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing
 - Временной ряд, RNN, LSTM: https://colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc?usp=sharing
+
+Дополнительно:
+- Предсказываем будущее с помощью библиотеки Facebook Prophet -- https://habr.com/ru/company/ods/blog/323730/
