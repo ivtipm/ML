@@ -14,11 +14,15 @@
     - Используйте сервис wandb для отслеживания обучения моделей и сравнения результатов
   - Сделайте выводы
 
-**Примеры**
-- Прогнозирование временных рядов -- https://www.youtube.com/watch?v=RdTxLXmbvjY
-- Анализ временных рядов (неделя 1): https://www.coursera.org/learn/data-analysis-applications#syllabus
+#### Примеры
 - Простые примеры использования RNN: https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing
 - Временной ряд, RNN, LSTM: https://colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc?usp=sharing
+
+
+#### Ссылки
+- Прогнозирование временных рядов -- https://www.youtube.com/watch?v=RdTxLXmbvjY
+- Анализ временных рядов (неделя 1): https://www.coursera.org/learn/data-analysis-applications#syllabus
+
 
 Дополнительно:
 - Предсказываем будущее с помощью библиотеки Facebook Prophet -- https://habr.com/ru/company/ods/blog/323730/
