@@ -40,3 +40,6 @@
 
 Дополнительно:
 - https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets -- обработка данных с дисбалансом классов
+
+
+[ [к списку заданий] ](https://github.com/ivtipm/ML/blob/main/tasks/tasks.md)
