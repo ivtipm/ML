@@ -30,4 +30,4 @@
 
 
 
-[к списку заданий](https://github.com/ivtipm/ML/blob/main/tasks/tasks.md)
+[ [к списку заданий] ](https://github.com/ivtipm/ML/blob/main/tasks/tasks.md)
