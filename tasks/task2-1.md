@@ -27,3 +27,7 @@
 
 Дополнительно:
 - Предсказываем будущее с помощью библиотеки Facebook Prophet -- https://habr.com/ru/company/ods/blog/323730/
+
+
+
+[ [к списку заданий] ](https://github.com/ivtipm/ML/blob/main/tasks/tasks.md)
