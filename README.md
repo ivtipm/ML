@@ -28,7 +28,7 @@
 6. Простые примеры использования RNN: https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing
 7. Временной ряд, RNN, LSTM: https://colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc?usp=sharing
 8. Обработка данных, деревья решений, случайный лес, апсемлинг (ADASYN) и андерсемплинг (TomekLinks): https://colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7?usp=sharing
-9. Предобработка текста, TF-IDF, SVM: https://github.com/ivtipm/ML
+9. Предобработка текста, TF-IDF, SVM: https://github.com/ivtipm/ML/blob/main/examples/text/text.md
 
 ## [Задания](tasks/tasks.md)
 
