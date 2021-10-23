@@ -4,3 +4,4 @@
     - Источник (сокращённый варинт, csv): https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews?select=IMDB+Dataset.csv
     - Источник (полный набор, отдельные файлы): http://ai.stanford.edu/~amaas/data/sentiment/
 2 `news.zip`    -- 20k, текст, русский, 3 класса (не сбалансированные), новости
+    - Источник: https://open-data-battle.geecko.com/issues/news
