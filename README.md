@@ -65,5 +65,6 @@
 - [pytorch](https://pytorch.org/) -- популярный и гибкий фреимвок для МО
 
 ## Датасеты
-[Ирисы Фишера -- задача классификации](https://archive.ics.uci.edu/ml/datasets/iris)
-[Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)
+1. [Ирисы Фишера -- задача классификации](https://archive.ics.uci.edu/ml/datasets/iris)
+2. [Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)
+3. https://github.com/ivtipm/ML/tree/main/datasets
