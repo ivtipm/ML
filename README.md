@@ -52,7 +52,10 @@
 - [stepik:Deep Learning (семестр 2)](https://stepik.org/course/65855/syllabus). Посвящённый обработке текстов и аудиозаписей (материалы доступны, начнётся заново осенью 2021)
 
 ## Для практики
-- [Dive into Deep Learning](http://d2l.ai/index.html)
+- [Dive into Deep Learning](http://d2l.ai/index.html) -- книжка (eng) по глубокому обучению, с примерами и заданиями.
+- [ODS: competitions](http://d2l.ai/index.html) -- соревнования по МО
+- [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) -- большая коллекция датасетов
+- [Kaggle](https://www.kaggle.com/)
 
 ## ПО
 - [PyCahrm](https://www.jetbrains.com/ru-ru/pycharm/download/)
