@@ -66,3 +66,6 @@ score, acc = model.evaluate(x_test, y_test, batch_size=batch_size)
 print('Test score:', score)
 print('Test accuracy:', acc)
 ```
+
+# Ссылки
+- Полный пример: предобработка и классификация https://colab.research.google.com/drive/1-DR0TUO-2WPT9xp8LaC6OOJxKbnbG6NO

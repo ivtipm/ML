@@ -8,7 +8,7 @@
 5. Нейросети
     - введения (мат. модели, свойства, задачи, линейная разделимость)
     - персептрон (Розенблатта, многослойный, алгоритмы: обратного распространения ошибки и стохастический градиентный спуск)
-    - сети с обратными связями 
+    - сети с обратными связями
     - нелинейная разделимость, радиально-базисные сети
     - самоорганизующиеся сети( кластеризация и классификация на них)
     - свёрточные сети (когнитрон, неокогнитрон, сверточные сети)
@@ -28,8 +28,9 @@
 6. Простые примеры использования RNN: https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing
 7. Временной ряд, RNN, LSTM: https://colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc?usp=sharing
 8. Обработка данных, деревья решений, случайный лес, апсемлинг (ADASYN) и андерсемплинг (TomekLinks): https://colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7?usp=sharing
-9. Предобработка текста, TF-IDF, SVM: https://github.com/ivtipm/ML/blob/main/examples/text/text_preprocess.md
-10. Классификация текстов, Embeddings, LSTM (Keras): https://colab.research.google.com/drive/1-DR0TUO-2WPT9xp8LaC6OOJxKbnbG6NO?usp=sharing
+9. [Предобработка текста, TF-IDF, SVM](https://github.com/ivtipm/ML/blob/main/examples/text/text_preprocess.md)
+10. [Классификация текстов, Embeddings, LSTM (Keras)](https://github.com/ivtipm/ML/blob/main/examples/text/text_keras.md)
+
 
 ## [Задания](tasks/tasks.md)
 
@@ -49,7 +50,7 @@
 - https://github.com/VetrovSV/Programming
 
 ## Курсы по глубокому обучению
-- [stepik:Deep Learning (семестр 1, осень 2020)](https://stepik.org/course/82177/promo). Введение в МО, обработка изображений. 
+- [stepik:Deep Learning (семестр 1, осень 2020)](https://stepik.org/course/82177/promo). Введение в МО, обработка изображений.
 - [stepik:Deep Learning (семестр 2)](https://stepik.org/course/65855/syllabus). Посвящённый обработке текстов и аудиозаписей (материалы доступны, начнётся заново осенью 2021)
 
 ## Для практики
