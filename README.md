@@ -73,3 +73,7 @@
 1. [Ирисы Фишера -- задача классификации](https://archive.ics.uci.edu/ml/datasets/iris)
 2. [Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)
 3. https://github.com/ivtipm/ML/tree/main/datasets
+
+### Дополнительно
+- Портал открытых данных РФ http://data.gov.ru/
+- Пакеты открытых данных https://hubofdata.ru/datase
