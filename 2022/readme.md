@@ -13,4 +13,5 @@
 - Программируем на Python. Лутц Марк
 - https://stepik.org/course/67/syllabus
 - https://github.com/VetrovSV/Programming
+- Python для сложных задач: наука о данных и машинное обучение. — СПб.: Питер, 2018. — 576 с.
 - google colaboratory -- для запуска кода на Python (есть GPU)
