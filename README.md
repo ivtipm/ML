@@ -35,7 +35,7 @@
 10. [Классификация текстов, Embeddings, LSTM (Keras)](https://github.com/ivtipm/ML/blob/main/examples/text/text_keras.md)
 
 
-## [Задания](tasks/tasks.md)
+## [Задания 2021](tasks/tasks.md)
 
 
 [Заочное: занятия 30 ноября - 9 декабря 2020](https://github.com/ivtipm/ML/blob/main/dist2020/lessons.md) (заочное)
