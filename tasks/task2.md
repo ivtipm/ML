@@ -4,8 +4,8 @@
 Завершите задание в течении двух недель.
 
 1. Скачайте данные
-    - вариант 1. https://archive.ics.uci.edu/ml/datasets/adult, https://www.kaggle.com/wenruliu/adult-income-dataset?select=adult.csv
-    - вариант 2. https://raw.githubusercontent.com/ivtipm/ML/main/datasets/churn.csv
+    - вариант 1. https://raw.githubusercontent.com/ivtipm/ML/main/datasets/churn.csv (есть на Kaggle)
+    - вариант 2. https://archive.ics.uci.edu/ml/datasets/adult, https://www.kaggle.com/wenruliu/adult-income-dataset?select=adult.csv
     - Можно предложить свой датасет по согласованию с преподавателем. Его должно быть интересно обрабатывать: пропуски, выбросы, не числовые признаки.
 1. Загрузите данные в DataFrame. 
     - Много ли данных? Сколько признаков? Какие из них не числовые? Опишите смысл всех признаков.
