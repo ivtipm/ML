@@ -4,6 +4,7 @@
 - параметры и гиперпараметры; поиск по сетке гиперпараметров; кросс-валидация
 - Нейрон; обучение; полносвязная сеть в tf.keras, pytorch
    - https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing#scrollTo=Jx7jYjM4RyGm
+   - Софтмакс, аргмакс
 - Консультация, Разбор работ, защита работ
 
 ### Домашнее задание
