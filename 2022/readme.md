@@ -1,3 +1,8 @@
+# Практика 5
+Создайте нейросеть для классификации данных:
+https://github.com/VetrovSV/ml-files/blob/main/X.npy.zip?raw=true
+https://github.com/VetrovSV/ml-files/blob/main/Y.npy?raw=true
+
 # Практика 4
 апрель 5 (9)
 - Повторение
