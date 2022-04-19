@@ -1,7 +1,7 @@
 # Практика 5
-Создайте нейросеть для классификации данных:
-https://github.com/VetrovSV/ml-files/blob/main/X.npy.zip?raw=true
-https://github.com/VetrovSV/ml-files/blob/main/Y.npy?raw=true
+Создайте нейросеть (многослойные персептрон) для классификации изображений. Примените два классических метода.
+Смотрите ссылку на kaggle в дискорде.
+
 
 # Практика 4
 апрель 5 (9)
