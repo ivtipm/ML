@@ -43,6 +43,7 @@
 
 # Ссылки
 ## Теория
+- Классические методы МО и начало НС: https://ml-handbook.ru
 - Основы нейрокомпьютерных систем [Текст] : учебное пособие / Д. А. Семигузов
 - Deep Learning with PyTorch, Eli Stevens, Luca Antiga, Thomas Viehmann --  теория + PyTorch
 
