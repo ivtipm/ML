@@ -40,7 +40,7 @@
    - сниппеты кода для типичных задач (преобразования, подключение модулей, построения нейросети, обучение, ... )
    - любой другой подходящий материал
 1. Решить задачу регрессии
-   - https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
+   - https://www.kaggle.com/competitions/california-house-prices/overview
    - используйте уравнение линейной регресии
    - бонусные балы за 
       - регрессиюя с регуляризацией и нейросеть 
