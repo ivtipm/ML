@@ -1,7 +1,8 @@
 # Практика 6
-- Случайные леса
-- Градиентный бустинг
-- Кластеризация
+- Случайные леса; Градиентный бустинг
+   - https://colab.research.google.com/drive/1N_mRJhAf7BX-ZwAcOGNGk3nNB3roDjzO?usp=sharing
+- Кластеризация 
+   - https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf?usp=sharing
 
 ### Домашнее задание
 1. Кластеризация https://github.com/ivtipm/ML/blob/main/tasks/clustering.md
