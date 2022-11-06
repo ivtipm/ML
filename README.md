@@ -29,7 +29,7 @@
 2. Классификация, персептрон (Keras, pytorch): https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing
 4. Классикация изображений, CNN, предобученные сети (keras): https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing
 1. Интерактивные графики, уменьшение размерности, веб-формы (plotly, PCA, gradio): https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing
-5. Отслеживание метрик моделей: [wanbd.md](wanbd.md])
+5. Отслеживание метрик моделей: [wandb.md](wandb.md])
 6. Простые примеры использования RNN: https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing
 7. Временной ряд, RNN, LSTM: https://colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc?usp=sharing
 8. Обработка данных, деревья решений, случайный лес, апсемлинг (ADASYN) и андерсемплинг (TomekLinks): https://colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7?usp=sharing
