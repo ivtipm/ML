@@ -69,9 +69,10 @@
 - [Kaggle](https://www.kaggle.com/)
 
 ## ПО
-- [PyCahrm](https://www.jetbrains.com/ru-ru/pycharm/download/)
 - [google colaboratory](https://colab.research.google.com) -- для запуска кода на python и обучения НС на GPU
 - [Anaconda](https://www.anaconda.com/products/individual) -- дистрибутив для научных вычислений на Python
+- DataSpell (бесплатно для студентов)
+- [PyCahrm](https://www.jetbrains.com/ru-ru/pycharm/download/)
 
 ### Библиотеки
 - [sklearn](https://scikit-learn.org/stable/) -- классические мтоды МО (python)
