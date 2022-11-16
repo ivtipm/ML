@@ -73,6 +73,7 @@ plt.show()
 
 
 # Тексты в PyTorch
+**Токенизация**
 ```python
 from torchtext.data.utils import get_tokenizer    
 
@@ -80,12 +81,25 @@ from torchtext.data.utils import get_tokenizer
 # вместо первого параметра можно передать свою функцию
 tokenizer = get_tokenizer('basic_english')
 
+
 tokens = tokenizer('Hello, World!')   # ->  ['hello', ',', 'world', '!']
 ```
 
+Составление словаря
+```
+from torchtext.vocab import Vocab                       # класс Словарь
+from torchtext.vocab import build_vocab_from_iterator   # создаёт словарь Vocab, мэпит слова в числа
 
+def get_tokens(dataset):
+    """генератор: выдаёт весь датасет по частям (текстам) в виде списка токенов (слов)
+    dataset -- набор текстов"""
+    for text in dataset:        
+        yield [ w for w in tokenizer(text) ] 
 
-from torchtext.vocab import Vocab   # класс для составления словаря 
+# my_dataset = [ 'Hello, World! Hello, Pytorch',
+                  'lorem ipusm...'
+                  ]
+vocab = build_vocab_from_iterator(get_tokens(my_dataset), specials=["<unk>", "<pad>"])
 
 ```
 
