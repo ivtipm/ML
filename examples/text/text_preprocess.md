@@ -86,7 +86,7 @@ tokens = tokenizer('Hello, World!')   # ->  ['hello', ',', 'world', '!']
 ```
 
 Составление словаря
-```
+```python
 from torchtext.vocab import Vocab                       # класс Словарь
 from torchtext.vocab import build_vocab_from_iterator   # создаёт словарь Vocab, мэпит слова в числа
 
