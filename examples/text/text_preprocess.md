@@ -100,7 +100,14 @@ def get_tokens(dataset):
                   'lorem ipusm...'
                   ]
 vocab = build_vocab_from_iterator(get_tokens(my_dataset), specials=["<unk>", "<pad>"])
+# vocab['<unk>'] -> 0     
+# vocab['<pad>'] -> 1   # для забивки коротких текстов до нужной длины
+# vocab['hello'] -> 42
+...
 
+# пример замены по словарю
+tokens = tokenizer('Remember, remember, the 5th of November, Gunpowder, treason and plot.')
+vocab( tokens )     # ->  [374, 4, 374, 4, 2, 9750, 7, 10167, 4, 21199, 4, 16087, 5, 122, 3]
 ```
 
 Примеры с новым API для работы с текстами:
