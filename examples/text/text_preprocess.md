@@ -70,3 +70,24 @@ plt.show()
   
   ## Пример
   - https://colab.research.google.com/drive/1yOnvYUbbu7b2sgnh4vn1csis9PWAss_f?usp=sharing -- предобработка (удаление лишних слов, стемминг), TF-IDF кодирование, предсказание с помощью SVM
+
+
+# Тексты в PyTorch
+```python
+from torchtext.data.utils import get_tokenizer    
+
+# делает ловеркейс, разбивает на токены (в том числе знаки препинания),
+# вместо первого параметра можно передать свою функцию
+tokenizer = get_tokenizer('basic_english')
+
+tokens = tokenizer('Hello, World!')   # ->  ['hello', ',', 'world', '!']
+```
+
+
+
+from torchtext.vocab import Vocab   # класс для составления словаря 
+
+```
+
+Примеры с новым API для работы с текстами:
+https://colab.research.google.com/github/pytorch/text/blob/master/examples/legacy_tutorial/migration_tutorial.ipynb#scrollTo=Ro8HXPwmwtp7
