@@ -70,3 +70,45 @@ plt.show()
   
   ## Пример
   - https://colab.research.google.com/drive/1yOnvYUbbu7b2sgnh4vn1csis9PWAss_f?usp=sharing -- предобработка (удаление лишних слов, стемминг), TF-IDF кодирование, предсказание с помощью SVM
+
+
+# Тексты в PyTorch
+**Токенизация**
+```python
+from torchtext.data.utils import get_tokenizer    
+
+# делает ловеркейс, разбивает на токены (в том числе знаки препинания),
+# вместо первого параметра можно передать свою функцию
+tokenizer = get_tokenizer('basic_english')
+
+
+tokens = tokenizer('Hello, World!')   # ->  ['hello', ',', 'world', '!']
+```
+
+Составление словаря
+```python
+from torchtext.vocab import Vocab                       # класс Словарь
+from torchtext.vocab import build_vocab_from_iterator   # создаёт словарь Vocab, мэпит слова в числа
+
+def get_tokens(dataset):
+    """генератор: выдаёт весь датасет по частям (текстам) в виде списка токенов (слов)
+    dataset -- набор текстов"""
+    for text in dataset:        
+        yield [ w for w in tokenizer(text) ] 
+
+# my_dataset = [ 'Hello, World! Hello, Pytorch',
+                  'lorem ipusm...'
+                  ]
+vocab = build_vocab_from_iterator(get_tokens(my_dataset), specials=["<unk>", "<pad>"])
+# vocab['<unk>'] -> 0     
+# vocab['<pad>'] -> 1   # для забивки коротких текстов до нужной длины
+# vocab['hello'] -> 42
+...
+
+# пример замены по словарю
+tokens = tokenizer('Remember, remember, the 5th of November, Gunpowder, treason and plot.')
+vocab( tokens )     # ->  [374, 4, 374, 4, 2, 9750, 7, 10167, 4, 21199, 4, 16087, 5, 122, 3]
+```
+
+Примеры с новым API для работы с текстами:
+https://colab.research.google.com/github/pytorch/text/blob/master/examples/legacy_tutorial/migration_tutorial.ipynb#scrollTo=Ro8HXPwmwtp7
