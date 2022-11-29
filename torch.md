@@ -19,7 +19,7 @@ from torch import nn
 
 # текст, где каждое слово представлено числом -- его номером в словаре (см. класс Vocab)
 # нули (число-заполнитель -- padding index) поставлены для выравнивания всех тектов по одной длине 
-text = torch.tensor( [[12, 27, 4, 56, 3, 81, 0, 0, 0, 0 ]] ) 		# [batch_size = 1, sequence_len = ]
+text = torch.tensor( [[12, 27, 4, 56, 3, 81, 0, 0, 0, 0 ]] ) 		# [batch_size = 1, sequence_len = 10]
 
 
 emb = nn.Embedding(num_embeddings = 100, 	# размер словаря
