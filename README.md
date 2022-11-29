@@ -66,7 +66,6 @@
 ## Для практики
 - [Dive into Deep Learning](http://d2l.ai/index.html) -- книжка (eng) по глубокому обучению, с примерами и заданиями.
 - [ODS: competitions](http://d2l.ai/index.html) -- соревнования по МО
-- [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) -- большая коллекция датасетов
 - [Kaggle](https://www.kaggle.com/)
 
 ## ПО
@@ -86,6 +85,9 @@
 1. [Ирисы Фишера -- задача классификации](https://archive.ics.uci.edu/ml/datasets/iris)
 2. [Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)
 3. https://github.com/ivtipm/ML/tree/main/datasets
+4. https://huggingface.co/datasets
+5. https://www.kaggle.com/datasets
+6. [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) -- большая коллекция датасетов
 
 ### Дополнительно
 - Портал открытых данных РФ http://data.gov.ru/
