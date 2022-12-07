@@ -25,6 +25,9 @@
     - логистическая регрессия
     - методы ансамблей
     - случайный лес.
+* Обработка текстов.
+    - http://nlpprogress.com -- каталог последних достижений и дастасетов по областям NLP 
+
 
 ## Примеры
 1. Обработка данных: https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing
