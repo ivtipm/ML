@@ -23,8 +23,8 @@
 **Практика**
 1. Обзор основных средств анализа данных. Установка и настройка рабочей среды.
    - Python. pip. virtual enviroment? conda?
-   - GNU Tools?
-   - Jupyter Notebook. Google Collab. Kaggle.
+   - GNU Tools. cd, ls, pwd, ..., wc, cat, head, tail, less, diff?
+   - Jupyter Notebook. Google Colaboratory. Kaggle.
    - R?
 3. Библиотеки анализа данных и машинного обучения. 
    -  Numpy. Pandas. SciPy. Matplotlib. Seaborn. plotly. Sklearn.
