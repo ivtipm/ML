@@ -3,7 +3,11 @@
 #### Математические аспекты анализа данных и машинного обучения
 **Лекции**
 1. Введение в машинное обучение
+  - https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit?usp=sharing
 1. Теория вероятностей и математическая статистика
+  - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_1.pdf
+  - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_2.pdf
+  - Среднее значение (average) и дисперсия (variance), интерактивный пример: https://seeing-theory.brown.edu/basic-probability/index.html#section3
 1. Линейная регрессия. Метод наименьших квадратов. Статистический вывод
 1. Градиентный спуск и стохастический градиентный спуск
 1. Логистическая регрессия
