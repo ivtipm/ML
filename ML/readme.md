@@ -7,13 +7,16 @@
 1. Теория вероятностей и математическая статистика
    - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_1.pdf
    - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_2.pdf
+   - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf
+   - Примеры распределений и их вид в зависимости от параметров: https://seeing-theory.brown.edu/probability-distributions/index.html#section3
    - Среднее значение (average) и дисперсия (variance), интерактивный пример: https://seeing-theory.brown.edu/basic-probability/index.html#section3
 1. Линейная регрессия. Метод наименьших квадратов. Статистический вывод
-1. Градиентный спуск и стохастический градиентный спуск
-1. Логистическая регрессия
-1. Регуляризация линейной регрессии и логистической регрессии
-1. Повторные выборки. Кросс-валидация. Выбор модели
-1. Выбор признаков
+   - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf
+3. Градиентный спуск и стохастический градиентный спуск
+4. Логистическая регрессия
+5. Регуляризация линейной регрессии и логистической регрессии
+6. Повторные выборки. Кросс-валидация. Выбор модели
+7. Выбор признаков
 
 **Практика**
 1. Обзор основных средств анализа данных. Установка и настройка рабочей среды
