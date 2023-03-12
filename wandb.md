@@ -23,6 +23,17 @@ import wandb
 
 `!wandb login`
 
+Авторизация из ноубука kaggle:
+1. Получить ключ `!wandb login`
+2. Добавить его в хранилище secrets среды Kaggle: menu Add-ons - Secrets, задать имя (например my_wandb_key)
+3. Обратиться к сохранённому ключу из ноутбука, авторизоваться:
+```python
+from kaggle_secrets import UserSecretsClient
+user_secrets = UserSecretsClient() 
+personal_key_for_api = user_secrets.get_secret("my_wandb_key")
+!wandb login $personal_key_for_api
+```
+
 5. Инициализировать сессию для загрузки информации об отдельном запуске обучения модели
 ```python
 wandb.init(project="project name",   # один проект на много запусков

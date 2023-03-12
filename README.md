@@ -1,5 +1,7 @@
 # Введение в ИИ
 
+### [Курс 2023. Основы МО](ML/readme.md)
+
 ### [Курс 2022](2022/readme.md)
 
 ### [Курс 2022. Заочное. Осень](dist/2022/fall.md)
@@ -25,6 +27,9 @@
     - логистическая регрессия
     - методы ансамблей
     - случайный лес.
+* Обработка текстов.
+    - http://nlpprogress.com -- каталог последних достижений и дастасетов по областям NLP 
+
 
 ## Примеры
 1. Обработка данных: https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing
@@ -66,7 +71,6 @@
 ## Для практики
 - [Dive into Deep Learning](http://d2l.ai/index.html) -- книжка (eng) по глубокому обучению, с примерами и заданиями.
 - [ODS: competitions](http://d2l.ai/index.html) -- соревнования по МО
-- [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) -- большая коллекция датасетов
 - [Kaggle](https://www.kaggle.com/)
 
 ## ПО
@@ -86,6 +90,9 @@
 1. [Ирисы Фишера -- задача классификации](https://archive.ics.uci.edu/ml/datasets/iris)
 2. [Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)
 3. https://github.com/ivtipm/ML/tree/main/datasets
+4. https://huggingface.co/datasets
+5. https://www.kaggle.com/datasets
+6. [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) -- большая коллекция датасетов
 
 ### Дополнительно
 - Портал открытых данных РФ http://data.gov.ru/
