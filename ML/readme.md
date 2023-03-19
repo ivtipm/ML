@@ -20,9 +20,10 @@
 3. Градиентный спуск и стохастический градиентный спуск
    - Теория: https://raw.githubusercontent.com/ivtipm/ML/main/Gradient%20Descent.pdf
    - https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx#scrollTo=Bz-MhoMQ8XPR
-5. Логистическая регрессия
-6. Регуляризация линейной регрессии и логистической регрессии
-7. Повторные выборки. Кросс-валидация. Выбор модели
+5. Логистическая регрессия.
+   - https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing
+6. Регуляризация линейной регрессии и логистической регрессии.
+7. Повторные выборки. Кросс-валидация. Выбор модели.
 8. Выбор признаков (отбор признаков на основе статистической значимости, создание новых признаков, ... )
 
 ### Практики
