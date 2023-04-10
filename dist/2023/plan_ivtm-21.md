@@ -4,6 +4,7 @@
 - Повторение
   - Многослойный персептрон. Функция активации. Функция потерь. Обучение.
   - https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit?usp=sharing
+  - https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3#scrollTo=aWdUxy4n62Ii
   - Батчи. Отслеживание обучения. Валидационная выборка. Переобучение. Подбор гиперпараметров.
 - CNN
   - слайды: https://docs.google.com/presentation/d/1i41kqGwZqW_sSRz9Bopoq7AZf_Zuo6OaRSeCKYIH_80/edit#slide=id.g175db6f31f84d48d_0
