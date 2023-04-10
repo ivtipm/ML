@@ -6,6 +6,8 @@
   - https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit?usp=sharing
   - Батчи. Отслеживание обучения. Валидационная выборка. Переобучение. Подбор гиперпараметров.
 - CNN
+  - слайды: https://docs.google.com/presentation/d/1i41kqGwZqW_sSRz9Bopoq7AZf_Zuo6OaRSeCKYIH_80/edit#slide=id.g175db6f31f84d48d_0
+  - пример: https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb
 #### Задание
 Решите задачу классификации изображений на популярном наборе данных:
 **CIFAR10 dataset**
