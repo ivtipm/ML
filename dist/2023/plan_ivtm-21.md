@@ -30,7 +30,9 @@ from tensorflow.keras import datasets
 # Занятие 2. Представление текста. Рекуррентные нейронные сети
 16 апреля
 - Повторение
-- TF-IDF
+- Обработка и представление текста. TF-IDF
+  - https://github.com/ivtipm/ML/blob/main/examples/text/text_preprocess.md
+  - https://github.com/ivtipm/ML/blob/main/examples/text/text_keras.md
 - RNN. LSTM. GRU.
   - https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK#scrollTo=HfPTJMS7BTey
 - Представление текста. RNN. LSTM. https://colab.research.google.com/drive/1YYk4fVlVDghrzEj_q_F-smbuSFMmhSK_#scrollTo=APohB_f101Ek
