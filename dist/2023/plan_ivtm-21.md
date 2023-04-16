@@ -9,7 +9,8 @@
 - CNN
   - слайды: https://docs.google.com/presentation/d/1i41kqGwZqW_sSRz9Bopoq7AZf_Zuo6OaRSeCKYIH_80/edit#slide=id.g175db6f31f84d48d_0
   - пример: https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb
-#### Задание
+
+#### Задание. CNN
 Решите задачу классификации изображений на популярном наборе данных:
 **CIFAR10 dataset**
 - 60,000 изображений,
@@ -31,6 +32,11 @@ from tensorflow.keras import datasets
 - Повторение
 - TF-IDF
 - RNN. LSTM. GRU.
+  - https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK#scrollTo=HfPTJMS7BTey
+- Представление текста. RNN. LSTM. https://colab.research.google.com/drive/1YYk4fVlVDghrzEj_q_F-smbuSFMmhSK_#scrollTo=APohB_f101Ek
+
+
+#### Задание RNN.
 
 
 # Занятие 3. Защита работ.
