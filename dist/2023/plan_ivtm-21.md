@@ -60,6 +60,7 @@ from tensorflow.keras import datasets
   - https://github.com/ivtipm/ML/blob/main/examples/text/text_preprocess.md
   - https://github.com/ivtipm/ML/blob/main/examples/text/text_keras.md
 - RNN. LSTM. GRU.
+  - Теория: https://www.figma.com/proto/1DzcdjkodaIvQPFBji5UVu/ML?node-id=810-2758&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=810%3A2758
   - https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK#scrollTo=HfPTJMS7BTey
 - Представление текста. RNN. LSTM. https://colab.research.google.com/drive/1YYk4fVlVDghrzEj_q_F-smbuSFMmhSK_#scrollTo=APohB_f101Ek
 
