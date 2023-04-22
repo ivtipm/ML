@@ -127,6 +127,7 @@
    - Напишите комментарии, документацию к коду и выводы.
    - Датасет: https://raw.githubusercontent.com/SteffiPeTaffy/machineLearningAZ/master/Machine Learning A-Z Template Folder/Part 4 - Clustering/Section 25 - Hierarchical Clustering/Mall_Customers.csv
 5. Уменьшение размерности и метод главных компонент
+   - Интерактивные графики и веб-формы: https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing
 6. Рекомендательные системы
 7. Распределенные алгоритмы
 8. Нейронные сети
