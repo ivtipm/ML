@@ -87,12 +87,13 @@
 - [wandb](https://wandb.ai/site) -- библиотека и интернет-сервис для отслеживания процесса обучения моделей, сравнения метрик моделей
 
 ## Датасеты
-1. [Ирисы Фишера -- задача классификации](https://archive.ics.uci.edu/ml/datasets/iris)
-2. [Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)
-3. https://github.com/ivtipm/ML/tree/main/datasets
-4. https://huggingface.co/datasets
-5. https://www.kaggle.com/datasets
-6. [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) -- большая коллекция датасетов
+1. [Классификация: Ирисы Фишера](https://archive.ics.uci.edu/ml/datasets/iris) (небольшой простой датасет)
+2. [Классификация: пингвины](https://github.com/allisonhorst/palmerpenguins) (небольшой простой датасет)
+3. [Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)
+4. https://github.com/ivtipm/ML/tree/main/datasets
+5. https://huggingface.co/datasets
+6. https://www.kaggle.com/datasets
+7. [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) — большая коллекция датасетов
 
 ### Дополнительно
 - Портал открытых данных РФ http://data.gov.ru/
