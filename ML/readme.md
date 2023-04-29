@@ -1,30 +1,30 @@
 # Методы МО
 # Содержание
 ## Математические аспекты анализа данных и машинного обучения
-**Лекции**
-1. Введение в машинное обучение
+### Лекции
+#### 1. Введение в машинное обучение
    - https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit?usp=sharing
-1. Теория вероятностей и математическая статистика
+#### 1. Теория вероятностей и математическая статистика
    - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_1.pdf
    - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_2.pdf
    - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf
    - Примеры распределений и их вид в зависимости от параметров: https://seeing-theory.brown.edu/probability-distributions/index.html#section3
    - Среднее значение (average) и дисперсия (variance), интерактивный пример: https://seeing-theory.brown.edu/basic-probability/index.html#section3
-1. Линейная регрессия. Метод наименьших квадратов. Статистический вывод
+#### 1. Линейная регрессия. Метод наименьших квадратов. Статистический вывод
    - Повторение: случайная величина, числовые характеристики, распределение.
    - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf
    - [Математические модели и вычислительные методы обработки экспериментальных данных](https://raw.githubusercontent.com/ivtipm/ML/main/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%B8%20%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf) раздел 2.4
    - Корреляция, коэффициент линейной корреляции (Пирсона), оценка качества уравнения регресии, коэффициент детерминации.
    - Линейная регрессия в sclearn
    - Теория + пример: https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx?usp=sharing
-3. Градиентный спуск и стохастический градиентный спуск
+#### 3. Градиентный спуск и стохастический градиентный спуск
    - Теория: https://raw.githubusercontent.com/ivtipm/ML/main/Gradient%20Descent.pdf
    - https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx#scrollTo=Bz-MhoMQ8XPR
-5. Логистическая регрессия.
+#### 5. Логистическая регрессия.
    - https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing
-6. Регуляризация линейной регрессии и логистической регрессии.
-7. Повторные выборки. Кросс-валидация. Выбор модели.
-8. Выбор признаков (отбор признаков на основе статистической значимости, создание новых признаков, ... )
+#### 6. Регуляризация линейной регрессии и логистической регрессии.
+#### 7. Повторные выборки. Кросс-валидация. Выбор модели.
+#### 8. Выбор признаков (отбор признаков на основе статистической значимости, создание новых признаков, ... )
 
 ### Практики
 #### 1. Обзор основных средств анализа данных. Установка и настройка рабочей среды.
@@ -37,7 +37,7 @@
    - Посмотрите основные возможности библиотек NumPy и Pandas.  [ [Математические модели и вычислительные методы обработки экспериментальных данных](https://raw.githubusercontent.com/ivtipm/ML/main/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%B8%20%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf)  ]
 #### 3. Библиотеки анализа данных и машинного обучения.
    -  Numpy. Pandas. SciPy. Matplotlib. Seaborn. plotly. Sklearn.
-#### Домашнее задание 2
+#### Домашнее задание 2. EDA, визуализация, предварительная обработка
 Предварительный анализ данных и визуализация:
 - данные:https://www.kaggle.com/competitions/california-house-prices/overview
    - После согласования с преподавателем можно использовать свои данные
