@@ -72,7 +72,7 @@
 ## Датасеты
 1. [Классификация: Ирисы Фишера](https://archive.ics.uci.edu/ml/datasets/iris) (небольшой простой датасет)
 2. [Классификация: пингвины](https://github.com/allisonhorst/palmerpenguins) (небольшой простой датасет)
-3. [Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)
+3. [Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)\
 Каталоги датасетов:
 5. https://github.com/ivtipm/ML/tree/main/datasets
 6. https://huggingface.co/datasets
