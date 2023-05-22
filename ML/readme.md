@@ -141,7 +141,7 @@
    - https://colab.research.google.com/drive/1_5JVzwKej5hCe8I_bHfFYC0y8CrjfhJi — Основы PyTorch
 #### Домашнее задание. Keras. Pytorch.
 Примените нейросети для решения задачи классификации и регрессии.
-Используйте фреимворки Keras и PyTorch
+Используйте фреимворки Keras и PyTorch (2 способа: на основе Sequential и Module)
 #### 9. Представление данных
 
 ### Практики
