@@ -136,6 +136,9 @@
 #### 6. Рекомендательные системы
 #### 7. Распределенные алгоритмы
 #### 8. Нейронные сети
+   - Слайды: https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit?usp=sharing
+   - https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3 — Пример полносвязной ести на PyTorch
+   - https://colab.research.google.com/drive/1_5JVzwKej5hCe8I_bHfFYC0y8CrjfhJi — Основы PyTorch
 #### 9. Представление данных
 
 ### Практики
