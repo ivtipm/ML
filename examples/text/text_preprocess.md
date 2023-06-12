@@ -70,6 +70,32 @@ plt.show()
 ## Пример
   - https://colab.research.google.com/drive/1yOnvYUbbu7b2sgnh4vn1csis9PWAss_f?usp=sharing — предобработка (удаление лишних слов, стемминг), TF-IDF кодирование, предсказание с помощью SVM
 
+# Кодирование TF-IDF
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+# https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
+tf_idf = TfidfVectorizer(
+    ngram_range=(1, 1),             # рассматриваем только 1-граммы, т.е. отдельные слова; можно рассматривать слова и словосочетания (1,2) и т.д.
+    max_df=0.8,                     # слова, встречаемые более чем в 80% документов будут отброшены
+    min_df=10,                      # мин. частота слова в текстах (более редкие слова игнорируются)
+    # max_features =                # можно задать максимальное количество рассматриваемых слов, иначе будут рассмотренны все
+    # vocabulary =                  # задать словарь вручную
+)
+
+# TfidfVectorizer тоже умеет делать предобработку: preprocessor=None, tokenizer=None, stop_words=None, token_pattern='(?u)\\b\\w\\w+\\b',  ...
+# analyzer{‘word’, ‘char’, ‘char_wb’} or callable, default=’word’ -- можно анализировать не только слова
+
+# max_features=None, vocabulary=None, binary=False, dtype=np.float64, norm='l2', use_idf=True, smooth_idf=True, sublinear_tf=False)
+# получим sparse (разреженную) матрицу, где сторки по-прежнему документы, столбцы -- токены (слова)
+X = tf_idf.fit_transform( <итерируемый набор текстов> )
+
+tf_idf.idf_         # вектор весов слов, в зависимости от их встречаемости в документах
+```
+
+## Пример
+  - https://colab.research.google.com/drive/1yOnvYUbbu7b2sgnh4vn1csis9PWAss_f?usp=sharing — предобработка (удаление лишних слов, стемминг), TF-IDF кодирование, предсказание с помощью SVM
+
 
 # Тексты в PyTorch
 **Токенизация**
