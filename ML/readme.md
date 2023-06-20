@@ -3,7 +3,7 @@
 ## Математические аспекты анализа данных и машинного обучения
 ### Лекции
 #### 1. Введение в машинное обучение
-   - https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit?usp=sharing
+   - Слайды: https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit?usp=sharing
 
 #### 2. Теория вероятностей и математическая статистика
    - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_1.pdf
