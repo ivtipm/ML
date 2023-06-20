@@ -3,29 +3,29 @@
 ## Математические аспекты анализа данных и машинного обучения
 ### Лекции
 #### 1. Введение в машинное обучение
-   - Слайды: https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit?usp=sharing
+   - Слайды: [docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit?usp=sharing](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit?usp=sharing)
 
 #### 2. Теория вероятностей и математическая статистика
-   - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_1.pdf
-   - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_2.pdf
-   - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf
-   - Примеры распределений и их вид в зависимости от параметров: https://seeing-theory.brown.edu/probability-distributions/index.html#section3
-   - Среднее значение (average) и дисперсия (variance), интерактивный пример: https://seeing-theory.brown.edu/basic-probability/index.html#section3
+   - [raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_1.pdf](https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_1.pdf)
+   - [raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_2.pdf](https://raw.githubusercontent.com/VetrovSV/AppMathST/master/variables_2.pdf)
+   - [raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf](https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf)
+   - Примеры распределений и их вид в зависимости от параметров: [seeing-theory.brown.edu/probability-distributions/index.html#section3](https://seeing-theory.brown.edu/probability-distributions/index.html#section3)
+   - Среднее значение (average) и дисперсия (variance), интерактивный пример: [seeing-theory.brown.edu/basic-probability/index.html#section3](https://seeing-theory.brown.edu/basic-probability/index.html#section3)
 
 #### 3. Линейная регрессия. Метод наименьших квадратов. Статистический вывод
    - Повторение: случайная величина, числовые характеристики, распределение.
-   - https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf
+   - [raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf](https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf)
    - [Математические модели и вычислительные методы обработки экспериментальных данных](https://raw.githubusercontent.com/ivtipm/ML/main/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%B8%20%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf) раздел 2.4
    - Корреляция, коэффициент линейной корреляции (Пирсона), оценка качества уравнения регресии, коэффициент детерминации.
    - Линейная регрессия в sklearn
-   - Теория + пример: https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx?usp=sharing
+   - Теория + пример: [colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx?usp=sharing](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx?usp=sharing)
 
 #### 4. Градиентный спуск и стохастический градиентный спуск
-   - Теория: https://raw.githubusercontent.com/ivtipm/ML/main/Gradient%20Descent.pdf
-   - https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx#scrollTo=Bz-MhoMQ8XPR
+   - Теория: [raw.githubusercontent.com/ivtipm/ML/main/Gradient%20Descent.pdf](https://raw.githubusercontent.com/ivtipm/ML/main/Gradient%20Descent.pdf)
+   - [colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx#scrollTo=Bz-MhoMQ8XPR](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx#scrollTo=Bz-MhoMQ8XPR)
 
 #### 5. Логистическая регрессия.
-   - https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing
+   - [colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing)
 
 #### 6. Регуляризация линейной регрессии и логистической регрессии.
 #### 7. Повторные выборки. Кросс-валидация. Выбор модели.
@@ -46,7 +46,7 @@
 
 #### Домашнее задание 2. EDA, визуализация, предварительная обработка данных для регресии
 Предварительный анализ данных и визуализация:
-- данные:https://www.kaggle.com/competitions/california-house-prices/overview
+- данные:[www.kaggle.com/competitions/california-house-prices/overview](https://www.kaggle.com/competitions/california-house-prices/overview)
    - После согласования с преподавателем можно использовать свои данные
 0. Зарегистрируйтесь на Kaggle
 1. Изучите пропуски, дубликаты, числовые характеристики
@@ -72,7 +72,7 @@
 
 Источники:
 1. [ [Математические модели и вычислительные методы обработки экспериментальных данных](https://raw.githubusercontent.com/ivtipm/ML/main/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%B8%20%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf)  ]
-2. https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR
+2. [colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR)
 3. Документация Pandas, Numpy, matplotlib, seaborn, scipy
 
 
@@ -93,14 +93,14 @@
 - [Полноценный вариант с предварительным анализом и предварительной обработкой](task_classification.md)
 
 #### 10. Регуляризация и выбор модели. Отбор признаков.
-   - https://colab.research.google.com/drive/1oF1OSgi_v_TgXsIJOvupmo020rKyPPP0#scrollTo=bQ8AgaO1Mbn2
+   - [colab.research.google.com/drive/1oF1OSgi_v_TgXsIJOvupmo020rKyPPP0#scrollTo=bQ8AgaO1Mbn2](https://colab.research.google.com/drive/1oF1OSgi_v_TgXsIJOvupmo020rKyPPP0#scrollTo=bQ8AgaO1Mbn2)
    - Балансирование выборок:
    ```pyhton
    from imblearn.under_sampling import TomekLinks
    from imblearn.over_sampling import ADASYN
    ```
-      - https://imbalanced-learn.org/stable/over_sampling.html#from-random-over-sampling-to-smote-and-adasyn
-      - https://imbalanced-learn.org/stable/under_sampling.html?highlight=tomeklinks#tomek-s-links
+      - [imbalanced-learn.org/stable/over_sampling.html#from-random-over-sampling-to-smote-and-adasyn](https://imbalanced-learn.org/stable/over_sampling.html#from-random-over-sampling-to-smote-and-adasyn)
+      - [imbalanced-learn.org/stable/under_sampling.html?highlight=tomeklinks#tomek-s-links](https://imbalanced-learn.org/stable/under_sampling.html?highlight=tomeklinks#tomek-s-links)
 
 
 #### Домашнее задание 5. Регрессия (продолжение)
@@ -122,24 +122,24 @@
 ## Методы машинного обучения
 ### Лекции
 #### 1. Метод опорных векторов и метод k-ближайших соседей
-   - https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing
+   - [colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)
 #### 2. Байесовская линейная регрессия и наивный байесовский классификатор
-   - https://colab.research.google.com/drive/1xJPrNR-iU6hmsMyzJHQIwTyYxjkhW3nm#scrollTo=P-1-EUt4mAHS
+   - [colab.research.google.com/drive/1xJPrNR-iU6hmsMyzJHQIwTyYxjkhW3nm#scrollTo=P-1-EUt4mAHS](https://colab.research.google.com/drive/1xJPrNR-iU6hmsMyzJHQIwTyYxjkhW3nm#scrollTo=P-1-EUt4mAHS)
 #### 3. Деревья решений и ансамбли методов
-   - https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sharing
+   - [colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sharing](https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sharing)
 #### 4. Кластеризация
    - [учебное пособие](https://raw.githubusercontent.com/ivtipm/ML/main/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%B8%20%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf#page=111)
-   - пример: https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf
+   - пример: [colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf](https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf)
 
 
 #### 5. Уменьшение размерности и метод главных компонент
-   - Интерактивные графики и веб-формы: https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing
+   - Интерактивные графики и веб-формы: [colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing](https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing)
 #### 6. Рекомендательные системы
 #### 7. Распределенные алгоритмы
 #### 8. Нейронные сети
-   - Слайды: https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit?usp=sharing
-   - https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3 — Пример полносвязной ести на PyTorch
-   - https://colab.research.google.com/drive/1_5JVzwKej5hCe8I_bHfFYC0y8CrjfhJi — Основы PyTorch
+   - Слайды: [docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit?usp=sharing](https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit?usp=sharing)
+   - [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3 — Пример полносвязной ести на PyTorch](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3 — Пример полносвязной ести на PyTorch)
+   - [colab.research.google.com/drive/1_5JVzwKej5hCe8I_bHfFYC0y8CrjfhJi — Основы PyTorch](https://colab.research.google.com/drive/1_5JVzwKej5hCe8I_bHfFYC0y8CrjfhJi — Основы PyTorch)
 #### Домашнее задание. Keras. Pytorch.
 Примените нейросети для решения задачи классификации и регрессии.
 Используйте фреимворки Keras и PyTorch (2 способа: на основе Sequential и Module)
