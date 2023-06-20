@@ -13,20 +13,20 @@
 
 
 
-## Примеры
-1. Обработка данных: https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing
-2. Классификация, персептрон (Keras, pytorch): https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing
+## Примеры 
+1. Обработка данных: [colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing)
+2. Классификация, персептрон (Keras, pytorch): [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing)
     - шпаргалка по pytorch: [torch.md](torch.md)
-4. Классикация изображений, CNN, предобученные сети (keras): https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing
-1. Интерактивные графики, уменьшение размерности, веб-формы (plotly, PCA, gradio): https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing
+4. Классикация изображений, CNN, предобученные сети (keras): [colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb](https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing)
+1. Интерактивные графики, уменьшение размерности, веб-формы (plotly, PCA, gradio): [colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s](https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing)
 5. Отслеживание метрик моделей: [wandb.md](wandb.md)
-6. Простые примеры использования RNN (pytorch, LSTM, MNIST): https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing
-7. Временной ряд, RNN, LSTM: https://colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc?usp=sharing
-8. Обработка данных, деревья решений, случайный лес, апсемлинг (ADASYN) и андерсемплинг (TomekLinks): https://colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7?usp=sharing
+6. Простые примеры использования RNN (pytorch, LSTM, MNIST): [colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK](https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing)
+7. Временной ряд, RNN, LSTM: [colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc](https://colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc?usp=sharing)
+8. Обработка данных, деревья решений, случайный лес, апсемлинг (ADASYN) и андерсемплинг (TomekLinks): [colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7](https://colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7?usp=sharing)
 9. [Предобработка текста, TF-IDF, SVM](https://github.com/ivtipm/ML/blob/main/examples/text/text_preprocess.md)
 10. [Классификация текстов, Embeddings, LSTM (Keras)](https://github.com/ivtipm/ML/blob/main/examples/text/text_keras.md)
-    - http://nlpprogress.com -- каталог последних достижений и дастасетов по областям NLP 
-11. Кластеризация https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf
+    - http://nlpprogress.com — каталог последних достижений и дастасетов по областям NLP 
+11. Кластеризация [colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf](https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf)
 
 
 
@@ -37,9 +37,11 @@
 
 # Ссылки
 ## Теория
-- Классические методы МО и начало НС: https://academy.yandex.ru/handbook/ml (материалы ШАД Яндекса)
+- Классические методы МО и начало НС: [https://academy.yandex.ru/handbook/ml](https://academy.yandex.ru/handbook/ml) (материалы ШАД Яндекса)
+- Теория по классическим методам МО с интерактивынми примерами: [mlu-explain.github.io](https://mlu-explain.github.io/)
 - Основы нейрокомпьютерных систем [Текст] : учебное пособие / Д. А. Семигузов
-- Deep Learning with PyTorch, Eli Stevens, Luca Antiga, Thomas Viehmann --  теория + PyTorch
+- Deep Learning with PyTorch, Eli Stevens, Luca Antiga, Thomas Viehmann — теория + PyTorch
+
 
 ### Python
 - Изучаем Python. Лутц Марк
@@ -52,22 +54,22 @@
 - [stepik:Deep Learning (семестр 2)](https://stepik.org/course/65855/syllabus). Посвящённый обработке текстов и аудиозаписей (материалы доступны, начнётся заново осенью 2021)
 
 ## Для практики
-- [Dive into Deep Learning](http://d2l.ai/index.html) -- книжка (eng) по глубокому обучению, с примерами и заданиями.
-- [ODS: competitions](http://d2l.ai/index.html) -- соревнования по МО
+- [Dive into Deep Learning](http://d2l.ai/index.html) — книжка (eng) по глубокому обучению, с примерами и заданиями.
+- [ODS: competitions](http://d2l.ai/index.html) — соревнования по МО
 - [Kaggle](https://www.kaggle.com/)
 
 ## ПО
-- [google colaboratory](https://colab.research.google.com) -- для запуска кода на python и обучения НС на GPU
-- [Anaconda](https://www.anaconda.com/products/individual) -- дистрибутив для научных вычислений на Python
+- [google colaboratory](https://colab.research.google.com) — для запуска кода на python и обучения НС на GPU
+- [Anaconda](https://www.anaconda.com/products/individual) — дистрибутив для научных вычислений на Python
 - DataSpell (бесплатно для студентов)
 - [PyCahrm](https://www.jetbrains.com/ru-ru/pycharm/download/)
 
 ### Библиотеки
-- [sklearn](https://scikit-learn.org/stable/) -- классические мтоды МО (python)
-- [keras](https://keras.io/) -- глубокое обучение (python)
-- [pytorch](https://pytorch.org/) -- популярный и гибкий фреимвок для МО
-- [gradio](https://gradio.app/getting_started/) -- для быстрого создания веб-интерфесов
-- [wandb](https://wandb.ai/site) -- библиотека и интернет-сервис для отслеживания процесса обучения моделей, сравнения метрик моделей
+- [sklearn](https://scikit-learn.org/stable/) — классические мтоды МО (python)
+- [keras](https://keras.io/) — глубокое обучение (python)
+- [pytorch](https://pytorch.org/) — популярный и гибкий фреимвок для МО
+- [gradio](https://gradio.app/getting_started/) — для быстрого создания веб-интерфесов
+- [wandb](https://wandb.ai/site) — библиотека и интернет-сервис для отслеживания процесса обучения моделей, сравнения метрик моделей
 
 ## Датасеты
 1. [Классификация: Ирисы Фишера](https://archive.ics.uci.edu/ml/datasets/iris) (небольшой простой датасет)
