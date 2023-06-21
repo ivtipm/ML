@@ -136,6 +136,8 @@
    - Интерактивные графики и веб-формы: [colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing](https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing)
 #### 6. Рекомендательные системы
 #### 7. Распределенные алгоритмы
+- ...
+- 6 способов значительно ускорить pandas с помощью пары строк кода: https://habr.com/ru/articles/503726/, https://habr.com/ru/articles/504006/
 #### 8. Нейронные сети
    - Слайды: [docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit?usp=sharing](https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit?usp=sharing)
    - [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3 — Пример полносвязной ести на PyTorch](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3 — Пример полносвязной ести на PyTorch)
