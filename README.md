@@ -14,8 +14,9 @@
 
 
 ## Примеры 
-1. Обработка данных: [colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing)
-2. Классификация, персептрон (Keras, pytorch): [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing)
+1. Разведочный анализ данных (exploratory data analysis, EDA), визуализация и подготовка данных для моделей МО. [pandas, numpy, matplotlib, seaborn]
+   [colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing)
+3. Классификация, персептрон (Keras, pytorch): [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing)
     - шпаргалка по pytorch: [torch.md](torch.md)
 4. Классикация изображений, CNN, предобученные сети (keras): [colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb](https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing)
 1. Интерактивные графики, уменьшение размерности, веб-формы (plotly, PCA, gradio): [colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s](https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing)
