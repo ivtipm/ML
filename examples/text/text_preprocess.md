@@ -135,5 +135,8 @@ tokens = tokenizer('Remember, remember, the 5th of November, Gunpowder, treason 
 vocab( tokens )     # ->  [374, 4, 374, 4, 2, 9750, 7, 10167, 4, 21199, 4, 16087, 5, 122, 3]
 ```
 
-Примеры с новым API для работы с текстами:
-https://colab.research.google.com/github/pytorch/text/blob/master/examples/legacy_tutorial/migration_tutorial.ipynb#scrollTo=Ro8HXPwmwtp7
+# Ссылки
+1.Примеры с новым API для работы с текстами:\
+    https://colab.research.google.com/github/pytorch/text/blob/master/examples/legacy_tutorial/migration_tutorial.ipynb#scrollTo=Ro8HXPwmwtp7
+2. Проект Natasha — набор Python-библиотек для обработки текстов на естественном русском языке\
+    https://natasha.github.io/
