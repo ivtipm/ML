@@ -8,9 +8,9 @@
 - [Задания 2021](tasks/tasks.md)
 - [Заочное: занятия 30 ноября - 9 декабря 2020](https://github.com/ivtipm/ML/blob/main/dist2020/lessons.md) (заочное)
 
-## ***
+# Темы, важные для дальнейшего освоения МО
 - Небольшой чеклист по математике: https://habr.com/ru/company/ruvds/blog/676114/
-
+- Короткая шпаргалка по Python: https://miro.com/app/board/uXjVORmoCO0=/?moveToWidget=3458764545754982875&cot=14
 
 
 ## Примеры 
