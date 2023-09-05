@@ -19,7 +19,7 @@
    [colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing)
 3. Классификация, персептрон (Keras, pytorch): [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing)
     - шпаргалка по pytorch: [torch.md](torch.md)
-4. Классикация изображений, CNN, предобученные сети (keras): [colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb](https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing)
+4. Классификация изображений, CNN, предобученные сети (keras): [colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb](https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing)
 1. Интерактивные графики, уменьшение размерности, веб-формы (plotly, PCA, gradio): [colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s](https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing)
 5. Отслеживание метрик моделей: [wandb.md](wandb.md)
 6. Простые примеры использования RNN (pytorch, LSTM, MNIST): [colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK](https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing)
