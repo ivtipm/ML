@@ -78,6 +78,25 @@ wandb.log({"train loss":loss.item(), "train acc":AccTrain[-1], "val loss":loss_v
 wandb.log({"val\test misprediction" : [wandb.Image(img) for img in mispredicted]})
 ```
 
+Интеграция с keras для логирования
+```python
+import wandb
+from wandb.keras import WandbMetricsLogger, WandbModelCheckpoint
+...
+
+# Pass the WandbModelCheckpoint to model.fit
+model.fit(
+    X_train,
+    y_train,
+    validation_data=(X_test, y_test),
+    callbacks=[
+        WandbMetricsLogger(),                                 # объект будет логировать лосс и доступные метрики
+        WandbModelCheckpoint("models"),
+    ],
+)
+```
+
+
 7. Сохранить не серийную информацию, результаты обучения:
 
 ```python
