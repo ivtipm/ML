@@ -32,7 +32,7 @@ a = torch.tensor([ [[4], [2], [3]] ])
 a.shape                 # torch.Size([1, 3, 1])  
 
 a.squeeze()             # -> torch.Size([3])                 
-# результат: 
+# результат:
 tensor([4, 2, 3])
 
 ```
@@ -46,6 +46,9 @@ x.flatten()
 # результат
 tensor([4, 2, 3, 2, 6, 8])
 ```
+
+
+
 
 # Загрузка данных
 `torch.utils.data.Dataset`.\
@@ -68,6 +71,11 @@ tensor([4, 2, 3, 2, 6, 8])
 
 См. также класс `datasets.ImageFolder` для работы с датасетом из отдельных файлов.
 
+```python
+Data = datasets.ImageFolder('my_dataset/train')
+# файлы должны лежать в папках, соответствующих классам
+Data.classes
+```
 
 
 
@@ -76,19 +84,26 @@ tensor([4, 2, 3, 2, 6, 8])
 - `nn.Sequential( [ ... ] )`
 - `nn.Linear(in_features=10, out_features=128, )` — 128 нейронов, 10 входов у каждого
 - `nn.MaxPool2d(kernel_size=2)`
-- `nn.Conv2d( in_channels=3  , out_channels=32, kernel_size=3)` — 32 свёртки, принимающих картинку с тремя каналами
+- `nn.Conv2d( in_channels=3  , out_channels=32, kernel_size=3)` — 32 свёртки, принимающих
+картинку с тремя каналами
+- RNN:
+    - `nn.RNN( input_dim, hidden_dim, rnn_neurons, batch_first=False)`
+    - `nn.LSTM(input_dim, hidden_dim, rnn_neurons, batch_first=False)`
 - Активации:
     - `nn.LeakyReLU()`
     - `nn.Sigmoid()`
+    - `nn.Softmax()` (встроен в лосс `nn.CrossEntropyLoss`)
     - ...
-- `nn.BatchNorm1d(64)` — батчнорм на 64 фичи
+- Нормализация:
+  - `nn.BatchNorm1d(64)` — батчнорм на 64 фичи
+  - `nn.BatchNorm2d(256)`
 - ...
 
 ## Embedding
 `torch.nn.Embedding` создаёт эмбеддинги (вектора) слов.
 https://pytorch.org/docs/stable/generated/torch.nn.Embedding.html
 
-Как правило используются вектора размерностью 100-300. 
+Как правило используются вектора размерностью 100-300.
 
 
 ```python
@@ -96,13 +111,13 @@ import torch
 from torch import nn
 
 # текст, где каждое слово представлено числом -- его номером в словаре (см. класс Vocab)
-# нули (число-заполнитель -- padding index) поставлены для выравнивания всех тектов по одной длине 
+# нули (число-заполнитель -- padding index) поставлены для выравнивания всех тектов по одной длине
 text = torch.tensor( [[12, 27, 4, 56, 3, 81, 0, 0, 0, 0 ]] ) 		# [batch_size = 1, sequence_len = 10]
 
 
 emb = nn.Embedding(num_embeddings = 100, 	# размер словаря
 				   embedding_dim = 128, 	# размерность вектора
-				   padding_idx = 0 			# 
+				   padding_idx = 0 			#
 				   )
 
 emb( text )			# -> [batch_size, seq_len, emb_dim]
@@ -122,13 +137,24 @@ tensor([[[ 0.6943,  1.0508, -1.8730,  ..., -0.2826,  0.2395,  1.0945],
 
 ```
 
+
+## Инициализация весов
+```python
+m = nn.Linear(in_features=20, out_features=30)      
+
+# xavier init;
+torch.nn.init.xavier_uniform(m.weight)
+# He (kaiming) init
+torch.nn.init.kaiming_normal(m.weight)
+# параметры распределения подбираются автоматически, на основе числа нейронов в слое
+```
 # Работа с моделями
 
 **общая информация**
 ```python
 from torchsummary import summary        # для вывода основных сведений про нейросеть
 
-summary( my_model, input_size = (3,28,28) ) 
+summary( my_model, input_size = (3,28,28) )
 ```
 
 ## Сохранение и загрузка модели
@@ -149,9 +175,9 @@ model.train()
 
 for ep in range( 10 ):                  # цикл по эпохам
     epoch_loss = 0                      # для подсчёта средней ошибки в эпохе
-    
+
     for batch_idx, (xb, yb) in enumerate(train_loader):     # перебор батчей
-        
+
         y_pred = model( xb.cuda() )                   # прямой проход
 
         loss = loss_fn(y_pred, yb.cuda())           # вычисление ошибки
@@ -172,5 +198,5 @@ for ep in range( 10 ):                  # цикл по эпохам
 ```python
 from torchvision.io.image import read_image                         # загрузка файла в тензор
 
-img = read_image("image.png") 
+img = read_image("image.png")
 ```
