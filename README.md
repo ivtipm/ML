@@ -43,7 +43,7 @@
 - Теория по классическим методам МО с интерактивынми примерами: [mlu-explain.github.io](https://mlu-explain.github.io/)
 - Основы нейрокомпьютерных систем [Текст] : учебное пособие / Д. А. Семигузов
 - Deep Learning with PyTorch, Eli Stevens, Luca Antiga, Thomas Viehmann — теория + PyTorch
-
+- шапаргалка по МО https://ml-cheatsheet.readthedocs.io/en/latest/index.html
 
 ### Python
 - Изучаем Python. Лутц Марк
