@@ -25,6 +25,7 @@
    - [colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx#scrollTo=Bz-MhoMQ8XPR](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx#scrollTo=Bz-MhoMQ8XPR)
 
 #### 5. Логистическая регрессия.
+   - Линейная разделимость классов. Сигмоида. Вероятностная модель; LogLoss.
    - [colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing)
 
 #### 6. Регуляризация линейной регрессии и логистической регрессии.
