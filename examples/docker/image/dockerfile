@@ -1,0 +1,39 @@
+from python:3.12.0-slim-bookworm
+# https://hub.docker.com/_/python
+# лучше не брать самую последнюю версию, т.к. некоторые библиотеки могут быть не совместимы
+
+# RUN -- запуск команд во время построения образа
+# обновление БД системного менеджера пакетов; обновление пакетов
+RUN apt update          
+RUN apt upgrade
+# устанвока пакета gcc; нужен для scikit-learn; -y — если установщик что спросит, то отвечать yes
+RUN apt install gcc -y
+RUN pip3 install --upgrade pip
+# стоит указать версии чтобы неожиданно ничего не сломалось
+RUN pip3 install -U scikit-learn==1.3.2
+RUN pip3 install -U gradio==3.41.0
+
+# создадим рабочую папку для приложения
+RUN mkdir my_app
+# установим текущую папку
+WORKDIR my_app
+
+# скопируем файл в текущую (.) папку
+COPY main.py .
+COPY  forest.joblib.lzma .
+
+# CMD — запуск команд во время старта контейнера
+CMD python3 main.py
+
+# todo: оптимизировать
+
+
+# Построение
+# docker build -t digit_recognize .
+
+# Посмотреть на созданные в системе образы
+# docker images
+
+# Запуск
+# docker run  -p 7860:7860 <имя_образа>
+# 7860:7860 — связывание внешенго порта и порта контейнера 
