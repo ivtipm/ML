@@ -1,4 +1,6 @@
-from python:3.12.0-slim-bookworm
+# from python:3.11.0-slim-bookworm
+from python:3.11.6-bullseye
+
 # https://hub.docker.com/_/python
 # лучше не брать самую последнюю версию, т.к. некоторые библиотеки могут быть не совместимы
 
@@ -20,7 +22,7 @@ WORKDIR my_app
 
 # скопируем файл в текущую (.) папку
 COPY main.py .
-COPY  forest.joblib.lzma .
+COPY forest.joblib.lzma .
 
 # CMD — запуск команд во время старта контейнера
 CMD python3 main.py
@@ -36,4 +38,4 @@ CMD python3 main.py
 
 # Запуск
 # docker run  -p 7860:7860 <имя_образа>
-# 7860:7860 — связывание внешенго порта и порта контейнера 
+# 7860:7860 — связывание   внешенго порта : порта контейнера 
