@@ -27,7 +27,10 @@ nltk.download('wordnet')   # для лемматизации
 ## Анализ частот n-грамм
   ```python
   from nltk import ngrams, FreqDist
-  drug_freq = FreqDist( text )
+  drug_freq = FreqDist( words_list )
+
+  # построить график 50 самых частых слов
+  drug_freq.plot(50)
   ```
 Возвращает список из пар (n-грамма, частота). Например: ```[('Birth Control', 7433), ('Depression', 2609), ('Pain', 1833),```
 
