@@ -29,6 +29,10 @@
 10. [Классификация текстов, Embeddings, LSTM (Keras)](https://github.com/ivtipm/ML/blob/main/examples/text/text_keras.md)
     - http://nlpprogress.com — каталог последних достижений и дастасетов по областям NLP 
 11. Кластеризация [colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf](https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf)
+   - Визуализации: pairplot, plotly scatterplot
+   - Principal component analysis (PCA), UMAP
+   - K-Means, метод локтя, коэффициент силуэта
+   
 
 
 
