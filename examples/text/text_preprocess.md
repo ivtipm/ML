@@ -27,7 +27,10 @@ nltk.download('wordnet')   # для лемматизации
 ## Анализ частот n-грамм
   ```python
   from nltk import ngrams, FreqDist
-  drug_freq = FreqDist( text )
+  drug_freq = FreqDist( words_list )
+
+  # построить график 50 самых частых слов
+  drug_freq.plot(50)
   ```
 Возвращает список из пар (n-грамма, частота). Например: ```[('Birth Control', 7433), ('Depression', 2609), ('Pain', 1833),```
 
@@ -79,8 +82,10 @@ tf_idf = TfidfVectorizer(
     ngram_range=(1, 1),             # рассматриваем только 1-граммы, т.е. отдельные слова; можно рассматривать слова и словосочетания (1,2) и т.д.
     max_df=0.8,                     # слова, встречаемые более чем в 80% документов будут отброшены
     min_df=10,                      # мин. частота слова в текстах (более редкие слова игнорируются)
+    stop_words = list(Stopwords),
     # max_features =                # можно задать максимальное количество рассматриваемых слов, иначе будут рассмотренны все
     # vocabulary =                  # задать словарь вручную
+    # preprocess =                  #
 )
 
 # TfidfVectorizer тоже умеет делать предобработку: preprocessor=None, tokenizer=None, stop_words=None, token_pattern='(?u)\\b\\w\\w+\\b',  ...
@@ -91,6 +96,9 @@ tf_idf = TfidfVectorizer(
 X = tf_idf.fit_transform( <итерируемый набор текстов> )
 
 tf_idf.idf_         # вектор весов слов, в зависимости от их встречаемости в документах
+
+
+tfidf.vocabulary_   # словарь (слово, номер)
 ```
 
 ## Пример
