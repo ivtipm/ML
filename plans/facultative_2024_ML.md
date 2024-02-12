@@ -66,6 +66,19 @@
 1. Основы математической статистики:
    - [raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf](https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf)
    - Выборки
+   - Корреляция и уравнение регреcсии
+1. Подбор параметров уравнения регрессии.
+    - Аналитический
+    - Численный
+    - Масштабирование признаков
+        - Нормирование
+        - Стандартизация
+    - Коэффицент детерминации R2 [[слайды](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_572)]
+    - [Теория, Пример](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx)
+1. Логистическая регрессия
+    [Теория,Пример](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh)
+
+
 
 
 ### Домашнее задание 1. Классификация на синтетических данных.
