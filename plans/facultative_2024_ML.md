@@ -73,7 +73,7 @@
     - Масштабирование признаков
         - Нормирование
         - Стандартизация
-    - Коэффицент детерминации R2 [[слайды](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_572)]
+    - Коэффициент детерминации R2 [[слайды](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_572)]
     - [Теория, Пример](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx)
 1. Логистическая регрессия
     [Теория,Пример](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh)
