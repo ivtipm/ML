@@ -81,14 +81,15 @@
     - [Теория, Пример](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx)
 1. Вероятностная модель. Логистическая регрессия
     [Теория,Пример](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh)
-1. Показатели качества модели классификации: https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_730
+1. Показатели качества модели классификации (accuracy (общая точность), точность (precision), recall (полнота), мера f1): 
+https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_730
 
 
 
 
 ### Домашнее задание 2. Классификация на синтетических данных.
 0. Приведите ссылку на задание, текст задания.
-1. Сгенерируйте данные. Создайте 5 или больше независимых признака, в том числе 1-2 лишних, 2 класса.
+1. Сгенерируйте данные. Создайте 5 или больше независимых признака, в том числе 1-2 лишних, 2 класса. [ [пример](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh#scrollTo=57PKhQ2Ylni1) ]
 1. Проведите разведочный анализ данных.
     - 7 point summary,
     - диаграммы размаха, скрипичные диаграммы (violin plot),
