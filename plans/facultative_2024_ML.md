@@ -81,6 +81,7 @@
     - [Теория, Пример](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx)
 1. Вероятностная модель. Логистическая регрессия
     [Теория,Пример](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh)
+1. Показатели качества модели классификации: https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_730
 
 
 
