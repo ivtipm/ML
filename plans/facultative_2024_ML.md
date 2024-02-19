@@ -62,23 +62,24 @@
 
 # Занятие 3. Введение в МО. Корреляция. Статистические визуализации
 12 февраля
+
 0. Повторение. Опрос. Объекты и признаки. Целевой признак, независимые признаки. Дисперсия, математическое ожидание, квартили. Тренировочная и тестовая выборка. Переобучение. Классификация и регрессия. Оценка качества регресии, MAE, MSE, R2.
 1. Основы математической статистики:
    - [raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf](https://raw.githubusercontent.com/VetrovSV/AppMathST/master/statistics.pdf)
    - Выборки
    - Корреляция и уравнение регреcсии
+   - Коэффициент детерминации R2 [[слайды](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_572)]
 
-
-# Занятие 4.
+# Занятие 4. Функция потерь для линейной и логичтической регрессии.
+0. Повторение. Модель машинного обучения. Виды признаков по их природе. Линейная регрессия.
 1. Подбор параметров уравнения регрессии.
     - Аналитический
     - Численный
     - Масштабирование признаков
         - Нормирование
         - Стандартизация
-    - Коэффициент детерминации R2 [[слайды](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_572)]
     - [Теория, Пример](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx)
-1. Логистическая регрессия
+1. Вероятностная модель. Логистическая регрессия
     [Теория,Пример](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh)
 
 
