@@ -125,7 +125,10 @@ https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBV
 
 ### Домашнее задание 3. EVA и классификация на реальных данных
 0. Приведите ссылку на задание, текст задания.
-1. Используйте датасет
+1. Используйте один из предложенных датасетов:
+    - вариант 1. https://raw.githubusercontent.com/ivtipm/ML/main/datasets/churn.csv (есть на Kaggle)
+    - вариант 2 (сложнее, но даёт примерно в 1.5 раза больше баллов). https://archive.ics.uci.edu/ml/datasets/adult, https://www.kaggle.com/wenruliu/adult-income-dataset?select=adult.csv
+    - можно обработать оба
 или предложите свой датасет, сопоставимый по количеству и качеству данных с рекомендованным. Используйте свой датасет после согласования с преподавателем.
 1. Проведите разведочный анализ данных.
     - 7 point summary,
