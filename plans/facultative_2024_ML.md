@@ -155,7 +155,7 @@ https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBV
 # Занятие 6. Предварительная обработка данных. (продолжение).
 1. Масштабирование данных: нормализация и стандартизация. 
 Важность признаков на основе логистической и линейной регрессии. 
-2. Перекрёстная проверка (cross-validation). Рассмотрите эту тему самостоятельно. 
+2. Перекрёстная проверка (cross-validation). [[слайды](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_709)] Рассмотрите эту тему самостоятельно. 
 3. KNN. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
 4. Поиск по сетки гиперпараметров. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
 4. SMV. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
@@ -166,4 +166,4 @@ https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBV
 1. Добавьте в работу 3 модели:
     - KNN
     - SVM
-2. Подберите гиперпараметры этих моделей.
+2. Подберите гиперпараметры этих моделей. Используйте класс GridSearchCV.
