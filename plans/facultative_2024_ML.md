@@ -152,18 +152,33 @@ https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBV
 
 
 
-# Занятие 6. Предварительная обработка данных. (продолжение).
+# Занятие 6. Предварительная обработка данных. (продолжение). kNN. Масштабирование.
+12 марта
 1. Масштабирование данных: нормализация и стандартизация. [[пример](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing)]
 Важность признаков на основе логистической и линейной регрессии. 
 2. Перекрёстная проверка (cross-validation). [[слайды](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM/edit#slide=id.ga34d6fd6e8_0_709)] Рассмотрите эту тему самостоятельно. 
 3. KNN. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
-4. Поиск по сетки гиперпараметров. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
-4. SMV. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
-5. Дерево выбора?
+
+
+
+
+# Занятие 7. 
+18 марта
+- Повторение. Алгоритм обработки данных, итеративный метод. kNN. Масштабирование. Кросс-валидация. Поис
+1. Поиск по сетки гиперпараметров. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
+2. SMV. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
+3. Решающие деревья [[colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg#scrollTo=o3dx6WQiX1m7](https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg#scrollTo=o3dx6WQiX1m7)]
 
 
 ### Домашнее задание 3.1
 1. Добавьте в работу 3 модели:
     - KNN
     - SVM
+    - Решающее дерево
+
+1. Добавьте в работы 1 и 2 модели:
+    - KNN
+    - SVM
+    - Решающее дерево
+
 2. Подберите гиперпараметры этих моделей. Используйте класс GridSearchCV.
