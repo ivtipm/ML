@@ -164,7 +164,7 @@ https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBV
 
 # Занятие 7. 
 18 марта
-- Повторение. Алгоритм обработки данных, итеративный метод. kNN. Масштабирование. Кросс-валидация. Поис
+- Повторение. Алгоритм обработки данных, итеративный метод. kNN. Масштабирование. Кросс-валидация.
 1. Поиск по сетке гиперпараметров. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
 2. SMV. [[Теория и пример](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)]
 3. Решающие деревья [[colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg#scrollTo=o3dx6WQiX1m7](https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg#scrollTo=o3dx6WQiX1m7)]
