@@ -182,3 +182,12 @@ https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBV
     - Решающее дерево
 
 2. Подберите гиперпараметры этих моделей. Используйте класс GridSearchCV.
+
+# Занятие 8. Ансамбли моделей. Случайный лес, бустинг и др.
+https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sharing#scrollTo=ORsayzp5X5Mh 
+
+
+### Домашнее задание 3.2
+1. Добавьте в работы 1, 2, 3 алгоритмы:
+    - Случайный лес
+    - Градиентный бустинг
