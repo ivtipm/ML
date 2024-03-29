@@ -5,5 +5,5 @@
     - Источник (полный набор, отдельные файлы): http://ai.stanford.edu/~amaas/data/sentiment/
 2. `news.zip`    -- 20k, текст, русский, 3 класса (не сбалансированные), новости
     - Источник: https://open-data-battle.geecko.com/issues/news
-3. `store-sales-time-series-forecasting.zip` — для анализа временнях рядов продаж различных товаров супермаркета. 
+3. `store-sales-time-series-forecasting.zip` — для анализа временных рядов продаж различных товаров супермаркета. 
 Alexis Cook, DanB, inversion, Ryan Holbrook. (2021). Store Sales - Time Series Forecasting. Kaggle. https://kaggle.com/competitions/store-sales-time-series-forecasting
