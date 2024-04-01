@@ -191,3 +191,14 @@ https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sh
 1. Добавьте в работы 1, 2, 3 алгоритмы:
     - Случайный лес
     - Градиентный бустинг
+
+
+
+# Модуль 2. Нейросети
+## Лекция 1. Многослойный персептрон
+- Слайды: https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit#slide=id.p
+- Пример: https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing#scrollTo=hCiu6Jn2d8JE&uniqifier=1
+
+### Домашнее задание 3.3
+- Добавьте в работы 1-3 многослойный персептрон
+- Поэксперементериуйте с количеством слоёв, нейронов, функциями активации.
