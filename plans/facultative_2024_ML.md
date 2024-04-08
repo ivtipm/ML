@@ -210,6 +210,6 @@ https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sh
 ## Лекция 2. Персептрон. Обучение. Метод обратного распространения ошибки. Метод градиентного спуска.
 - Повторение. Персептрон. 
 - Обучение персептрона. Функции потерь. Метод обратного распространения ошибки для вычисления производных. 
-- Метод градиентного спуска. Стохастический градиентный спуск. Батчи.гзвЖ
+- Метод градиентного спуска. Стохастический градиентный спуск. Learning rate (шаг обучения). Батчи. Эпохи.
 - Слайды: https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit#slide=id.p
 - Пример: https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing#scrollTo=hCiu6Jn2d8JE&uniqifier=1
