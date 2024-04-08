@@ -196,9 +196,20 @@ https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sh
 
 # Модуль 2. Нейросети
 ## Лекция 1. Многослойный персептрон
+- Модель нейрона. Вход. Веса. Линейная регрессия в составе нейрона. Логиcтическая функция в составе нейрона. Функция активации (cигмода, ReLU).
+- Многослойный персептрон (полносвязная нейросеть сеть). Соединения слоёв. Параметры нейросети. Построение нейросети в Keras, обучение и проверка. Особенности выходных слоёв для задачи классификации.  
+
 - Слайды: https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit#slide=id.p
 - Пример: https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing#scrollTo=hCiu6Jn2d8JE&uniqifier=1
 
 ### Домашнее задание 3.3
 - Добавьте в работы 1-3 многослойный персептрон
-- Поэксперементериуйте с количеством слоёв, нейронов, функциями активации.
+- Поэкспериментируйте с количеством слоёв, нейронов, функциями активации.
+
+
+## Лекция 2. Персептрон. Обучение. Метод обратного распространения ошибки. Метод градиентного спуска.
+- Повторение. Персептрон. 
+- Обучение персептрона. Функции потерь. Метод обратного распространения ошибки для вычисления производных. 
+- Метод градиентного спуска. Стохастический градиентный спуск. Батчи.гзвЖ
+- Слайды: https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit#slide=id.p
+- Пример: https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing#scrollTo=hCiu6Jn2d8JE&uniqifier=1
