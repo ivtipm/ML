@@ -231,6 +231,7 @@ https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sh
     2. поэкспериментируйте с количеством слоёв, нейронов, функциями активации хотя бы одной из работ. Результаты запишите в таблицу результатов обучения.
  
 ## Лекция 3. Отслеживание обучения. Графики обучения. WanDB. Переобучение
-- Метод градиентного спуска. Стохастический градиентный спуск. Learning rate (шаг обучения). Батчи. Эпохи.
-- Слайды: https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit#slide=id.p
-- Пример: https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing#scrollTo=hCiu6Jn2d8JE&uniqifier=1
+- Повторение. Устройство поносвязной сети. Математическая модель нейрона. Функция активации. Метод градиетного спуска. 
+- Недобучение. Переобучение. https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit#slide=id.p
+- Отслеживание метрик моделей: [wandb.md](https://github.com/ivtipm/ML/blob/main/wandb.md)
+- WandB.Графики обучения. https://colab.research.google.com/drive/1ckpgKd8eizzzuVJgHkFHLoY9bkjEmaD8?usp=sharing

@@ -11,7 +11,7 @@
 
 2. Создать проект в котором будут собрана вся информация о моделях и их запусках.
 
-3. Установить библиотеку
+3. Установить библиотеку wandb для Python
 
 ```python
 %%capture
@@ -19,20 +19,21 @@
 import wandb
 ```
 
-4. Подключится для удалённого логирования
+4. Войти в аккаунт для удалённого логирования
 
+В Jupyter Notebook (google collab):\
 `!wandb login`
 
-Авторизация из ноутбука kaggle:
-1. Получить ключ `!wandb login`
-2. Добавить его в хранилище secrets среды Kaggle: menu Add-ons - Secrets, задать имя (например my_wandb_key)
-3. Обратиться к сохранённому ключу из ноутбука, авторизоваться:
-```python
-from kaggle_secrets import UserSecretsClient
-user_secrets = UserSecretsClient() 
-personal_key_for_api = user_secrets.get_secret("my_wandb_key")
-!wandb login $personal_key_for_api
-```
+    Авторизация из ноутбука kaggle:
+    1. Получить ключ `!wandb login`
+    2. Добавить его в хранилище secrets среды Kaggle: menu Add-ons - Secrets, задать имя (например my_wandb_key)
+    3. Обратиться к сохранённому ключу из ноутбука, авторизоваться:
+    ```python
+    from kaggle_secrets import UserSecretsClient
+    user_secrets = UserSecretsClient() 
+    personal_key_for_api = user_secrets.get_secret("my_wandb_key")
+    !wandb login $personal_key_for_api
+    ```
 
 5. Инициализировать сессию для загрузки информации об отдельном запуске обучения модели
 ```python
