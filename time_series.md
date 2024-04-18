@@ -29,6 +29,7 @@ data0 = pd.read_html('http://sophist.hse.ru/hse/1/tables/WAG_M.htm',
                     decimal=',', thousands='.',                                 # по-умолчанию точки и запятые имеют обратный смысл
                     skiprows=[1])[0]     
 ```
+<img src="https://github.com/ivtipm/ML/blob/main/assets/wag_time_series.png" height=200>
 
 # Ссылки
 https://education.yandex.ru/handbook/ml/article/vremennye-ryady
