@@ -235,3 +235,14 @@ https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sh
 - Недобучение. Переобучение. https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit#slide=id.p
 - Отслеживание метрик моделей: [wandb.md](https://github.com/ivtipm/ML/blob/main/wandb.md)
 - WandB.Графики обучения. https://colab.research.google.com/drive/1ckpgKd8eizzzuVJgHkFHLoY9bkjEmaD8?usp=sharing
+
+## Лекция 4. Свёрточные нейросети. 
+0. Повторение.
+1. Свёрточные нейросети. Векторные представления изображений. Свёртка. Пулинг. Архитектура AlexNet. VGG. ResNet. Inception
+    - Слайды: https://docs.google.com/presentation/d/1i41kqGwZqW_sSRz9Bopoq7AZf_Zuo6OaRSeCKYIH_80/edit#slide=id.gc6f73a04f_0_0
+2. Построение свёрточных нейросетей в keras для классификации изображений: 
+2. Использование предварительно обученных нейросетей. Дообучение (fine-tuning).
+- Пример https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb#scrollTo=7mlkn05FTdFY
+
+### Домашнее задание 4
+Подберите архитектуру (количетсво слоёв, количество нейронов на них, функции активации, количество эпох) в нейросети из примера чтобы достичь лушего качества, при этом не используйте слишком больше количество параметров
