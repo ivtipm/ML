@@ -12,7 +12,9 @@
 ### Некоторые горячие клавиши
 - <kbd>Esc</kbd> - перейти из режима редактирования ячейки в режим выделения ячеек.
 - <kbd>Enter</kbd> - перейти в режим редактирования ячейки.
-- <kbd>Tab</kbd> - автодополнение
+- <kbd>Tab</kbd> - автодополнение (может работать не мгновенно)
+- <kbd>Shift</kbd> + <kbd>Tab</kbd> - показать документацию для идентификатора под курсором
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> - открыть окно команд.
 
 Горячие клавиши для режима выделения ячеек:
 - <kbd>Shift</kbd>+<kbd>Enter</kbd> - выполнить выделенные ячейки и перейти в ячейку ниже
@@ -25,3 +27,9 @@
 - <kbd>l</kbd> - скрыть\показать номера строк
 
 ### Плагины
+Настройки плагинов недоступны из панели плагинов, но в общих настройках Jupyter Lab есть разделы соответствующие плагинам.
+
+- https://jupyterlab-contrib.github.io/jupyterlab-cell-flash.html
+- https://github.com/jupyter-server/jupyter-resource-usage
+- [jupyterlab-execute-time](https://github.com/deshaw/jupyterlab-execute-time): Execute Time Plugin for Jupyter Lab
+- https://github.com/jtpio/jupyterlab-theme-toggle
