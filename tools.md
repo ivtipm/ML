@@ -1,5 +1,7 @@
-# Инструменты для МО
+# Инструменты МО
 
+
+## IDE - Jyputer \ Jyputer in VS Code
 [Jupyter Lab](https://jupyter.org/) - IDE для анализа данных и МО, основной вид виде интерактивного блокнота (notebook, ipynb файл).
 - Имеет веб-интерфейс, поэтому сервер может быть запущен не только локально но и на любой машине, к которой есть доступ.
 - Основной типа файлов IDE - Блокнот (notebook, тетрадка). Может содержать код на Питоне (и не только); показывать статичные и интерактивные диаграммы, создаваемые на языке программирования; показывать текст в разметке markdown (включая структурирование с помощью заголовков), формулы в LaTeX.
@@ -35,3 +37,19 @@
 - https://github.com/jupyter-server/jupyter-resource-usage
 - [jupyterlab-execute-time](https://github.com/deshaw/jupyterlab-execute-time): Execute Time Plugin for Jupyter Lab
 - https://github.com/jtpio/jupyterlab-theme-toggle
+
+
+# Языковые модели с доступом к серверу по API
+- OpenAI. ChatGPT (https://platform.openai.com/api-keys)
+    - Доступ к API платный (хотя в веб-интерфейсе GPT3.5 доступен бесплатно)
+    - Для получения ключа доступа требуется подтвердить номер телефона
+
+# Запуск языковых моделей локально
+Программы для работы с большими языковыми моделями (Large Language Models, LLM):
+- скачивать модели
+- запускать языковые модели локально
+- предоставляет интерфейс чата для моделей
+- ...
+
+- **Jan** https://jan.ai/
+- **LM Studio** https://lmstudio.ai/
