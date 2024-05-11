@@ -1,4 +1,8 @@
 {
     "cmake.configureOnOpen": false,
-    "python.analysis.autoImportCompletions": true
+    "python.analysis.autoImportCompletions": true,
+    "cSpell.words": [
+        "gradboost",
+        "logreg"
+    ]
 }

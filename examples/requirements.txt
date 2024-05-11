@@ -3,4 +3,5 @@ pandas
 seaborn
 scikit-learn
 plotly
+nbformat
 
