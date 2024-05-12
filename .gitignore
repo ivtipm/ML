@@ -9992,3 +9992,4 @@ examples/docker/image/my_venv/lib/python3.11/site-packages/pydantic-2.4.2.dist-i
 examples/docker/image/my_venv/lib/python3.11/site-packages/pydantic-2.4.2.dist-info/RECORD
 examples/docker/image/my_venv/lib/python3.11/site-packages/pydantic-2.4.2.dist-info/WHEEL
 examples/docker/image/my_venv/lib/python3.11/site-packages/pydantic-2.4.2.dist-info/licenses/LICENSE
+.vscode/settings.json

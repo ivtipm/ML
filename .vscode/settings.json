@@ -3,6 +3,7 @@
     "python.analysis.autoImportCompletions": true,
     "cSpell.words": [
         "gradboost",
+        "gradio",
         "logreg"
     ]
 }
