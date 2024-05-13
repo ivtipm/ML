@@ -303,9 +303,12 @@ https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sh
 
 Можно использовать другие датасеты из репозиторий. После согласования с преподавателем можно выбрать любой другой текстовый датасет.
 
-Используйте векторные представления текстов, полученные из нейросети типа transformer. Пример: https://colab.research.google.com/drive/1Aacg8tUXXNICQ0SetvqoIPD7GXnm0Ymx#scrollTo=e94a2272-af5a-4a17-a253-3fbcededbeb6
+Создайте векторные представления текстов, с помощью нейросети основанной на архитектуре transformer, например (LABSE, Language-agnostic BERT Sentence Embedding).
+Пример: https://colab.research.google.com/drive/1Aacg8tUXXNICQ0SetvqoIPD7GXnm0Ymx#scrollTo=e94a2272-af5a-4a17-a253-3fbcededbeb6
 
-Далее используйте полученные признаки чтобы решить задачу классификации любым из известных Вам методов классификации. 
+Далее используйте полученные признаки (векторные представления, Embeddings) чтобы решить задачу классификации любым из известных вам методов классификации (SVM, решающее дерево, случайные лес и др.). 
+
+Оценить качество полученной модели на тестовой выборке.
 
 
 *Бонус*:
