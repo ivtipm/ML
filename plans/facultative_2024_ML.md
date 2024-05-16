@@ -291,6 +291,16 @@ https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sh
 - `train_*.txt`
 - `val_*.txt`
 
+В файлах с текстом каждый твит расположен в отдельной строке. Их можно прочитать так:
+```python
+# чтение твитов
+text = open("tweeteval-main/datasets/sentiment/train_text.txt").readlines()
+# чтение класов
+labels = pd.read_csv("tweeteval-main/datasets/sentiment/train_labels.txt", header=None)
+# объединение в одну таблицу
+Data = pd.DataFrame({'text': text, 'label':labels[0].values})
+```
+
 Можно использовать другие датасеты из репозиторий. После согласования с преподавателем можно выбрать любой другой текстовый датасет.
 
 Используйте векторные представления текстов, полученные из нейросети типа transformer. Пример: https://colab.research.google.com/drive/1Aacg8tUXXNICQ0SetvqoIPD7GXnm0Ymx#scrollTo=e94a2272-af5a-4a17-a253-3fbcededbeb6
