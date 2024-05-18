@@ -41,9 +41,10 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 [https://github.com/alfinauzikri/ROCm-RX6600XT]
 
-При проблемах совместимости версий выполнение кода на GPU может быть возможным только после ручного задания переменной `HSA_OVERRIDE_GFX_VERSION=10.3.0`.
+При проблемах совместимости с аппаратным обеспечением (GPU не имеет полной поддерки ROCm) выполнение кода на GPU может быть возможным только после подмены переменной `HSA_OVERRIDE_GFX_VERSION=10.3.0` - версии графического ядра.
 Например: `HSA_OVERRIDE_GFX_VERSION=10.3.0 jupyter lab` или `HSA_OVERRIDE_GFX_VERSION=10.3.0 python3 main.py`
 
+Корректная работы всех функций не гарантируется.
 
 **Отображение информации о ROMc устройствах и их состоянии GPU**
 ```bash
