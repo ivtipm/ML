@@ -1,3 +1,103 @@
+# Вычисления для GPU
+## ROCm
+ROCm (изначально Radeon Open Compute) - это открытая платформа (драйвер + средства разработки) для вычислений на GPU производства AMD.
+CUDA - аналогичная, но проприетарная, платформа для вычислений на GPU производства Nvidia. В настоящий момент ROCm как более молодая технология поддерживает меньшее количество видеокарт, версий ОС и другого программного обеспечения, имеет меньше возможностей.
+
+Существует специальная версия PyTorch для ROCm.
+
+### Установка в Ubuntu
+Основная инструкция: https://rocm.docs.amd.com/_/downloads/install-on-linux/en/latest/pdf/
+
+0. Проверить поддержку ROCm видеокартой.\
+Некоторые видеокарты, например AMD 6600, фактически поддерживают технологию, но официально об этом не сообщается.
+0. Выполнить предварительную настройку
+Добавить текущего пользователя в группы render и video
+```bash
+sudo usermod -a -G render $LOGNAME
+sudo usermod -a -G video $LOGNAME
+```
+1. Установить драйвер для AMD GPU. 
+Скачать и установить программу установки драйвера видеокарты `amdgpu-install`.
+```
+wget https://repo.radeon.com/amdgpu-install/6.1.1/ubuntu/jammy/amdgpu-install_6.1.60101-1_all.deb
+sudo apt install ./amdgpu-install_6.1.60101-1_all.deb
+```
+Версия файла актуальна на момент мая 2024 г. Новая версия указана в инструкции, причём она может быть новее, чем предоставленная на сайте AMD.
+```bash
+sudo apt update
+sudo apt install amdgpu-dkms
+sudo apt install rocm
+```
+Перезапустить ОС.
+2. Установить необходимые библиотеки, например (pytorch)[https://pytorch.org/].
+Рекомендуется устанавливать в созданное виртуальное окружение или в Докер-контейнер (`docker pull rocm/pytorch:latest`) (раздел инструкции)[https://rocm.docs.amd.com/_/downloads/install-on-linux/en/latest/pdf/#section.10.1].
+```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.0
+```
+
+3. Дополнительно:
+> Make sure before running any program in either TensorFlow or PyTorch, run the following command:
+`HSA_OVERRIDE_GFX_VERSION=10.3.0`
+
+[https://github.com/alfinauzikri/ROCm-RX6600XT]
+
+При проблемах совместимости версий выполнение кода на GPU может быть возможным только после ручного задания переменной `HSA_OVERRIDE_GFX_VERSION=10.3.0`.
+Например: `HSA_OVERRIDE_GFX_VERSION=10.3.0 jupyter lab` или `HSA_OVERRIDE_GFX_VERSION=10.3.0 python3 main.py`
+
+
+**Отображение информации о ROMc устройствах и их состоянии GPU**
+```bash
+# информация про все устройства (включая поддерживаемые CPU)
+rocminfo
+
+# состояние устройств
+rocm-smi
+```
+
+Пример вывода информации о состоянии
+```text
+======================= ROCm System Management Interface =======================
+================================= Concise Info =================================
+GPU  Temp   AvgPwr  SCLK    MCLK   Fan  Perf  PwrCap  VRAM%  GPU%  
+0    36.0c  4.0W    800Mhz  96Mhz  0%   auto  100.0W   61%   0%    
+================================================================================
+============================= End of ROCm SMI Log ==============================
+```
+
+Для постоянного мониторинга удобнее всего циклически запускать программу rocm-smi используя утилиту watch. Например, запускать каждые полсекунды:
+```bash
+watch -n 0.5 rocm-smi
+```
+
+**Пример для быстрой проверки работоспособности ROCm**
+
+```python
+import torch
+
+Device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print("Device: ", Device)
+
+# общая информация
+print(torch.__version__)
+print(torch.version.cuda)
+print(torch.backends.cudnn.version())
+print(torch.cuda.get_device_name(0))
+print(torch.cuda.get_device_properties(0))
+
+# коротка проверка
+print( torch.ones(2).to(torch.device(0)) )
+
+# проверка перемножением матриц
+N = 20_000
+a = torch.rand( (N, N) ).to(Device)
+b = torch.rand( (N, N) ).to(Device)
+
+d = a @ b
+```
+
+
+**Вывод полной технической информации:** https://gist.github.com/damico/484f7b0a148a0c5f707054cf9c0a0533
+
 # Инструменты МО
 
 
@@ -65,4 +165,5 @@
 
 
 ToDo: temperature и др. параметры генерации
+
 
