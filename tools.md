@@ -155,7 +155,9 @@ d = a @ b
 
 - **Jan** https://jan.ai/
 - **LM Studio** https://lmstudio.ai/
-- Llama.cpp (https://github.com/ggerganov/llama.cpp) и другие
+- **Ollama**
+- Llama.cpp (https://github.com/ggerganov/llama.cpp)
+- и другие
 
 **Модели**
 Модели, которые можно запускать на обычном ПК с 16-32 Гб  оперативной памяти - это модели до нескольких миллиардов параметров.
@@ -168,3 +170,45 @@ d = a @ b
 ToDo: temperature и др. параметры генерации
 
 
+#### ollama
+Установка в Linux:
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+Пример запуска (со скачиванием, если нужно) модели в консоли
+```bash
+ollama run gemma:2b
+```
+
+`gemma:2b` - название модели.
+
+
+help
+<details>
+```text
+Usage:
+  ollama [flags]
+  ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model from a Modelfile
+  show        Show information for a model
+  run         Run a model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+
+Flags:
+  -h, --help      help for ollama
+  -v, --version   Show version information
+```
+</details>
+
+
+http://127.0.0.1:11434/

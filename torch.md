@@ -69,14 +69,14 @@ tensor([4, 2, 3, 2, 6, 8])
 (см. [специальные методы классов в Pyhton](https://coderpad.io/python-magic-methods-cheat-sheet/))
 
 
-См. также класс `datasets.ImageFolder` для работы с датасетом из отдельных файлов.
+См. также класс `torchvision.datasets.ImageFolder` для работы с датасетом из отдельных файлов.
 
 ```python
 Data = datasets.ImageFolder('my_dataset/train')
 # файлы должны лежать в папках, соответствующих классам
 Data.classes
 ```
-
+Для использования нужно установить пакет `torchvivion`.
 
 
 # Слои
