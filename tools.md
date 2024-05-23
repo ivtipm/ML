@@ -176,13 +176,33 @@ ToDo: temperature и др. параметры генерации
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Пример запуска (со скачиванием, если нужно) модели в консоли
+**Пример запуска** (со скачиванием, если нужно) модели в консоли в режиме чата (зависит от модели)
 ```bash
 ollama run gemma:2b
 ```
 
 `gemma:2b` - название модели.
 
+
+**Запуск сервера**
+```bash
+ollama serve
+```
+Проверить сервер можно по адресу: http://127.0.0.1:11434/
+
+URL для обращения по REST API:
+- http://localhost:11434/api/generate - ответ на промпт
+- http://localhost:11434/api/chat - режим чата
+
+Документация по API: https://github.com/ollama/ollama/blob/main/docs/api.md
+
+Модель, запущенная на сервере, не имеет состояния. Поэтому при обращении к ней по API необходимо передавать весь необходимый контекст или историю чата.
+
+
+Останвока сервера (запущенного как сервис) 
+```bash
+systemctl stop ollama.service
+```
 
 help
 <details>
@@ -209,6 +229,3 @@ Flags:
   -v, --version   Show version information
 ```
 </details>
-
-
-http://127.0.0.1:11434/
