@@ -206,10 +206,12 @@ https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sh
 
 - Слайды: https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit#slide=id.p
 - Пример: https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing#scrollTo=hCiu6Jn2d8JE&uniqifier=1
+- Короткая шпарагалка по нейросетям в фреимворке Keras: https://miro.com/app/board/uXjVNQC1rq8=/?moveToWidget=3458764571093405205&cot=14
 
 ### Домашнее задание 3.3. многослойный персептрон (+)
 - Добавьте в работы 1-3 многослойный персептрон (как минимум в одну работу (+))
 - Поэкспериментируйте с количеством слоёв, нейронов, функциями активации.
+
 
 
 ## Лекция 2. Персептрон. Обучение. Метод обратного распространения ошибки. Метод градиентного спуска.
