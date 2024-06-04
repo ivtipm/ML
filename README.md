@@ -19,9 +19,23 @@
 - Короткая шпаргалка по Python: https://miro.com/app/board/uXjVORmoCO0=/?moveToWidget=3458764545754982875&cot=14
 
 
-## Примеры 
+## Примеры
+### Анализ данных и классические методы МО
+0. Python. Настройка рабочего окружения. Виртуальное окружение. Pip. Jupyter Notebook. Jupyter lab. Google Colab. [todo:] https://miro.com/app/board/uXjVNQC1rq8=/?share_link_id=860218532001
 1. Разведочный анализ данных (exploratory data analysis, EDA), визуализация и подготовка данных для моделей МО. [pandas, numpy, matplotlib, seaborn]
    [colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing)
+1. Задача регрессии. Метод линейной регрессии. Теория + пример: [Линейная регрессия. МНК. Метод макс.правдоподобия. sklearn.ipynb colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx?usp=sharing)
+1. Задача классификации. Линейная разделимость классов. Сигмоида. Вероятностная модель; SoftMax. LogLoss. 
+   - [colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing)
+1. Метод опорных векторов (Support Vector Machine, SVM) и метод k-ближайших соседей (k-nearest neighbors).
+   - [colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk?usp=sharing)
+2. Решающие деревья (Decision Tree). Ансамбли моделей (ensembles): Беггинг (bagging), Бустинг (адаптивный и градиентный), Стекинг, Голосование. [colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sharing](https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sharing)
+3. Кластеризация. Диаграммы рассеивания. Seaborn.
+    - [учебное пособие](https://raw.githubusercontent.com/ivtipm/ML/main/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%B8%20%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf#page=111)
+4. Уменьшение размерности. PCA. UMAP. [seaborn, plotly]. 
+Кластеризация. KMeans. Метод локтя. Коэффициент силлуэта. [colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf](https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf)
+
+### Основы глубокого обучения
 3. Классификация, персептрон (Keras, pytorch): [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing)
     - шпаргалка по pytorch: [torch.md](torch.md)
 4. Классификация изображений, CNN, предобученные сети (keras): [colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb](https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing)
