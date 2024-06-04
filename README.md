@@ -35,6 +35,9 @@
 4. Уменьшение размерности. PCA. UMAP. [seaborn, plotly]. 
 Кластеризация. KMeans. Метод локтя. Коэффициент силлуэта. [colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf](https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf)
 
+5. Временные ряды (time series). Стационарность. Тренд, сезонность, шум. Методы: AR, MA, ARMA, ARIMA, SARIMA. Пакет Facebook Prophet. https://colab.research.google.com/drive/1_9vRiJ4BPhQMXd1PAjKK61ARjPp46IdY?usp=sharing
+
+
 ### Основы глубокого обучения
 3. Классификация, персептрон (Keras, pytorch): [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing)
     - шпаргалка по pytorch: [torch.md](torch.md)
