@@ -32,31 +32,33 @@
 2. Решающие деревья (Decision Tree). Ансамбли моделей (ensembles): Беггинг (bagging), Бустинг (адаптивный и градиентный), Стекинг, Голосование. [colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sharing](https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sharing)
 3. Кластеризация. Диаграммы рассеивания. Seaborn.
     - [учебное пособие](https://raw.githubusercontent.com/ivtipm/ML/main/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%B8%20%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf#page=111)
-4. Уменьшение размерности. PCA. UMAP. [seaborn, plotly]. 
+4. Уменьшение размерности. PCA (Principal component analysis ). UMAP. [seaborn, plotly]. 
 Кластеризация. KMeans. Метод локтя. Коэффициент силлуэта. [colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf](https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf)
 
 5. Временные ряды (time series). Стационарность. Тренд, сезонность, шум. Методы: AR, MA, ARMA, ARIMA, SARIMA. Пакет Facebook Prophet. https://colab.research.google.com/drive/1_9vRiJ4BPhQMXd1PAjKK61ARjPp46IdY?usp=sharing
+
+6. [Предобработка текста, TF-IDF, SVM](https://github.com/ivtipm/ML/blob/main/examples/text/text_preprocess.md)
+
 
 
 ### Основы глубокого обучения
 3. Классификация, персептрон (Keras, pytorch): [colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3](https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing)
     - шпаргалка по pytorch: [torch.md](torch.md)
 4. Классификация изображений, CNN, предобученные сети (keras): [colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb](https://colab.research.google.com/drive/1kqSiP9IpPmW8dw9NxV5Sm5pMLMqfINZb?usp=sharing)
-1. Интерактивные графики, уменьшение размерности, веб-формы (plotly, PCA, gradio): [colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s](https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing)
-5. Отслеживание метрик моделей: [wandb.md](wandb.md)
+
+
 6. Простые примеры использования RNN (pytorch, LSTM, MNIST): [colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK](https://colab.research.google.com/drive/1XXQgLdECny8MvO8VVcEn3-cM1TW8pdHK?usp=sharing)
 7. Временной ряд, RNN, LSTM: [colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc](https://colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc?usp=sharing)
 8. Обработка данных, деревья решений, случайный лес, апсемлинг (ADASYN) и андерсемплинг (TomekLinks): [colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7](https://colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7?usp=sharing)
-9. [Предобработка текста, TF-IDF, SVM](https://github.com/ivtipm/ML/blob/main/examples/text/text_preprocess.md)
+
 10. [Классификация текстов, Embeddings, LSTM (Keras)](https://github.com/ivtipm/ML/blob/main/examples/text/text_keras.md)
     - http://nlpprogress.com — каталог последних достижений и дастасетов по областям NLP 
-11. Кластеризация [colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf](https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf)
-    - Визуализации: pairplot, plotly scatterplot
-    - Principal component analysis (PCA), UMAP
-    - K-Means, метод локтя, коэффициент силуэта
-   
 
+11. Пример использования BERT для создания векторных представлений текстов: https://colab.research.google.com/drive/1Aacg8tUXXNICQ0SetvqoIPD7GXnm0Ymx?usp=sharing
 
+### Разное
+1. Интерактивные графики, уменьшение размерности, веб-формы (plotly, PCA, gradio): [colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s](https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing)
+5. Отслеживание метрик моделей: [wandb.md](wandb.md)
 
 
 
