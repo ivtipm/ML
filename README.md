@@ -35,7 +35,9 @@
 4. Уменьшение размерности. PCA (Principal component analysis ). UMAP. [seaborn, plotly]. 
 Кластеризация. KMeans. Метод локтя. Коэффициент силлуэта. [colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf](https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf)
 
-5. Временные ряды (time series). Стационарность. Тренд, сезонность, шум. Методы: AR, MA, ARMA, ARIMA, SARIMA. Пакет Facebook Prophet. https://colab.research.google.com/drive/1ZOOJK2-9mYED6WiMRnFAe74miSfjKHxG
+5. Временные ряды (time series). 
+- Разложение. Начальный анализ. Простые модели: [sktime, statmodels]: https://colab.research.google.com/drive/1hgFTqkfu37v7PQAR9JYcH610FJdXOP-b#scrollTo=Hj0GjwJKVawA
+- Стационарность. Тренд, сезонность, шум. Методы: AR, MA, ARMA, ARIMA, SARIMA. Пакет Facebook Prophet. https://colab.research.google.com/drive/1ZOOJK2-9mYED6WiMRnFAe74miSfjKHxG
 
 6. [Предобработка текста, TF-IDF, SVM](https://github.com/ivtipm/ML/blob/main/examples/text/text_preprocess.md)
 
