@@ -1,6 +1,6 @@
 # wandb. Weights and Biases
 
-Библиотека и сервис для сбора информации об обучении моделей.
+Библиотека и сервис для сбора информации об обучении моделей,  ноутбуков (jupter notebook) и др. возможностями.
 
 - Логирование на сервис в реальном времени для построению кривых обучения
 - Сбор информации об отдельных запусках моделей (нейросетевых и не только) с отображением статистики и произвольной модели
@@ -144,3 +144,57 @@ neptune.ai, comet_ml, mlflow
 
 # Ссылки
 - Пример интеграции WandB и SKLearn: https://colab.research.google.com/github/wandb/examples/blob/master/colabs/scikit/Simple_Scikit_Integration.ipynb#scrollTo=qpcQ2HDs5LQ2
+
+
+# Ml Flow
+(https://mlflow.org/)[Ml Flow] - альтернатива WanDB с открытым исходным кодом. Помимо прочего позволяет логировать артефакты, такие как графики или файлы.
+
+Позволяет выгружать результаты логирования экспериментов в DataFrame. 
+
+Можно запустить локальный сервер для изучения результатов экспериментов с UI.
+
+<img src="https://mlflow.org/img/hero.png" width=400>
+
+Пример:
+```python
+import mlflow
+
+# Задать имя для серии экспериментов
+mlflow.set_experiment("Caravan - AllSales prediction")
+
+# Создать новый эксперимерт (run)
+mlflow.start_run()
+
+# Загрузка и обработка данных
+# ...
+
+# Логировать параметры эксперимента 
+mlflow.log_params( { "Train len": len(Train), 
+                     ,
+                    })
+
+# Создание и обучение модели
+# ...
+
+# логировать параметры модели
+mlflow.log_param("Model","NaiveForecaster")
+
+# Оценка модели на тесте 
+# ...
+
+# логировать график
+mlflow.log_figure(fig, f"forecast_plot_{fig.__hash__()}.png")
+# логировать метрики
+mlflow.log_metric("Test.MSE", mse)
+
+# завершить эксперимент
+mlflow.end_run()
+```
+
+Запуск сервера:
+```bash
+mlflow ui
+```
+
+
+Документация: https://mlflow.org/docs/latest/getting-started/index.html
