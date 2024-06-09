@@ -137,5 +137,10 @@ wandb.sdk.wandb_run.finish()
 **Артефакты**
 При обучении можно сохранять отдельные данные (в wandb они называются артефактами). Например можно сохранять небольшие файлы, датасеты или результаты их обработки.
 
+# См. также похожие интструменты
+neptune.ai, comet_ml, mlflow
+
+Короткий обзор: https://neptune.ai/blog/weights-and-biases-alternatives
+
 # Ссылки
 - Пример интеграции WandB и SKLearn: https://colab.research.google.com/github/wandb/examples/blob/master/colabs/scikit/Simple_Scikit_Integration.ipynb#scrollTo=qpcQ2HDs5LQ2

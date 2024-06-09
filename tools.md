@@ -176,6 +176,10 @@ ToDo: temperature и др. параметры генерации
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
+Докер образ: https://hub.docker.com/r/ollama/ollama
+
+
+
 **Пример запуска** (со скачиванием, если нужно) модели в консоли в режиме чата (зависит от модели)
 ```bash
 ollama run gemma:2b
@@ -195,6 +199,8 @@ URL для обращения по REST API:
 - http://localhost:11434/api/chat - режим чата
 
 Документация по API: https://github.com/ollama/ollama/blob/main/docs/api.md
+
+Пакет для Python - обёртка над REST API Ollama: https://github.com/ollama/ollama-python
 
 Модель, запущенная на сервере, не имеет состояния. Поэтому при обращении к ней по API необходимо передавать весь необходимый контекст или историю чата.
 
