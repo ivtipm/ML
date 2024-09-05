@@ -155,7 +155,9 @@ d = a @ b
 
 - **Jan** https://jan.ai/
 - **LM Studio** https://lmstudio.ai/
-- Llama.cpp (https://github.com/ggerganov/llama.cpp) и другие
+- **Ollama**
+- Llama.cpp (https://github.com/ggerganov/llama.cpp)
+- и другие
 
 **Модели**
 Модели, которые можно запускать на обычном ПК с 16-32 Гб  оперативной памяти - это модели до нескольких миллиардов параметров.
@@ -168,3 +170,81 @@ d = a @ b
 ToDo: temperature и др. параметры генерации
 
 
+#### ollama
+Установка в Linux:
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+Докер образ: https://hub.docker.com/r/ollama/ollama
+
+
+
+**Пример запуска** (со скачиванием, если нужно) модели в консоли в режиме чата (зависит от модели)
+```bash
+ollama run gemma:2b
+```
+
+`gemma:2b` - название модели.
+
+
+**Запуск сервера**
+```bash
+ollama serve
+```
+Проверить сервер можно по адресу: http://127.0.0.1:11434/
+
+URL для обращения по REST API:
+- http://localhost:11434/api/generate - ответ на промпт
+- http://localhost:11434/api/chat - режим чата
+
+Документация по API: https://github.com/ollama/ollama/blob/main/docs/api.md
+
+Пакет для Python - обёртка над REST API Ollama: https://github.com/ollama/ollama-python
+
+Модель, запущенная на сервере, не имеет состояния. Поэтому при обращении к ней по API необходимо передавать весь необходимый контекст или историю чата.
+
+
+Останвока сервера (запущенного как сервис) 
+```bash
+systemctl stop ollama.service
+```
+
+help
+<details>
+```text
+Usage:
+  ollama [flags]
+  ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model from a Modelfile
+  show        Show information for a model
+  run         Run a model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+
+Flags:
+  -h, --help      help for ollama
+  -v, --version   Show version information
+```
+</details>
+
+
+#### Запуск докер образа
+```bash
+docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+```
+
+- `-d` запуск в режиме сервиса (демона, daemon)
+- `--gpus=all` предоставить доступ к GPU
+-  `-v ollama:/root/.ollama` - присоединение папок (volumes) к контейнеру внешняя_папка:папка в контейнере; по умолчанию ollama сохраняет модели в папку .ollama, которая находится в папке пользователя, от имени которого она запущена. Если не указать внешнюю папку, до все изменения в файловой системе контейнера будут сохраняться только до его перезапуска.
+- `-p 11434:11434` - проброс портов внешний_порт:порт_контейнера
+- `--name ollama` - название с которым запустится контейнер
+- `ollama/ollama` - название образа (скачается при необходимости), на основе которого будет выполнятся контейнер
