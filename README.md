@@ -113,6 +113,7 @@
 7. https://www.kaggle.com/datasets
 8. https://pytorch.org/text/stable/datasets.html#text-classification — текстовые дастасеты pytorch
 9. [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) — большая коллекция датасетов
+10. https://commoncrawl.org/overview - текстовые датасеты собранные со всего интернета, терабайты данных 
 
 ### Дополнительно
 - Портал открытых данных РФ http://data.gov.ru/
