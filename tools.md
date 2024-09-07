@@ -248,3 +248,11 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ol
 - `-p 11434:11434` - проброс портов внешний_порт:порт_контейнера
 - `--name ollama` - название с которым запустится контейнер
 - `ollama/ollama` - название образа (скачается при необходимости), на основе которого будет выполнятся контейнер
+
+
+# Детекторы текстов, написанных большими языковыми моделями
+
+- https://developers.sber.ru/portal/products/gigacheck
+
+- https://www.zerogpt.com/
+
