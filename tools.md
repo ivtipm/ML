@@ -197,6 +197,7 @@ ollama serve
 URL для обращения по REST API:
 - http://localhost:11434/api/generate - ответ на промпт
 - http://localhost:11434/api/chat - режим чата
+- http://localhost:11434/api/tags - доступные модели
 
 Документация по API: https://github.com/ollama/ollama/blob/main/docs/api.md
 
