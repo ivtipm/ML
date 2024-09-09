@@ -211,8 +211,14 @@ URL для обращения по REST API:
 systemctl stop ollama.service
 ```
 
+Проверка API:
+```bash
+curl http://localhost:11434/api/generate -d '{"model": "llama2", "prompt": "Why is the sky blue?"}
+```
+
 help
 <details>
+ 
 ```text
 Usage:
   ollama [flags]
@@ -235,6 +241,7 @@ Flags:
   -h, --help      help for ollama
   -v, --version   Show version information
 ```
+
 </details>
 
 
