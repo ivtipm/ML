@@ -216,7 +216,13 @@ systemctl stop ollama.service
 curl http://localhost:11434/api/generate -d '{"model": "llama2", "prompt": "Why is the sky blue?"}
 ```
 
-help
+
+**Некоторые модели**
+- llama3
+- IlyaGusev/saiga_llama3_8b — llama3 дополнительно дообученная для русского языка
+
+
+**help**
 <details>
  
 ```text
