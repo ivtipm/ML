@@ -187,6 +187,7 @@ ollama run gemma:2b
 
 `gemma:2b` - название модели.
 
+В Linux модели сохраняются в каталог `~/.ollama/models`
 
 **Запуск сервера**
 ```bash
