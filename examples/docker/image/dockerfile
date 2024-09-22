@@ -2,7 +2,8 @@
 
 # 1. Название базового контейнера, на основе которого будет строиться новый
 # from python:3.11.0-slim-bookworm
-from python:3.11.6-bullseye
+# from python:3.11.6-bullseye
+from python:3.11-slim
 # https://hub.docker.com/_/python
 # лучше не брать самую последнюю версию, т.к. некоторые библиотеки могут быть не совместимы
 
@@ -11,7 +12,7 @@ from python:3.11.6-bullseye
 # RUN -- запуск команд во время построения образа
 # обновление БД системного менеджера пакетов; обновление пакетов
 RUN apt update          
-RUN apt upgrade
+RUN apt upgrade -y
 # устанвока пакета gcc; нужен для scikit-learn; -y — если установщик что спросит, то отвечать yes
 RUN apt install gcc -y
 RUN pip3 install --upgrade pip
@@ -43,12 +44,14 @@ CMD python3 main.py
 
 
 
-# Построение
+# 1. Построение
 # docker build -t digit_recognize .
+#  -t digit_recognize -- название контейнера
+#   .                 -- путь к папке с dockerfile
 
-# Посмотреть на созданные в системе образы
+# 2. Посмотреть на созданные в системе образы
 # docker images
 
-# Запуск
+# 3. Запуск
 # docker run  -p 7860:7860 <имя_образа>
 # 7860:7860 — связывание внешнего_порта : порта_контейнера 
