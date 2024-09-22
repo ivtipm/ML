@@ -4,24 +4,31 @@
 """
 from random import randint
 from fastapi import FastAPI
+import joblib
 
 
 app = FastAPI()
+Model = joblib.load("rand_forest_model_sk150_joblib142.joblib")
+Labels = ["Iris-Setosa", "Iris-Versicolour", "Iris-Virginica"]
+print("Model Loaded")
 
-# get запрос для корневого эндпоинта
+
+# get-запрос для корневого эндпоинта, используется в качестве health-check
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"ststus": "Ok"}
 
 
-@app.get("/classificate")
-async def calc_sum(sep_len: float, sep_width:float, pet_len:float, pet_width:float):
+@app.get("/classify")
+async def classify_iris(sep_len: float, sep_width:float, pet_len:float, pet_width:float):
     """Возвращает класс (ирис) для заданных значений длины и ширины лепестка и чашелистика"""
-    Classes = ["Iris-Setosa", "Iris-Versicolour", "Iris-Virginica"]
-    return {"class": Classes[randint(0,2)]}
+    global Model, Labels
+    
+    answer = Model.predict( [[sep_len, sep_width, pet_len, pet_width]] )
+    return {"class": Labels[int(answer[0])]}
 
 
-# эндпоинты / и /calc_sum в терминах FastAPI называются маршрутами
+# эндпоинты / и /classify в терминах FastAPI называются маршрутами
 
 # автоматически по пути /docs доступна документация к API в формате фреимворка Swagger
 # тут же можно и выполнить запрос чтобы протестировать
@@ -38,12 +45,6 @@ async def calc_sum(sep_len: float, sep_width:float, pet_len:float, pet_width:flo
     uvicorn - это легковесный сервер. 
     FastAPI предоставляет обёртку над обработчиками событий, но ещё нужен сервер, который будет принимать входящее подключение, 
     работать с HTTP соединениями.
-
-Вариант 2
-   fastapi dev main.py
-   В режиме dev автоперезагрузка включена
-   В режиме run - для продакшина, нет.
-   https://fastapi.tiangolo.com/fastapi-cli/
 """
 
 

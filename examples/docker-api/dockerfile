@@ -1,0 +1,51 @@
+# Пример файла конфигурации контейнера для сервера, использующего готовую модель sklearn и отвечающего на запросы по web-API
+
+# 1. Название базового контейнера, на основе которого будет строиться новый
+# from python:3.11.0-slim-bookworm
+# from python:3.11.6-bullseye
+from python:3.11-slim
+# https://hub.docker.com/_/python
+# лучше не брать самую последнюю версию, т.к. некоторые библиотеки могут быть не совместимы
+
+
+# 2. Настройка контейнера. Установка программ и python-пакетов
+# RUN -- запуск команд во время построения образа
+# обновление БД системного менеджера пакетов; обновление пакетов
+RUN apt update          
+RUN apt upgrade -y
+# устанвока пакета gcc; нужен для scikit-learn; -y — если установщик что спросит, то отвечать yes
+RUN apt install gcc -y
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install --upgrade pip
+
+
+# 3. Настройка окружения и приложения
+# создадим рабочую папку для приложения
+RUN mkdir my_app
+# установим текущую папку
+WORKDIR my_app
+# скопируем файлы в текущую (.) папку
+COPY requirements.txt main.py rand_forest_model_sk150_joblib142.joblib .
+RUN pip3 install -U -r requirements.txt
+
+# 4. Команда запуска приложения
+CMD uvicorn main:app --host 0.0.0.0 --port 8880
+# uvicorn - это ASGI сервер, который принмиает запросы на порт 8880
+# и перенаправляет их приложению app из файла main
+# важно указать внутренний IP не localhost (--host 0.0.0.0) чтобы можно было пробросить порт извне контейнера к приложению
+
+
+# 1. Построение
+# docker build -t iris_fastapi_example .
+#  -t iris_fastapi_example  -- название контейнера
+#   .                       -- путь к папке с dockerfile
+
+# 2. Посмотреть на созданные в системе образы
+# docker images
+
+# 3. Запуск
+
+
+# todo:
+    # группировать комманды чтобы создавать меньше слоёв
