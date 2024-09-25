@@ -265,6 +265,12 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ol
 - `ollama/ollama` - название образа (скачается при необходимости), на основе которого будет выполнятся контейнер
 
 
+## UI для LLM
+- [OpenWebUI](https://openwebui.com/) - веб-интерфейс для больших языковых моделей, похожий на UI для ChatGPT
+- LM Studio и Jan уже предоставляют UI для обращения к моделям 
+- [Anything LLM](https://anythingllm.com/) 
+
+
 # Детекторы текстов, написанных большими языковыми моделями
 
 - https://developers.sber.ru/portal/products/gigacheck
