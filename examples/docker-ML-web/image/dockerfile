@@ -1,20 +1,30 @@
-# from python:3.11.0-slim-bookworm
-from python:3.11.6-bullseye
+# Пример файла конфигурации контейнера для веб-приложения, использующего готовую модель sklearn
 
+# 1. Название базового контейнера, на основе которого будет строиться новый
+# from python:3.11.0-slim-bookworm
+# from python:3.11.6-bullseye
+from python:3.11-slim
 # https://hub.docker.com/_/python
 # лучше не брать самую последнюю версию, т.к. некоторые библиотеки могут быть не совместимы
 
+
+# 2. Настройка контейнера. Установка программ и python-пакетов
 # RUN -- запуск команд во время построения образа
 # обновление БД системного менеджера пакетов; обновление пакетов
 RUN apt update          
-RUN apt upgrade
+RUN apt upgrade -y
 # устанвока пакета gcc; нужен для scikit-learn; -y — если установщик что спросит, то отвечать yes
 RUN apt install gcc -y
 RUN pip3 install --upgrade pip
 # стоит указать версии чтобы неожиданно ничего не сломалось
+# лучше использовать файл requirements.txt
 RUN pip3 install -U scikit-learn==1.3.2
 RUN pip3 install -U gradio==3.41.0
+# очитска кэша
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
+
+# 3. Настройка окружения и приложения
 # создадим рабочую папку для приложения
 RUN mkdir my_app
 # установим текущую папку
@@ -23,19 +33,25 @@ WORKDIR my_app
 # скопируем файл в текущую (.) папку
 COPY main.py .
 COPY forest.joblib.lzma .
+# forest.joblib.lzma - это sklearn модель (todo: указать версию SKL)
 
+# 4. Команда запуска приложения (веб-сервера)
 # CMD — запуск команд во время старта контейнера
 CMD python3 main.py
+
 
 # todo: оптимизировать
 
 
-# Построение
-# docker build -t digit_recognize .
 
-# Посмотреть на созданные в системе образы
+# 1. Построение
+# docker build -t digit_recognize .
+#  -t digit_recognize -- название контейнера
+#   .                 -- путь к папке с dockerfile
+
+# 2. Посмотреть на созданные в системе образы
 # docker images
 
-# Запуск
+# 3. Запуск
 # docker run  -p 7860:7860 <имя_образа>
-# 7860:7860 — связывание   внешенго порта : порта контейнера 
+# 7860:7860 — связывание внешнего_порта : порта_контейнера 
