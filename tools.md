@@ -207,7 +207,7 @@ URL для обращения по REST API:
 Модель, запущенная на сервере, не имеет состояния. Поэтому при обращении к ней по API необходимо передавать весь необходимый контекст или историю чата.
 
 
-Останвока сервера (запущенного как сервис) 
+Остановка сервера (запущенного как сервис) 
 ```bash
 systemctl stop ollama.service
 ```
@@ -219,7 +219,7 @@ curl http://localhost:11434/api/generate -d '{"model": "llama2", "prompt": "Why 
 
 
 **Некоторые модели**
-- llama3.2 ()
+- llama3.2 
 - IlyaGusev/saiga_llama3_8b — llama3 дополнительно дообученная для русского языка
 
 
@@ -279,6 +279,31 @@ https://github.com/ggerganov/llama.cpp/blob/master/docs/docker.md
 - [OpenWebUI](https://openwebui.com/) - веб-интерфейс для больших языковых моделей, похожий на UI для ChatGPT
 - LM Studio и Jan уже предоставляют UI для обращения к моделям 
 - [Anything LLM](https://anythingllm.com/) 
+
+
+### Anything LLM
+
+Инструкция для docker: https://github.com/Mintplex-Labs/anything-llm/blob/master/docker/HOW_TO_USE_DOCKER.md
+**Установка**
+```bash
+docker pull mintplexlabs/anythingllm
+```
+
+**Запуск, Linux**
+```bash
+export STORAGE_LOCATION=$HOME/anythingllm && \
+mkdir -p $STORAGE_LOCATION && \
+touch "$STORAGE_LOCATION/.env" && \
+docker run -d -p 3001:3001 \
+--cap-add SYS_ADMIN \
+-v ${STORAGE_LOCATION}:/app/server/storage \
+-v ${STORAGE_LOCATION}/.env:/app/server/.env \
+-e STORAGE_DIR="/app/server/storage" \
+mintplexlabs/anythingllm
+```
+
+Сервер будет доступен на порту 3001.
+
 
 
 # Детекторы текстов, написанных большими языковыми моделями
