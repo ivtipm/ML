@@ -292,6 +292,13 @@ https://github.com/ggerganov/llama.cpp/blob/master/docs/docker.md
 
 
 ### Anything LLM
+Возможности:
+- интеграция с LLM по API (Ollama, OpenAI, Anthropic, Gemini, ... )
+- Интерфейс чата для LLM
+- Использование поисковых систем совместно с LLM  (Google, Bing, ...)
+- Взаимодействие с векторными БД и инструментами для разбивки текстов на части 
+- Сервис для суммаризации документов
+- Test-to-speech и Speech-to-text
 
 Инструкция для docker: https://github.com/Mintplex-Labs/anything-llm/blob/master/docker/HOW_TO_USE_DOCKER.md
 **Установка**
