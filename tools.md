@@ -156,7 +156,7 @@ d = a @ b
 - **Jan** https://jan.ai/
 - **LM Studio** https://lmstudio.ai/
 - **Ollama**
-- Llama.cpp (https://github.com/ggerganov/llama.cpp)
+- Llama.cpp (https://github.com/ggerganov/llama.cpp), производительнее чем ollama
 - и другие
 
 **Модели**
@@ -170,7 +170,7 @@ d = a @ b
 ToDo: temperature и др. параметры генерации
 
 
-#### ollama
+### ollama
 Установка в Linux:
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
@@ -219,7 +219,7 @@ curl http://localhost:11434/api/generate -d '{"model": "llama2", "prompt": "Why 
 
 
 **Некоторые модели**
-- llama3
+- llama3.2 ()
 - IlyaGusev/saiga_llama3_8b — llama3 дополнительно дообученная для русского языка
 
 
@@ -263,6 +263,16 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ol
 - `-p 11434:11434` - проброс портов внешний_порт:порт_контейнера
 - `--name ollama` - название с которым запустится контейнер
 - `ollama/ollama` - название образа (скачается при необходимости), на основе которого будет выполнятся контейнер
+
+
+### llama.cpp
+- Производительнее до двух раз по сравнению с Ollama
+- использует формат `ggml` для моделей
+- Есть python-пакет
+- Нет удобного встроенного способа скачивать модели, как у Ollama и др.
+
+Работа с docker образом:
+https://github.com/ggerganov/llama.cpp/blob/master/docs/docker.md
 
 
 ## UI для LLM
