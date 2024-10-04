@@ -299,6 +299,7 @@ https://github.com/ggerganov/llama.cpp/blob/master/docs/docker.md
 - Взаимодействие с векторными БД и инструментами для разбивки текстов на части 
 - Сервис для суммаризации документов
 - Test-to-speech и Speech-to-text
+- ...
 
 Инструкция для docker: https://github.com/Mintplex-Labs/anything-llm/blob/master/docker/HOW_TO_USE_DOCKER.md
 **Установка**
