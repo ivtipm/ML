@@ -285,7 +285,10 @@ docker ps
 https://github.com/ggerganov/llama.cpp/blob/master/docs/docker.md
 
 
-## UI для LLM
+
+
+
+## UI / API для LLM
 - [OpenWebUI](https://openwebui.com/) - веб-интерфейс для больших языковых моделей, похожий на UI для ChatGPT
 - LM Studio и Jan уже предоставляют UI для обращения к моделям 
 - [Anything LLM](https://anythingllm.com/) 
@@ -294,12 +297,17 @@ https://github.com/ggerganov/llama.cpp/blob/master/docs/docker.md
 ### Anything LLM
 Возможности:
 - интеграция с LLM по API (Ollama, OpenAI, Anthropic, Gemini, ... )
-- Интерфейс чата для LLM
+- Интерфейс чата для LLM\
+  Загрузка файлов; загрузка файлов, которые будут использоваться как контекст чата; команды (заранее созданный промпт); обращение к агентам; голосовой ввод и озвучивание ответов
+- Предоставление API с настроенными чатами, предоставление встраиваемого веб-интерфейса на основе JS
 - Использование поисковых систем совместно с LLM  (Google, Bing, ...)
-- Взаимодействие с векторными БД и инструментами для разбивки текстов на части 
+- Взаимодействие с векторными БД (по умолчанию поставляется с LanceDB)
+- Взаимодействие с инструментами для разбивки текстов на части 
 - Сервис для суммаризации документов
 - Test-to-speech и Speech-to-text
 - ...
+
+
 
 Инструкция для docker: https://github.com/Mintplex-Labs/anything-llm/blob/master/docker/HOW_TO_USE_DOCKER.md
 **Установка**
