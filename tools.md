@@ -141,6 +141,11 @@ d = a @ b
 - https://github.com/jtpio/jupyterlab-theme-toggle
 
 
+### Расширения VS Code
+- Jupyter, Jupyter Notebbok Renderer
+- Data Wrangler - для удобного просмотра таблиц DataFrame
+- RainbovCSV - для подсветки колонок в CVS файлах
+
 # Языковые модели с доступом к серверу по API
 - OpenAI. ChatGPT (https://platform.openai.com/api-keys)
     - Доступ к API платный (хотя в веб-интерфейсе GPT4o доступен бесплатно)
