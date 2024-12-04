@@ -74,3 +74,6 @@ topics, probabilities = topic_model.fit_transform(docs)
 # Вывод тем и их меток
 print(topic_model.get_topic_info())
 ```
+
+# Ссылки
+- https://maartengr.github.io/BERTopic/index.html 
