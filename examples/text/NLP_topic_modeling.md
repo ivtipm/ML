@@ -75,5 +75,22 @@ topics, probabilities = topic_model.fit_transform(docs)
 print(topic_model.get_topic_info())
 ```
 
+
+**Сохранение и загрузка**
+
+Модели UMAP, Count Vectorizer и HDBSCAN не воспроизводимы, если для каждой их них не задан инициализатор для генератора случайных чисел.
+
+Поэтому для воспроизводимости модель нужно сохранять:
+```py
+# в этом примере используется отдельная модель эмбеддингов, как и список эмбеддингов текстов
+topic_model.fit( texts, texts_embeddings)
+
+# сохранение в папку, сохранится в том числе список тем
+topic_model.save("folder_name", serialization="safetensors", save_ctfidf=True, save_embedding_model=False)
+
+# загрузка
+topic_model = BERTopic.load("folder_name")
+```
+
 # Ссылки
 - https://maartengr.github.io/BERTopic/index.html 
