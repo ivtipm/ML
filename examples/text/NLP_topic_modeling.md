@@ -77,10 +77,11 @@ print(topic_model.get_topic_info())
 
 
 **Стоп слова**
-```
+```py
 STOPWORDS_RUSSIAN = []
 count_model=CountVectorizer(ngram_range=(1, 2), stop_words=STOPWORDS_RUSSIAN)
 topic_model_ts = BERTopic(language="russian", vectorizer_model=count_model )
+```
 
 **Сохранение и загрузка**
 
