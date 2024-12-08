@@ -107,6 +107,8 @@ topic_model = BERTopic.load("folder_name")
 ```py
 topic_model.visualize_documents(docs, embeddings=embeddings)
 ```
+Диаграмма строится на освное пакета plotly.
+
 https://maartengr.github.io/BERTopic/getting_started/visualization/visualize_documents.html
 
 # Ссылки
