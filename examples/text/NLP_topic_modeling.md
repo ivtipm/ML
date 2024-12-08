@@ -63,7 +63,7 @@ seed_topic_list = [
 ]
 
 # Создание модели BERTopic
-topic_model = BERTopic(language="russian", seed_topic_list=seed_topic_list)
+topic_model = BERTopic(language="russian", seed_topic_list=seed_topic_list, embedd)
 # Обучение модели; получени метод для тем
 topics, probs = topic_model.fit_transform(docs)
 # topics, probs = topic_model.fit_transform(docs, groups_ed_emb)        # если уже есть векторные представления документов
@@ -75,6 +75,12 @@ topics, probabilities = topic_model.fit_transform(docs)
 print(topic_model.get_topic_info())
 ```
 
+
+**Стоп слова**
+```
+STOPWORDS_RUSSIAN = []
+count_model=CountVectorizer(ngram_range=(1, 2), stop_words=STOPWORDS_RUSSIAN)
+topic_model_ts = BERTopic(language="russian", vectorizer_model=count_model )
 
 **Сохранение и загрузка**
 
