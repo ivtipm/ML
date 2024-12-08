@@ -71,7 +71,7 @@ topics, probs = topic_model.fit_transform(docs)
 topics, probabilities = topic_model.fit_transform(docs)
 
 
-# Вывод тем и их меток
+# Вывод тем и их меток (DataFrame)
 print(topic_model.get_topic_info())
 ```
 
@@ -83,7 +83,7 @@ count_model=CountVectorizer(ngram_range=(1, 2), stop_words=STOPWORDS_RUSSIAN)
 topic_model_ts = BERTopic(language="russian", vectorizer_model=count_model )
 ```
 
-**Сохранение и загрузка**
+### Сохранение и загрузка
 
 Модели UMAP, Count Vectorizer и HDBSCAN не воспроизводимы, если для каждой их них не задан инициализатор для генератора случайных чисел.
 
@@ -98,6 +98,16 @@ topic_model.save("folder_name", serialization="safetensors", save_ctfidf=True, s
 # загрузка
 topic_model = BERTopic.load("folder_name")
 ```
+
+ ### Визуализации
+**Диаграмма рассеяния для тем (topics)**
+..
+
+**Диаграмма рассеяния для документов (nтекстов)**
+```py
+topic_model.visualize_documents(docs, embeddings=embeddings)
+```
+https://maartengr.github.io/BERTopic/getting_started/visualization/visualize_documents.html
 
 # Ссылки
 - https://maartengr.github.io/BERTopic/index.html 
