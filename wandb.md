@@ -191,7 +191,7 @@ mlflow.log_metric("Test.MSE", mse)
 mlflow.end_run()
 ```
 
-Запуск сервера:
+Запуск сервера [из папки проекта]:
 ```bash
 mlflow ui
 ```
