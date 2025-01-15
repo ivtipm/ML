@@ -40,7 +40,11 @@
    - Сравнение ответов различных LLM по одному из запросов.
 
 **LLM**
-При возможности используйте [ChatGPT-4o](https://chatgpt.com/) или [Gemini](https://gemini.google.com/).
+
+При возможности используйте [ChatGPT-4o](https://chatgpt.com/) или [Gemini](https://gemini.google.com/) через VPN.
+
+Эти и другие модели могут быть доступны на сайтах: [lmarena.ai](https://lmarena.ai/) и [llmarena.ru](https://llmarena.ru/) 
+Помните, на этих сайтах могут быть представлены экспериментальные версии моделей.  
 
 Из России может быть доступен https://mistral.ai/. При регистрации не стоит использовать российскую почту.
 
