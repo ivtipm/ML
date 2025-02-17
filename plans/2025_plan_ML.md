@@ -32,19 +32,24 @@
 
 
 # План
-# 1. Обзор курса. Python
+# 1. Обзор курса. Повторение Python. Venv. Jupyer Notebook
 05 февраля
 1. Обзор курса. 
-1. Введение в Pyhton. PIP3. Virtual Enviroment. Jupyter Notebook: запуск в VS Code и в Google Colab.
+1. Введение в Pyhton. 
+    - PIP3. Установка библиотек. Requirements.txt
+    - Virtual Enviroment. Создание. Активация.
+    - Jupyter Notebook: запуск в VS Code и в Google Colab.
+        - Код и markdown. 
+        - Выполнение программ с командным интерфейсом. 
 
 
 ### Задание 0. Python, NumPy и основные понятия математической статистики
 
 Не используйте циклы, генераторы, функции стандартной библиотеки Питона sum, zip и map.
 
-Используйте Google Colaboratory.
+Используйте Google Colaboratory или другие среду подобную Jupyter Notebook.
 
-Реулизуйте функции двумя способами: 
+Реализуйте функции двумя способами: 
 - через циклы и списки Python;
 - без использования циклов, через векторные вычисления и массивы numpy.
 
