@@ -182,13 +182,14 @@ neptune.ai, comet_ml, mlflow
     См. также Model Registry
 
 * Теги. Полезны чтобы быстро помечать или отличать запуски (runs)
-```
-mlflow.set_tag("env", "staging")  # Одиночный тег
-mlflow.set_tags({"framework": "PyTorch", "commit_hash": "abc123"})  # Несколько тегов
-```
-
+    ```py
+    mlflow.set_tag("env", "staging")  # Одиночный тег
+    mlflow.set_tags({"framework": "PyTorch", "commit_hash": "abc123"})  # Несколько тегов
+    ```
 
 Позволяет выгружать результаты логирования экспериментов в DataFrame. 
+
+Отедльная функция - автологирование. Автоматически захватывает параметры, метрики, артефакты и модели при использовании стандартных методов фреймворков. Например .fit, .score гиперпараметры моделей и т.п. Поддерживаеммые фреиворки: Sklearn, PyTorch, TensorFlow, XGBoost, Hugging Face и др.
 
 Можно запустить локальный сервер для изучения результатов экспериментов с UI.
 
@@ -249,3 +250,10 @@ with mlflow.start_run(run_id="5003f2d31f9f46d4a2fcc5d0c815e050") as run:
 run_id можно посмотреть открыв отдельный run в веб-интерфейсе.
 
 Документация: https://mlflow.org/docs/latest/getting-started/index.html
+
+
+## См. также
+* Model Registry
+* Деплой моделей
+* MLflow Pipelines
+* Мониторинг моделей в продакшне
