@@ -16,7 +16,7 @@ print("Model Loaded")
 # get-запрос для корневого эндпоинта, используется в качестве health-check
 @app.get("/")
 async def root():
-    return {"ststus": "Ok"}
+    return {"status": "Ok"}
 
 
 @app.get("/classify")
