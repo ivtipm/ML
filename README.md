@@ -1,5 +1,6 @@
 # Машинное обучение
 
+### [Магистратура. Очное. 2025. Весна. Методы машиннного обучения](plans/2025_plan_ML.md)
 ### [Магистратура. Очное. 2024. Осень. Нейросети](plans/2024_NN.md)
 ### [Магистратура. Очное. 2024. Весна. Методы машиннного обучения](plans/2024_plan.md)
 ### Магистратура. Заочное. 2024
@@ -25,7 +26,7 @@
 ### Анализ данных и классические методы МО
 0. Python. Настройка рабочего окружения. Виртуальное окружение. Pip. Jupyter Notebook. Jupyter lab. Google Colab. [todo:] https://miro.com/app/board/uXjVNQC1rq8=/?share_link_id=860218532001
 1. Разведочный анализ данных (exploratory data analysis, EDA), визуализация и подготовка данных для моделей МО. [pandas, numpy, matplotlib, seaborn]
-   [colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR?usp=sharing)
+   [colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR)
 1. Задача регрессии. Метод линейной регрессии. Теория + пример: [Линейная регрессия. МНК. Метод макс.правдоподобия. sklearn.ipynb colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx?usp=sharing)
 1. Задача классификации. Линейная разделимость классов. Сигмоида. Вероятностная модель; SoftMax. LogLoss. 
    - [colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing)

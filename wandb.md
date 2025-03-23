@@ -147,9 +147,49 @@ neptune.ai, comet_ml, mlflow
 
 
 # Ml Flow
-(https://mlflow.org/)[Ml Flow] - альтернатива WanDB с открытым исходным кодом. Помимо прочего позволяет логировать артефакты, такие как графики или файлы.
+(https://mlflow.org/)[Ml Flow] - альтернатива WanDB с открытым исходным кодом. Помимо прочего позволяет логировать артефакты, такие как графики или файлы, в том числе ipynb.
+
+**Установка**:  
+`pip install mlflow`
+
+Основные функции:
+* Запись датасета
+    ```py
+    dataset = mlflow.data.from_pandas(df, name="train_data")
+    mlflow.log_input(dataset, context="training")
+    ```
+* Запись параметра или параметров:
+    ```py
+    mlflow.log_param("param_name","param_value")`
+    mlflow.log_params({"batch_size": 32, "epochs": 100})
+    ```
+* Запись метрик
+    ```py
+    mlflow.log_metric("accuracy", 0.85)
+    mlflow.log_metrics({"f1": 0.82, "precision": 0.87})
+     ```
+* Запись артефакта
+    ```py
+    mlflow.log_artifact("confusion_matrix.png")
+    mlflow.log_artifact("my_file.ipynb")
+    mlflow.log_artifacts("output_dir/")
+    ```
+* Сохранение и загрузка модели
+    ```py
+    mlflow.sklearn.log_model(model, "model")
+    model = mlflow.pyfunc.load_model("runs:/<run_id>/model")
+    ```
+    См. также Model Registry
+
+* Теги. Полезны чтобы быстро помечать или отличать запуски (runs)
+    ```py
+    mlflow.set_tag("env", "staging")  # Одиночный тег
+    mlflow.set_tags({"framework": "PyTorch", "commit_hash": "abc123"})  # Несколько тегов
+    ```
 
 Позволяет выгружать результаты логирования экспериментов в DataFrame. 
+
+Отедльная функция - автологирование. Автоматически захватывает параметры, метрики, артефакты и модели при использовании стандартных методов фреймворков. Например .fit, .score гиперпараметры моделей и т.п. Поддерживаеммые фреиворки: Sklearn, PyTorch, TensorFlow, XGBoost, Hugging Face и др.
 
 Можно запустить локальный сервер для изучения результатов экспериментов с UI.
 
@@ -191,10 +231,29 @@ mlflow.log_metric("Test.MSE", mse)
 mlflow.end_run()
 ```
 
-Запуск сервера:
+Запуск сервера [из папки проекта]:
 ```bash
 mlflow ui
 ```
 
+Сохранить версию jupyter тетрадки или любой другой файл:
+```py
+import mlflow
+mlflow.log_artifact("my_file.ipynb") 
+```
+
+```py
+# если нужно что-то поменять поелс вызова end_run
+with mlflow.start_run(run_id="5003f2d31f9f46d4a2fcc5d0c815e050") as run:
+    mlflow.log_metric("Site.MSE",20)
+```
+run_id можно посмотреть открыв отдельный run в веб-интерфейсе.
 
 Документация: https://mlflow.org/docs/latest/getting-started/index.html
+
+
+## См. также
+* Model Registry
+* Деплой моделей
+* MLflow Pipelines
+* Мониторинг моделей в продакшне

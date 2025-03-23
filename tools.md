@@ -102,17 +102,34 @@ d = a @ b
 # Инструменты МО
 
 
-## IDE - Jyputer \ Jyputer in VS Code
+## IDE - Jupyter \ Jupyter in VS Code
 [Jupyter Lab](https://jupyter.org/) - IDE для анализа данных и МО, основной вид виде интерактивного блокнота (notebook, ipynb файл).
 - Имеет веб-интерфейс, поэтому сервер может быть запущен не только локально но и на любой машине, к которой есть доступ.
 - Основной типа файлов IDE - Блокнот (notebook, тетрадка). Может содержать код на Питоне (и не только); показывать статичные и интерактивные диаграммы, создаваемые на языке программирования; показывать текст в разметке markdown (включая структурирование с помощью заголовков), формулы в LaTeX.
 Позволяет просматривать файлы с табличными данными.
-- Jyputer Lab включает в себя возможности среды Jyputer Notebook. 
-- Подобная Jyputer Notebook IDE (в качестве основы) используется в [Google Colaboratory](https://colab.research.google.com/), среде Kaggle, специальных сервисах для МО в Яндекс Облаке и др. местах
+- Jupyter Lab включает в себя возможности среды Jupyter Notebook. 
+- Подобная Jupyter Notebook IDE (в качестве основы) используется в [Google Colaboratory](https://colab.research.google.com/), среде Kaggle, специальных сервисах для МО в Яндекс Облаке и др. местах
 - Поддерживает плагины
 
-**VS Code** тоже поддерживает работу с Jyputer Notebook, позволяет открывать и запускать Jyputer сервер прямо из окна редактора.
+**VS Code** тоже поддерживает работу с Jupyter Notebook, позволяет открывать и запускать Jupyter сервер прямо из окна редактора.
 Есть возможность выполнять открытый локально ipynb файл на удалённом сервере: <kbd>F1</kbd> > `Notebook: Select notebook kernel` (или нажать на кнопку kernel справа вверху, в открытом блокноте) > Select another > Вставить URL сервера с Jupyter.
+Работа, при этом будет по своему принципу похожа на работу в google colaboratory. Все файлы, к которым обращается код должны быть на удалённом сервере. Но файл ipynb может быть локальным.
+
+**Запуск Jupyter сервера**
+Короткий вариант, без создания файла конфигурации:
+```bash
+jupyter notebook --no-browser --port=8888 --ip=0.0.0.0
+
+# для докального запуска без контроля доступа к серверу
+jupyter lab --no-browser --ip=127.0.0.1 --NotebookApp.token=''
+
+```
+Если не указать `--ip=0.0.0.0` то, по умолчанию сервер будет запущен на 127.0.0.1 и будет недоступен из сети.
+
+URL, по которому будет доступе сервер, можно видеть в выводе после запуска.
+
+
+
 
 
 ### Некоторые горячие клавиши
@@ -140,6 +157,11 @@ d = a @ b
 - [jupyterlab-execute-time](https://github.com/deshaw/jupyterlab-execute-time): Execute Time Plugin for Jupyter Lab
 - https://github.com/jtpio/jupyterlab-theme-toggle
 
+
+### Расширения VS Code
+- Jupyter, Jupyter Notebbok Renderer
+- Data Wrangler - для удобного просмотра таблиц DataFrame
+- RainbovCSV - для подсветки колонок в CVS файлах
 
 # Языковые модели с доступом к серверу по API
 - OpenAI. ChatGPT (https://platform.openai.com/api-keys)
@@ -182,6 +204,13 @@ todo: формула softmax с temperature
 Маленькие значения – более детерминированный ответ, большие (например 0.9) – более случайный.
 
 ### ollama
+- Имеет консольный интерфейс
+- Может скачивать файлы LLM из 
+  - собственного репозитория (ollama.com) 
+  - hugging face, если LLM записано в GGUF формате
+- Работает как сервер, предоставляя доступ к моделям через REST API по протоколу HTTP
+- Есть режим чата прямо в консоли 
+
 Установка в Linux:
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
@@ -199,6 +228,17 @@ ollama run gemma:2b
 `gemma:2b` - название модели.
 
 В Linux модели сохраняются в каталог `~/.ollama/models`
+
+
+**Скачивание LLM**
+```bash
+ollama pull gemma:2b
+# скачивание с сайта hugging face
+ollama ollama run hf.co/{username}/{repository}
+
+ollama run hf.co/evgensoft/T-pro-it-1.0-Q4_K_M-GGUF
+
+```
 
 **Запуск сервера**
 ```bash
@@ -218,12 +258,12 @@ URL для обращения по REST API:
 Модель, запущенная на сервере, не имеет состояния. Поэтому при обращении к ней по API необходимо передавать весь необходимый контекст или историю чата.
 
 
-Остановка сервера (запущенного как сервис) 
+**Остановка сервера (запущенного как сервис)**
 ```bash
 systemctl stop ollama.service
 ```
 
-Проверка API:
+**Проверка API:**
 ```bash
 curl http://localhost:11434/api/generate -d '{"model": "llama2", "prompt": "Why is the sky blue?"}
 ```
@@ -288,7 +328,7 @@ docker ps
 
 ### llama.cpp
 - Производительнее до двух раз по сравнению с Ollama
-- использует формат `ggml` для моделей
+- Использует формат `ggml` для моделей
 - Есть python-пакет
 - Нет удобного встроенного способа скачивать модели, как у Ollama и др.
 

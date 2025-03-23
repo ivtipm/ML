@@ -2,3 +2,4 @@ my_venv/
 venv/
 .venv/
 *.pyc
+ML/example.ipynb

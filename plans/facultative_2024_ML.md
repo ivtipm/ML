@@ -279,7 +279,7 @@ https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg?usp=sh
     - https://colab.research.google.com/drive/1IBdKzbY3sQBb7C2o03rZlLH_oYBVOpb1#scrollTo=eSd8OLqWS0oj
 
 - BERT - нейросетевая языковая модель на основе архитектуры трансформера. Её вариант может выдавать векторные представления текста.
-    - https://colab.research.google.com/drive/1Aacg8tUXXNICQ0SetvqoIPD7GXnm0Ymx#scrollTo=ac4c1025-a5e7-4684-a14f-f133b7860701
+    - https://drive.google.com/file/d/1XDLKd42U5UcDSfwXtDgR3uJuFND9xCvS
 
 
 ## Домашнее задание 5. Классификация текстов (+-)
@@ -316,7 +316,7 @@ Data = pd.DataFrame({'text': text, 'label':labels[0].values})
 Можно использовать другие датасеты из репозиторий. После согласования с преподавателем можно выбрать любой другой текстовый датасет.
 
 Создайте векторные представления текстов, с помощью нейросети основанной на архитектуре transformer, например (LABSE, Language-agnostic BERT Sentence Embedding).
-Пример: https://colab.research.google.com/drive/1Aacg8tUXXNICQ0SetvqoIPD7GXnm0Ymx#scrollTo=e94a2272-af5a-4a17-a253-3fbcededbeb6
+Пример: https://drive.google.com/file/d/1XDLKd42U5UcDSfwXtDgR3uJuFND9xCvS
 
 Далее используйте полученные признаки (векторные представления, Embeddings) чтобы решить задачу классификации любым из известных вам методов классификации (SVM, решающее дерево, случайные лес и др.). 
 
