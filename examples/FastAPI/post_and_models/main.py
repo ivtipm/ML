@@ -34,7 +34,7 @@ class UserResponse(BaseModel):
 # специальная функция, котора будет вызываться при старте сервера
 @app.on_event("startup")
 async def generate_openapi_yaml():
-    # астоматическая генерации спецификации для API в yaml
+    # автоматическая генерации спецификации для API в yaml
     openapi_schema = app.openapi()
     with open("openapi.yaml", "w") as f:
         yaml.dump(openapi_schema, f, default_flow_style=False, allow_unicode=True)
