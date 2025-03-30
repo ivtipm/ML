@@ -1,37 +1,42 @@
 """
-Пример сервера, который отвечает на запросы по API
-Используется модель классификатор ирисов
+Пример сервера, который отвечает на запросы по HTTP API
+
 """
 from random import randint
 from fastapi import FastAPI
-import joblib
+
 
 
 app = FastAPI()
-Model = joblib.load("rand_forest_model_sk150_joblib142.joblib")
-Labels = ["Iris-Setosa", "Iris-Versicolour", "Iris-Virginica"]
-print("Model Loaded")
 
 
 # get-запрос для корневого эндпоинта, используется в качестве health-check
 @app.get("/")
 async def root():
+    """health-check; в норме выдаёт Ok"""
+    # docstring будет виден в /doc
     return {"status": "Ok"}
 
 
-@app.get("/classify")
-async def classify_iris(sep_len: float, sep_width:float, pet_len:float, pet_width:float):
-    """Возвращает класс (ирис) для заданных значений длины и ширины лепестка и чашелистика"""
-    global Model, Labels
-    
-    answer = Model.predict( [[sep_len, sep_width, pet_len, pet_width]] )
-    return {"class": Labels[int(answer[0])]}
+@app.get("/number")
+async def number():
+    """Выдаёт случайное число от 0 до 100 включительно"""
+    return {"number":  randint(0,100)}
+
+# специальные параметры (summary и description) декоратора станут частью документации
+@app.get("/number_with_params", summary="тут короткое описание эндпоинта", description="а тут детальное")
+async def number(min:int, max:int):
+    """Выдаёт случайное число от min до max включительно"""
+    # todo: проверить: min < max
+    return {"number":  randint(min,max)}
 
 
-# эндпоинты / и /classify в терминах FastAPI называются маршрутами
+# эндпоинты /, /number и .number_with_params в терминах FastAPI называются маршрутами
 
 # автоматически по пути /docs доступна документация к API в формате фреимворка Swagger
 # тут же можно и выполнить запрос чтобы протестировать
+
+ 
 
 """
 Запуск
@@ -48,11 +53,11 @@ async def classify_iris(sep_len: float, sep_width:float, pet_len:float, pet_widt
 """
 
 
-# Проверить:
+# Проверить работоспособность:
 """
 
 curl -X 'GET' \
-  'http://localhost:8880/classificate?sep_len=2&sep_width=2&pet_len=2&pet_width=2' \
+  'http://127.0.0.1:8880/number_with_params?min=-50&max=0' \
   -H 'accept: application/json'
 
 или зайти на страницу /doc и сформировать запрос там
