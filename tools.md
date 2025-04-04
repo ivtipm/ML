@@ -269,6 +269,9 @@ curl http://localhost:11434/api/generate -d '{"model": "llama2", "prompt": "Why 
 ```
 
 
+
+
+
 **Некоторые модели**
 - llama3.2 
 - IlyaGusev/saiga_llama3_8b — llama3 дополнительно дообученная для русского языка
@@ -302,6 +305,54 @@ Flags:
 
 </details>
 
+#### Другие возможности
+
+**Эмбеддинги текстов**
+Ollama также поддерживает модели для созданиия эмбеддингов текстов: https://ollama.com/blog/embedding-models
+
+Для этого использутся специальные модели. Например:
+
+```bash
+ollama pull mxbai-embed-large
+```
+
+Доступ по REST API:
+```bash
+curl http://localhost:11434/api/embed -d '{
+  "model": "mxbai-embed-large",
+  "input": "Llamas are members of the camelid family"
+}
+```
+
+**Вызов функций**\
+https://ollama.com/blog/tool-support
+
+Модели с такими возможностями в библиотеке ollama приведены с тегом `tools`.
+
+
+**Мультимодальные модели с поддержкой анализа изображений**\
+https://ollama.com/blog/vision-models
+
+Модели с такими возможностями в библиотеке ollama приведены с тегом `vision`.
+
+```py
+import ollama
+
+res = ollama.chat(
+	model="gemma3:4b",
+	messages=[
+		{
+			'role': 'user',
+			'content': 'Describe this image:',
+			'images': ['./some-image.jpg']
+		}
+	]
+)
+
+# предполагается, что файл some-image.jpg находится в текущем каталоге; он будет отправлен модели автоматически 
+print(res['message']['content'])
+
+```
 
 #### Запуск докер образа
 
