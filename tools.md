@@ -70,6 +70,9 @@ GPU  Temp   AvgPwr  SCLK    MCLK   Fan  Perf  PwrCap  VRAM%  GPU%
 watch -n 0.5 rocm-smi
 ```
 
+Мониторинг загрузки видеопамити и GPU доступен также в программе btop++, еслли установлен пакет rocm-smi
+<img src="assets\btop_gpu.png" width=600 > 
+
 **Пример для быстрой проверки работоспособности ROCm**
 
 ```python
