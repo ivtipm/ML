@@ -70,6 +70,9 @@ GPU  Temp   AvgPwr  SCLK    MCLK   Fan  Perf  PwrCap  VRAM%  GPU%
 watch -n 0.5 rocm-smi
 ```
 
+Мониторинг загрузки видеопамити и GPU доступен также в программе btop++, еслли установлен пакет rocm-smi
+<img src="assets\btop_gpu.png" width=600 > 
+
 **Пример для быстрой проверки работоспособности ROCm**
 
 ```python
@@ -269,6 +272,9 @@ curl http://localhost:11434/api/generate -d '{"model": "llama2", "prompt": "Why 
 ```
 
 
+
+
+
 **Некоторые модели**
 - llama3.2 
 - IlyaGusev/saiga_llama3_8b — llama3 дополнительно дообученная для русского языка
@@ -301,6 +307,70 @@ Flags:
 ```
 
 </details>
+
+#### Другие возможности
+
+**Эмбеддинги текстов**
+Ollama также поддерживает модели для созданиия эмбеддингов текстов: https://ollama.com/blog/embedding-models
+
+Для этого использутся специальные модели. Например:
+
+```bash
+ollama pull mxbai-embed-large
+```
+
+Доступ по REST API:
+```bash
+curl http://localhost:11434/api/embed -d '{
+  "model": "mxbai-embed-large",
+  "input": "Llamas are members of the camelid family"
+}
+```
+
+**Вызов функций**\
+https://ollama.com/blog/tool-support
+
+Модели с такими возможностями в библиотеке ollama приведены с тегом `tools`.
+
+
+**Мультимодальные модели с поддержкой анализа изображений**\
+https://ollama.com/blog/vision-models
+
+Модели с такими возможностями в библиотеке ollama приведены с тегом `vision`.
+
+```py
+import ollama
+
+res = ollama.chat(
+	model="gemma3:4b",
+	messages=[
+		{
+			'role': 'user',
+			'content': 'Describe this image:',
+			'images': ['./some-image.jpg']
+		}
+	]
+)
+
+# предполагается, что файл some-image.jpg находится в текущем каталоге; он будет отправлен модели автоматически 
+print(res['message']['content'])
+
+```
+
+
+**Запуск с поддержкой ROCm для видеокарт от AMD**:
+
+При проблемах совместимости с аппаратным обеспечением (GPU не имеет полной поддерки ROCm) выполнение кода на GPU может быть возможным только после подмены переменной `HSA_OVERRIDE_GFX_VERSION=10.3.0` - версии графического ядра.
+Подена версии имеет смысл, если GPU фактически поддерживает ROCm, но в драйверах эта поддержка искуственно ограничена. Этот подход протестирован и срабатывает на Ubuntu 24.10 даже без установки офоициальных драйверов от AMD, только с драйверами по умолчанию.
+Для использования GPU потребуется добавить текущего пользователя, котоырй запускает ollama в группу render:
+```bash
+sudo usermod -a -G render $USER
+```
+
+Запсук на видеокарте:
+```bash
+OLLAMA_HOST="127.0.0.1:11434" HSA_OVERRIDE_GFX_VERSION=10.3.0 ollama serve
+```
 
 
 #### Запуск докер образа
