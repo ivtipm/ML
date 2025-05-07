@@ -323,8 +323,8 @@
 https://github.com/ivtipm/ML/blob/main/tasks/clustering.md
 
 
-# Лекция 8. Ансамбли моделей
-12 апреля
+# Лекция. Ансамбли моделей
+7 мая
 - Случайный лес.
 - Комитет
 - Бэггинг
@@ -345,8 +345,8 @@ https://github.com/ivtipm/ML/blob/main/tasks/clustering.md
 - Дополните выводы
 
 
-# Лекция 9. Обработка текстовых данные
-19 апреля
+# Лекция. Обработка текстовых данных
+30 апреля
 - Разведочный анализ и представление текста. Токенизация. Стемминг. Лемматизация. Стоп-слова. Частоты слов. Облака слов.  
 - Представление текста: мешок слов, tf-idf, нейросетевые методы получения представлений текста
 - Векторные представления слов. Word2vec, Glove и другие. Векторные представления из пакет sentence transformer;
@@ -358,7 +358,7 @@ https://github.com/ivtipm/ML/blob/main/tasks/clustering.md
 
 upd: Примените нейросетевую модуль на основе архитектуры transformer для создания векторных представлений текстов.
 Используйте векторные представления текстов для классификации.\
-Пример: https://colab.research.google.com/drive/1Aacg8tUXXNICQ0SetvqoIPD7GXnm0Ymx#scrollTo=e94a2272-af5a-4a17-a253-3fbcededbeb6
+Пример: https://colab.research.google.com/drive/1XDLKd42U5UcDSfwXtDgR3uJuFND9xCvS
 
 
 
