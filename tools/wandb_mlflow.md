@@ -149,6 +149,8 @@ neptune.ai, comet_ml, mlflow
 # Ml Flow
 (https://mlflow.org/)[Ml Flow] - альтернатива WanDB с открытым исходным кодом. Помимо прочего позволяет логировать артефакты, такие как графики или файлы, в том числе ipynb.
 
+<img src="ml_flow_architect.png" width=600>
+
 **Установка**:  
 `pip install mlflow`
 
@@ -193,7 +195,7 @@ neptune.ai, comet_ml, mlflow
 
 Можно запустить локальный сервер для изучения результатов экспериментов с UI.
 
-<img src="https://mlflow.org/img/hero.png" width=400>
+
 
 Пример:
 ```python
@@ -243,7 +245,7 @@ mlflow.log_artifact("my_file.ipynb")
 ```
 
 ```py
-# если нужно что-то поменять поелс вызова end_run
+# если нужно что-то поменять поcле вызова end_run
 with mlflow.start_run(run_id="5003f2d31f9f46d4a2fcc5d0c815e050") as run:
     mlflow.log_metric("Site.MSE",20)
 ```
