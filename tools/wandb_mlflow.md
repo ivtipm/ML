@@ -260,14 +260,25 @@ run_id можно посмотреть открыв отдельный run в в
 
 Документация: https://mlflow.org/docs/latest/getting-started/index.html
 
+**Показать таблицу с экспериментами (runs)**
+```py
+from mlflow.entities import ViewType
+
+
+# experiments_df = mlflow.search_runs(experiment_ids=["535947039481366833"], run_view_type=ViewType.ALL, search_all_experiments=True)
+
+experiments_df = mlflow.search_runs()
+
+experiments_df
+```
 
 ### ML Flow UI
 
-Пример таблицы с экпериментами
-<img href="tools/ml_flow_table0.png" width=400>
+Пример таблицы с экпериментами\
+<img src="ml_flow_table0.png" width=1100>
 
-Выбор экспериментов для сравнения
-<img href="tools/ml_flow_compare.png" width=400>
+Выбор экспериментов для сравнения\
+<img src="ml_flow_compare.png" width=600>
 
 ## См. также
 * Model Registry
