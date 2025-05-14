@@ -261,6 +261,14 @@ run_id можно посмотреть открыв отдельный run в в
 Документация: https://mlflow.org/docs/latest/getting-started/index.html
 
 
+### ML Flow UI
+
+Пример таблицы с экпериментами
+<img href="tools/ml_flow_table0.png" width=400>
+
+Выбор экспериментов для сравнения
+<img href="tools/ml_flow_compare.png" width=400>
+
 ## См. также
 * Model Registry
 * Деплой моделей
