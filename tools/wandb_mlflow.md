@@ -1,4 +1,11 @@
-# wandb. Weights and Biases
+# Инструменты для отслеживания экспериментов
+- Weights & Biases (W&B)
+- MLflow
+- ClearML
+- Comet.ml
+- Neptune.ai 
+
+# WandB. Weights and Biases
 
 Библиотека и сервис для сбора информации об обучении моделей,  ноутбуков (jupter notebook) и др. возможностями.
 
