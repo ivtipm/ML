@@ -1,4 +1,11 @@
-# wandb. Weights and Biases
+# Инструменты для отслеживания экспериментов
+- Weights & Biases (W&B)
+- MLflow
+- ClearML
+- Comet.ml
+- Neptune.ai 
+
+# WandB. Weights and Biases
 
 Библиотека и сервис для сбора информации об обучении моделей,  ноутбуков (jupter notebook) и др. возможностями.
 
@@ -149,6 +156,8 @@ neptune.ai, comet_ml, mlflow
 # Ml Flow
 (https://mlflow.org/)[Ml Flow] - альтернатива WanDB с открытым исходным кодом. Помимо прочего позволяет логировать артефакты, такие как графики или файлы, в том числе ipynb.
 
+<img src="ml_flow_architect.png" width=600>
+
 **Установка**:  
 `pip install mlflow`
 
@@ -193,7 +202,7 @@ neptune.ai, comet_ml, mlflow
 
 Можно запустить локальный сервер для изучения результатов экспериментов с UI.
 
-<img src="https://mlflow.org/img/hero.png" width=400>
+
 
 Пример:
 ```python
@@ -243,7 +252,7 @@ mlflow.log_artifact("my_file.ipynb")
 ```
 
 ```py
-# если нужно что-то поменять поелс вызова end_run
+# если нужно что-то поменять поcле вызова end_run
 with mlflow.start_run(run_id="5003f2d31f9f46d4a2fcc5d0c815e050") as run:
     mlflow.log_metric("Site.MSE",20)
 ```
@@ -251,6 +260,25 @@ run_id можно посмотреть открыв отдельный run в в
 
 Документация: https://mlflow.org/docs/latest/getting-started/index.html
 
+**Показать таблицу с экспериментами (runs)**
+```py
+from mlflow.entities import ViewType
+
+
+# experiments_df = mlflow.search_runs(experiment_ids=["535947039481366833"], run_view_type=ViewType.ALL, search_all_experiments=True)
+
+experiments_df = mlflow.search_runs()
+
+experiments_df
+```
+
+### ML Flow UI
+
+Пример таблицы с экпериментами\
+<img src="ml_flow_table0.png" width=1100>
+
+Выбор экспериментов для сравнения\
+<img src="ml_flow_compare.png" width=600>
 
 ## См. также
 * Model Registry

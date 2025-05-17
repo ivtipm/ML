@@ -25,5 +25,5 @@ https://pytorch.org/text/stable/datasets.html#text-classification
 
 
 ## Примеры кода
-
-https://github.com/ivtipm/ML/blob/main/examples/text/text.md
+- Извлечение признаков (эмбеддинги) текста: https://colab.research.google.com/drive/1XDLKd42U5UcDSfwXtDgR3uJuFND9xCvS#scrollTo=671c40ae
+* https://github.com/ivtipm/ML/blob/main/examples/text/text.md
