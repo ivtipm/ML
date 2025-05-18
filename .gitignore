@@ -5,3 +5,5 @@ venv/
 ML/example.ipynb
 
 .vscode
+
+lab.*

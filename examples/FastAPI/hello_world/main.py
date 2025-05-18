@@ -23,6 +23,7 @@ async def number():
     """Выдаёт случайное число от 0 до 100 включительно"""
     return {"number":  randint(0,100)}
 
+
 # специальные параметры (summary и description) декоратора станут частью документации
 @app.get("/number_with_params", summary="тут короткое описание эндпоинта", description="а тут детальное")
 async def number(min:int, max:int):
