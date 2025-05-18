@@ -54,10 +54,12 @@
 7. Временной ряд, RNN, LSTM: [colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc](https://colab.research.google.com/drive/1IDf2w2WFmkcSG70-3Fl-Ylx1aDbHJoQc?usp=sharing)
 8. Обработка данных, деревья решений, случайный лес, апсемлинг (ADASYN) и андерсемплинг (TomekLinks): [colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7](https://colab.research.google.com/drive/1oudif62hPceY8h_1kOXd8A8QoPh2gTT7?usp=sharing)
 
-10. [Классификация текстов, Embeddings, LSTM (Keras)](https://github.com/ivtipm/ML/blob/main/examples/text/text_keras.md)
+10. Обработка и анализ текстов:
+    - [Классификация текстов, Embeddings, LSTM (Keras)](https://github.com/ivtipm/ML/blob/main/examples/text/text_keras.md)
+    - [Классификация текстов, feature extraction, BERT, sentence embedding]: https://colab.research.google.com/drive/1XDLKd42U5UcDSfwXtDgR3uJuFND9xCvS#scrollTo=671c40ae
+    - Пример использования BERT для создания векторных представлений текстов: https://colab.research.google.com/drive/1Aacg8tUXXNICQ0SetvqoIPD7GXnm0Ymx?usp=sharing
     - http://nlpprogress.com — каталог последних достижений и дастасетов по областям NLP 
-
-11. Пример использования BERT для создания векторных представлений текстов: https://colab.research.google.com/drive/1Aacg8tUXXNICQ0SetvqoIPD7GXnm0Ymx?usp=sharing
+    - Короткая шпаргалка по использованию Sentence Embedding: https://miro.com/app/board/uXjVNQC1rq8=/?moveToWidget=3458764608088989698&cot=14
 
 ### Разное
 1. Интерактивные графики, уменьшение размерности, веб-формы (plotly, PCA, gradio): [colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s](https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s?usp=sharing)
