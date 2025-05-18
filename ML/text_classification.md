@@ -24,6 +24,9 @@ https://pytorch.org/text/stable/datasets.html#text-classification
 5. https://github.com/ivtipm/ML/tree/main/datasets
 
 
-## Примеры кода
-- Извлечение признаков (эмбеддинги) текста: https://colab.research.google.com/drive/1XDLKd42U5UcDSfwXtDgR3uJuFND9xCvS#scrollTo=671c40ae
-* https://github.com/ivtipm/ML/blob/main/examples/text/text.md
+## Ссылки
+- Слайды: https://docs.google.com/presentation/d/1o1TN-hI9BhVakKm4xI_S9ZS-lGV68iBUt6h3cX-DWQg/edit#slide=id.p 
+- Пример [анализ теста, подготовка текста для TF-IDF, Word2vec, SVM, классификация]:  https://colab.research.google.com/drive/1yOnvYUbbu7b2sgnh4vn1csis9PWAss_f
+- Извлечение признаков (эмбеддингов) текста [feature extraction, BERT, sentence embedding]: https://colab.research.google.com/drive/1XDLKd42U5UcDSfwXtDgR3uJuFND9xCvS#scrollTo=671c40ae
+- Шпаргалка по обработке и подготовке текстов: https://github.com/ivtipm/ML/blob/main/examples/text/text.md
+- Короткая шпаргалка по использованию Sentence Embedding: https://miro.com/app/board/uXjVNQC1rq8=/?moveToWidget=3458764608088989698&cot=14

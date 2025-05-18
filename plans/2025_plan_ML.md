@@ -329,14 +329,15 @@
 - Представление текста: мешок слов, tf-idf, нейросетевые методы получения представлений текста
 - Векторные представления слов. Word2vec, Glove и другие. Векторные представления из пакет sentence transformer;
 - Классификация текстов. Анализ тональности текстов.
+
+
+<br>
+
 - Слайды: https://docs.google.com/presentation/d/1o1TN-hI9BhVakKm4xI_S9ZS-lGV68iBUt6h3cX-DWQg/edit#slide=id.p 
-- Пример:  https://colab.research.google.com/drive/1yOnvYUbbu7b2sgnh4vn1csis9PWAss_f
-
-- Отслеживание экспериментов: https://github.com/ivtipm/ML/blob/main/wandb.md
-
-upd: Примените нейросетевую модуль на основе архитектуры transformer для создания векторных представлений текстов.
-Используйте векторные представления текстов для классификации.\
-Пример: https://colab.research.google.com/drive/1XDLKd42U5UcDSfwXtDgR3uJuFND9xCvS
+- Пример [анализ теста, подготовка текста для TF-IDF, Word2vec, SVM, классификация]:  https://colab.research.google.com/drive/1yOnvYUbbu7b2sgnh4vn1csis9PWAss_f
+- Извлечение признаков (эмбеддингов) текста [feature extraction, BERT, sentence embedding]: https://colab.research.google.com/drive/1XDLKd42U5UcDSfwXtDgR3uJuFND9xCvS#scrollTo=671c40ae
+- Шпаргалка по обработке и подготовке текстов: https://github.com/ivtipm/ML/blob/main/examples/text/text.md
+- Короткая шпаргалка по использованию Sentence Embedding: https://miro.com/app/board/uXjVNQC1rq8=/?moveToWidget=3458764608088989698&cot=14
 
 
 
@@ -372,7 +373,7 @@ upd: Примените нейросетевую модуль на основе 
 
 
 
-# [Домашнее задание. Классификация текстов](https://github.com/ivtipm/ML/blob/main/ML/text_classification.md)
+# [Домашнее задание. Классификация текстов](../ML/text_classification.md)
 
 
 # Домашнее задание. Отслеживание экспериментов и сравнение моделей (WB, MLFlow)
@@ -428,10 +429,6 @@ upd: Примените нейросетевую модуль на основе 
 - Обучение и переобучение 
 - Слайды: https://docs.google.com/presentation/d/1YCJhQIj2BV42sDLKtxmytcYW5W39EJceYfqrYT7bKNo/edit#slide=id.p
 - Пример: https://colab.research.google.com/drive/1YtK4an7UAhnxTmhmQzZd6Eo3esfv6TL3?usp=sharing#scrollTo=hCiu6Jn2d8JE&uniqifier=1
-
-
-
-
 
 
 
