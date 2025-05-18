@@ -1,10 +1,10 @@
 # Машинное обучение
 
-### [Магистратура. Очное. 2025. Весна. Методы машиннного обучения](plans/2025_plan_ML.md)
+### [Магистратура. Очное. 2025. Весна. Методы машинного обучения](plans/2025_plan_ML.md)
 ### [Магистратура. Очное. 2024. Осень. Нейросети](plans/2024_NN.md)
-### [Магистратура. Очное. 2024. Весна. Методы машиннного обучения](plans/2024_plan.md)
+### [Магистратура. Очное. 2024. Весна. Методы машинного обучения](plans/2024_plan.md)
 ### Магистратура. Заочное. 2024
-- [Весна. Методы машиннного обучения.](plans/2024_distance.md)
+- [Весна. Методы машинного обучения.](plans/2024_distance.md)
 - [Осень. Нейросети.](plans/2024_NN_dist.md)
 ### [ДПО Курс. 2024. Весна. Машинное обучение](plans/facultative_2024_ML.md)
 
@@ -73,10 +73,11 @@
 # Ссылки
 ## Теория
 - Классические методы МО и начало НС: [https://academy.yandex.ru/handbook/ml](https://academy.yandex.ru/handbook/ml) (материалы ШАД Яндекса)
-- Теория по классическим методам МО с интерактивынми примерами: [mlu-explain.github.io](https://mlu-explain.github.io/)
+- Теория по классическим методам МО с интерактивными примерами: [mlu-explain.github.io](https://mlu-explain.github.io/)
 - Основы нейрокомпьютерных систем [Текст] : учебное пособие / Д. А. Семигузов
 - Deep Learning with PyTorch, Eli Stevens, Luca Antiga, Thomas Viehmann — теория + PyTorch
-- шапаргалка по МО https://ml-cheatsheet.readthedocs.io/en/latest/index.html
+- Шпаргалка по МО https://ml-cheatsheet.readthedocs.io/en/latest/index.html
+
 
 ### Python
 - Изучаем Python. Лутц Марк
@@ -84,20 +85,27 @@
 - https://stepik.org/course/67/syllabus
 - https://github.com/VetrovSV/Programming
 
+
 ## Курсы по глубокому обучению
 - [stepik:Deep Learning (семестр 1, осень 2020)](https://stepik.org/course/82177/promo). Введение в МО, обработка изображений.
 - [stepik:Deep Learning (семестр 2)](https://stepik.org/course/65855/syllabus). Посвящённый обработке текстов и аудиозаписей (материалы доступны, начнётся заново осенью 2021)
+
 
 ## Для практики
 - [Dive into Deep Learning](http://d2l.ai/index.html) — книжка (eng) по глубокому обучению, с примерами и заданиями.
 - [ODS: competitions](http://d2l.ai/index.html) — соревнования по МО
 - [Kaggle](https://www.kaggle.com/)
 
+
 ## ПО
 - [google colaboratory](https://colab.research.google.com) — для запуска кода на python и обучения НС на GPU
+- VS Code. Поддерживает ipynb файлы.
 - [Anaconda](https://www.anaconda.com/products/individual) — дистрибутив для научных вычислений на Python
-- DataSpell (бесплатно для студентов)
+- DataSpell (было бесплатно для студентов до 2022 года)
 - [PyCahrm](https://www.jetbrains.com/ru-ru/pycharm/download/)
+
+
+
 
 ### Библиотеки
 - [sklearn](https://scikit-learn.org/stable/) — классические мтоды МО (python)
@@ -105,6 +113,9 @@
 - [pytorch](https://pytorch.org/) — популярный и гибкий фреимвок для МО
 - [gradio](https://gradio.app/getting_started/) — для быстрого создания веб-интерфесов
 - [wandb](https://wandb.ai/site) — библиотека и интернет-сервис для отслеживания процесса обучения моделей, сравнения метрик моделей
+
+
+
 
 ## Датасеты
 1. [Классификация: Ирисы Фишера](https://archive.ics.uci.edu/ml/datasets/iris) (небольшой простой датасет)
