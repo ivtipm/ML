@@ -143,6 +143,10 @@ tokens = tokenizer('Remember, remember, the 5th of November, Gunpowder, treason 
 vocab( tokens )     # ->  [374, 4, 374, 4, 2, 9750, 7, 10167, 4, 21199, 4, 16087, 5, 122, 3]
 ```
 
+# См. также
+- Способы сравнения текстов
+- Okapi BM25
+
 # Некоторые пакеты для работы с текстом
 - NLTK, spaCy
 - sentence embeddings - пакет от HugginFace для создания эмбеддингов текстов (с помощью моделей на оснвое BERT)
