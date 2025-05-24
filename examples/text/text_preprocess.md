@@ -21,6 +21,9 @@ nltk.download('wordnet')   # для лемматизации
 - bag of words. текст — сумма частот слов
 - TfiDf
 - векторное представление слов (word2vec и др.)
+- Тематическое моделирование 
+  - вектор текста - распределение вероятностей принадлежности текста разным темам
+  - LSI (Latent Semantic Indexing) — вектор, который получается из матрицы «терм–документ» (часто с весами TF-IDF), а затем с помощью сингулярного разложения (SVD) понижает размерность до k-мерного «семантического» пространства;
 - Эмбеддинги текста
 
 
@@ -72,6 +75,16 @@ plt.show()
   lemmatizer = nltk.WordNetLemmatizer() # простой лемматайзер, без учёта части речи
   lemmatizer.lemmatize( 'word' )
   ```
+
+Стеммеры:
+- NLTK: PorterStemmer, SnowballStemmer,  LancasterStemmer              
+- пакет PyStemmer (быстрые реализации стеммеров)
+
+Лемматизаторы:
+- NLTK: WordNet Lemmatizer - лемматизация без определения части речи (POS)
+- spaCy, 
+- pymorphy2, 
+- ...
   
 ## Пример
   - https://colab.research.google.com/drive/1yOnvYUbbu7b2sgnh4vn1csis9PWAss_f?usp=sharing — предобработка (удаление лишних слов, стемминг), TF-IDF кодирование, предсказание с помощью SVM
