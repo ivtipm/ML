@@ -1,3 +1,6 @@
+![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fivtipm%2FML%2Fedit%2Fmain%2FREADME.md&label=Visitors&icon=github&color=%230a58ca)
+
+
 # Машинное обучение
 
 ### [Магистратура. Очное. 2025. Весна. Методы машинного обучения](plans/2025_plan_ML.md)
