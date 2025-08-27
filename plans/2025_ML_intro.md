@@ -21,7 +21,7 @@
 
 4. Обучения с учителем: задачи регрессии и классификации; разделение данных на обучающую (train) и тестовую (test) выборки. [слайды - 1](https://docs.google.com/presentation/d/11zFsnGJAaCzFGGVAjrd_OyNGD-fB6uLr3R-azaof0Qk)
 
-5. Простые модели: линейная и логистическая регрессия. Использование scikit-learn: fit, predict.
+5. Простые модели: линейная и логистическая регрессия. Функции потерь: MSE, LogLoss. Использование scikit-learn: fit, predict.
     - Линейная регрессия: модель и пример: https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx
     - Логистическая регрессия: мдель и пример: https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing#scrollTo=UmtvOZb6DzgM
 
@@ -37,4 +37,4 @@
     - https://github.com/ivtipm/ML/blob/main/examples/docker-ML-web
     - https://github.com/ivtipm/ML/blob/main/examples/docker-api 
 
-# Зачёт
+# Экзамен
