@@ -11,6 +11,7 @@
 
 * Сериализовать модель и подготовить минимальный интерфейс/API (Gradio/FastAPI) для демонстрации результата.
 
+CСм. также курс по программированию для МО: https://github.com/VetrovSV/Programming/blob/master/plans/ML/readme.md
 
 # План
 1. Основы ИИ: определения ИИ, машинного обучения (МО) и их взаимосвязь; отличие от классического программирования; примеры применения. История ИИ. [слайды - 1](https://docs.google.com/presentation/d/11zFsnGJAaCzFGGVAjrd_OyNGD-fB6uLr3R-azaof0Qk)
