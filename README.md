@@ -125,10 +125,25 @@
 
 
 ## Датасеты
+### Классификация
 1. [Классификация: Ирисы Фишера](https://archive.ics.uci.edu/ml/datasets/iris) (небольшой простой датасет)
 2. [Классификация: пингвины](https://github.com/allisonhorst/palmerpenguins) (небольшой простой датасет)
 3. [Классификация: доходы (Adult Data Set)](https://archive.ics.uci.edu/ml/datasets/adult)\
-Каталоги датасетов:
+3. Wheat Seeds Dataset. 7 + 1 признак (3 класса). 210 объектов. \
+https://archive.ics.uci.edu/dataset/236/seeds
+3. Pima Indians Diabetes Dataset. 8 + 1 признак. ~700 объектов.\
+https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+3. Heart Disease. 13 + 1. 303\
+https://archive.ics.uci.edu/dataset/45/heart+disease
+3. Car Evaluation. 6+1. 1728. DВсе признаки категориальные\
+https://archive.ics.uci.edu/dataset/19/car+evaluation
+4. Bank Marketing/ 16+1. 45k\
+https://archive.ics.uci.edu/dataset/222/bank+marketing
+## Регрессия
+1. Abalone. 8+1 признаков. 4k объектов. https://archive.ics.uci.edu/dataset/1/abalone
+
+
+### Каталоги датасетов:
 5. https://github.com/ivtipm/ML/tree/main/datasets
 6. https://huggingface.co/datasets
 7. https://www.kaggle.com/datasets
