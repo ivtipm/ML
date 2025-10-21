@@ -41,6 +41,8 @@ CСм. также курс по программированию для МО: ht
     - https://github.com/ivtipm/ML/blob/main/examples/docker-api 
 
 
+**См. также** [план по Языкам программирования для МО](https://github.com/VetrovSV/Programming/blob/master/plans/ML/readme.md)
+
 # Задания
 
 ## Линейная регрессия
