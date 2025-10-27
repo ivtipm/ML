@@ -18,7 +18,7 @@ CСм. также курс по программированию для МО: ht
 
 2. Жизненный цикл ML-проекта: этапы от бизнес-задачи до развертывания; 
     - CRISP-DM.  [слайды - 1](https://docs.google.com/presentation/d/11zFsnGJAaCzFGGVAjrd_OyNGD-fB6uLr3R-azaof0Qk)
-    - Разведочный анализ данных. 
+    - Разведочный анализ данных. Пример: https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR
         - Пропуски.
         - Выбросы.
         - Запросы к DataFrame.
