@@ -16,7 +16,13 @@ CСм. также курс по программированию для МО: ht
 # План
 1. Основы ИИ: определения ИИ, машинного обучения (МО) и их взаимосвязь; отличие от классического программирования; примеры применения. История ИИ. [слайды - 1](https://docs.google.com/presentation/d/11zFsnGJAaCzFGGVAjrd_OyNGD-fB6uLr3R-azaof0Qk)
 
-2. Жизненный цикл ML-проекта: этапы от бизнес-задачи до развертывания; CRISP-DM.  [слайды - 1](https://docs.google.com/presentation/d/11zFsnGJAaCzFGGVAjrd_OyNGD-fB6uLr3R-azaof0Qk)
+2. Жизненный цикл ML-проекта: этапы от бизнес-задачи до развертывания; 
+    - CRISP-DM.  [слайды - 1](https://docs.google.com/presentation/d/11zFsnGJAaCzFGGVAjrd_OyNGD-fB6uLr3R-azaof0Qk)
+    - Разведочный анализ данных. 
+        - Пропуски.
+        - Выбросы.
+        - Запросы к DataFrame.
+        - one-hot кодирование.
 
 3. Данные для МО: понятия признак (feature) и целевая переменная (target), типы данных, концепция разведочного анализа данных (EDA). [слайды - 1](https://docs.google.com/presentation/d/11zFsnGJAaCzFGGVAjrd_OyNGD-fB6uLr3R-azaof0Qk), [слайды - 2](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM)
 
