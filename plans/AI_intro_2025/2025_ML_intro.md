@@ -11,7 +11,7 @@
 
 * Сериализовать модель и подготовить минимальный интерфейс/API (Gradio/FastAPI) для демонстрации результата.
 
-CСм. также курс по программированию для МО: https://github.com/VetrovSV/Programming/blob/master/plans/ML/readme.md
+См. также курс по программированию для МО: https://github.com/VetrovSV/Programming/blob/master/plans/ML/readme.md
 
 # План
 1. Основы ИИ: определения ИИ, машинного обучения (МО) и их взаимосвязь; отличие от классического программирования; примеры применения. История ИИ. [слайды - 1](https://docs.google.com/presentation/d/11zFsnGJAaCzFGGVAjrd_OyNGD-fB6uLr3R-azaof0Qk)
@@ -31,7 +31,9 @@ CСм. также курс по программированию для МО: ht
 5. Простые модели: линейная и логистическая регрессия. Функции потерь: MSE, LogLoss. Использование scikit-learn: fit, predict.
     - Линейная регрессия: модель и пример: https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx
     - [Короткая шпаргалка по линейной регрессии](https://github.com/ivtipm/ML/blob/main/slides%20etc/linreg/ML_intro_linreg.png?raw=true)
-    - Логистическая регрессия: модель и пример: https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing#scrollTo=UmtvOZb6DzgM
+    - Логистическая регрессия: модель и пример: 
+        - https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing#scrollTo=UmtvOZb6DzgM
+        - https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR#scrollTo=bG_ytuO0xECz
     - *Пайплайны обработки данных и применение модели*
 
 6. Качество модели: метрики для регрессии (MAE, MSE, R²), метрики для классификации (Accuracy, Precision, Recall, F1-score), матрица ошибок, визуальное объяснение недообучения (underfitting) и переобучения (overfitting). Воспроизводимость экспериментов. [слайды - 2](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM)
