@@ -161,6 +161,14 @@
 1. Создайте пайплайн для обработки данных. Добавьте в него модель. Сохраните пайплайн. Постройте веб-сервис на gradio и API сервер на основе полученного пайплайна. См. аналогичное задание по Языкам программирования для МО.
 Интерфейсы сервисов должны позволять ввести значения признаков, получить вероятности классов.
 
+
+**Справка**
+Шпаргалка по Питону, анализу данных и МО: https://miro.com/app/board/uXjVNQC1rq8=/
+
+Примеры:
+- https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing#scrollTo=UmtvOZb6DzgM
+- https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR#scrollTo=bG_ytuO0xECz
+
 ## Генетический алгоритм?
 
 
