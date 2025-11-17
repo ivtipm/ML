@@ -153,6 +153,10 @@ neptune.ai, comet_ml, mlflow
 - Пример интеграции WandB и SKLearn: https://colab.research.google.com/github/wandb/examples/blob/master/colabs/scikit/Simple_Scikit_Integration.ipynb#scrollTo=qpcQ2HDs5LQ2
 
 
+
+
+
+
 # Ml Flow
 (https://mlflow.org/)[Ml Flow] - альтернатива WanDB с открытым исходным кодом. Помимо прочего позволяет логировать артефакты, такие как графики или файлы, в том числе ipynb.
 
