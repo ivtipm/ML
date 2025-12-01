@@ -33,10 +33,16 @@
     - [Короткая шпаргалка по линейной регрессии](https://github.com/ivtipm/ML/blob/main/slides%20etc/linreg/ML_intro_linreg.png?raw=true)
     - Логистическая регрессия: модель и пример:
         - https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh?usp=sharing#scrollTo=UmtvOZb6DzgM
-        - https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR#scrollTo=bG_ytuO0xECz
-    - *Пайплайны обработки данных и применение модели*
+        - Пример разведочного анализа данных (Exploratory data analysis, EDA), подготовки данных - https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR#scrollTo=bG_ytuO0xECz
 
 6. Качество модели: метрики для регрессии (MAE, MSE, R²), метрики для классификации (Accuracy, Precision, Recall, F1-score), матрица ошибок, визуальное объяснение недообучения (underfitting) и переобучения (overfitting). Воспроизводимость экспериментов. [слайды - 2](https://docs.google.com/presentation/d/1mK9CfhwjQtAdJZENV3vU4nCGSkzI8_Ugkv_AavBVEaM)
+
+7. Подготовка данных.
+    - Работа с пропусками, дубликатами, выбросами
+    - Кодирование: унитарный код -- one-hot (OneHotEncoder, .get_dummies), числовое кодирование (LabelEncoder, .map, .apply))
+    - *Пайплайны (конвейеры) обработки данных и применение модели*
+        - sklearn.pipeline.Pipeline, sklearn.compose.ColumnTransformer, sklearn.preprocessing.FunctionTransformer
+        - Кодирования + масштабирования данных 
 
 7. Другие парадигмы в ИИ (Обзор): обучение без учителя (Unsupervised Learning), кластеризация; обучение с подкреплением (Reinforcement Learning), агент, среда, вознаграждение; краткий обзор других направлений.
 
