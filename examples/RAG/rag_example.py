@@ -1,3 +1,14 @@
+"""
+requirements.txt
+# langchain==1.1.0
+# langchain-core==1.1.0
+# langchain-community==0.4.1
+# faiss-cpu==1.13.0
+# sentence-transformers==5.1.2
+# langchain-ollama==1.0.0
+# langchain-huggingface==1.1.0
+"""
+
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
