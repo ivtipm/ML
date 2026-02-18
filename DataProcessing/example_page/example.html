@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Пример: каталог</title>
+  <style>
+    /* Простой CSS для демонстрации селекторов */
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+    nav ul.menu { list-style:none; padding:0; margin:0; display:flex; gap:12px; }
+    nav .menu-link.active { font-weight:700; text-decoration:underline; }
+    .items { list-style:none; padding:0; display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
+    .item > .card { border:1px solid #ddd; padding:12px; border-radius:6px; }
+    .card.featured { border-color:#f1a; background:#fff7fb; }
+    .thumb { max-width:100%; height:auto; display:block; margin-bottom:8px; }
+    .price { color: #118844; font-weight:700; }
+    .badge { display:inline-block; padding:2px 6px; font-size:12px; background:#eee; border-radius:4px; margin-left:6px; }
+    .meta { margin-top:8px; display:flex; gap:8px; align-items:center; }
+    form#subscribe-form { margin-top:18px; }
+    footer { margin-top:20px; color:#666; font-size:13px; }
+  </style>
+</head>
+<body>
+  <header id="site-header">
+    <h1 class="site-title">Магазин неудобных вещей</h1>
+    <nav aria-label="Главная навигация">
+      <ul class="menu">
+        <li><a class="menu-link" href="/">Главная</a></li>
+        <li><a class="menu-link active" href="/catalog">Каталог</a></li>
+        <li><a class="menu-link" href="/about">О нас</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="content">
+    <section class="intro">
+      <p>Короткое введение. Ниже — товары с разными атрибутами и метаданными.</p>
+    </section>
+
+    <section class="products">
+      <ul class="items">
+        <li class="item" data-id="10">
+          <article class="card">
+            <h2 class="title">Неудобная эко-подушка набитая соломой<span class="badge">bestseller</span></h2>
+            <img class="thumb" src="pillow.jpg" alt="Ортопедическая подушка" />
+            <p class="description">Мягкая ортопедическая подушка!</p>
+            <div class="meta">
+              <span class="price" data-price="1990">₽199'990</span>
+              <a class="details" href="/p1" data-id="10">Подробнее</a>
+            </div>
+          </article>
+        </li>
+
+        <li class="item special" data-id="20">
+          <article class="card featured">
+            <h2 class="title">Эргономичный стул на двух ножках</h2>
+            <img class="thumb" src="chair.jpg" alt="Эргономичный стул" />
+            <p class="description">Поддержка спины + регулировка высоты + возможность тренировать вестибюлярный аппарат</p>
+            <div class="meta">
+              <span class="price" data-price="7490">₽740'990</span>
+              <a class="details" href="/p2" data-id="20">Подробнее</a>
+              <button class="buy" aria-label="Купить стул">Купить</button>
+            </div>
+          </article>
+        </li>
+
+        <li class="item" data-id="30">
+          <article class="card">
+            <h2 class="title">Термокружка</h2>
+            <img class="thumb" src="mug.jpg" alt="Термокружка" />
+            <p class="description">Держит тепло до 6 часов, держит комнатную температуру бесконечно долго. Осбенности: дна нет, верх запаян.</p>
+            <div class="meta">
+              <span class="price" data-price="890">₽899 000</span>
+              <a class="details" href="/p3" data-id="30">Подробнее</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="newsletter">
+      <form id="subscribe-form" action="/subscribe" method="post">
+        <label for="email">Подпишитесь на новости:</label>
+        <input id="email" name="email" type="email" placeholder="email@example.com" required>
+        <button type="submit" class="btn">Подписаться</button>
+      </form>
+    </section>
+
+    <section class="reviews">
+      <h3>Отзывы</h3>
+      <ul class="reviews-list">
+        <li class="review" data-review-id="r1"><p><b>Алексей</b>: Отлично!</p></li>
+        <li class="review" data-review-id="r2"><p><b>Мария</b>: Очень удобно.</p></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <p>Автор: <b>Иван</b></p>
+  </footer>
+</body>
+</html>

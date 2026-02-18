@@ -23,7 +23,7 @@ async def root():
 async def classify_iris(sep_len: float, sep_width:float, pet_len:float, pet_width:float):
     """Возвращает класс (ирис) для заданных значений длины и ширины лепестка и чашелистика"""
     global Model, Labels
-    
+
     answer = Model.predict( [[sep_len, sep_width, pet_len, pet_width]] )
     return {"class": Labels[int(answer[0])]}
 
@@ -42,8 +42,8 @@ async def classify_iris(sep_len: float, sep_width:float, pet_len:float, pet_widt
     - app - название объекта FastAPI
     - --reload - перезапускать сервер если исходники изменились
 
-    uvicorn - это легковесный сервер. 
-    FastAPI предоставляет обёртку над обработчиками событий, но ещё нужен сервер, который будет принимать входящее подключение, 
+    uvicorn - это легковесный сервер.
+    FastAPI предоставляет обёртку над обработчиками событий, но ещё нужен сервер, который будет принимать входящее подключение,
     работать с HTTP соединениями.
 """
 
@@ -56,5 +56,4 @@ curl -X 'GET' \
   -H 'accept: application/json'
 
 или зайти на страницу /doc и сформировать запрос там
-
 """
