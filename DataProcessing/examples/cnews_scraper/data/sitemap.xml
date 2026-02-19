@@ -1,6 +1,457 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_tochka_bank_predstavil</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T15:13:18+03:00</news:publication_date>
+          <news:title>«Точка Банк» представил ИИ-мониторинг для проверки сайтов и соцсетей бизнеса на безопасность</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_aktivconsulting_otsenila_uroven</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T15:00:22+03:00</news:publication_date>
+          <news:title>Aktiv.Consulting оценила уровень зрелости ИБ российских компаний</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_rosatom_infrastrukturnye</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T14:55:22+03:00</news:publication_date>
+          <news:title>«Росатом Инфраструктурные решения» перевела Дягилевскую ТЭЦ на отечественное ПО для мониторинга оборудования</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_vk_reklama_zapuskaet_novyj</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T14:35:15+03:00</news:publication_date>
+          <news:title>«VK Реклама» запускает новый объект «Визитки»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-19_microsoft_otvleklas_ot_softa</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T14:13:39+03:00</news:publication_date>
+          <news:title>Microsoft отвлеклась от софта и ударилась в футуристическое «железо». Создан стеклянный заменитель HDD и SSD. Он проработает тысячи лет</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_issledovanie_68_rossiyan</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T14:10:21+03:00</news:publication_date>
+          <news:title>Исследование: 68% россиян готовы к модели добровольного просмотра рекламы в обмен на бесплатные цифровые сервисы</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_otechestvennaya_nejroset</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:58:34+03:00</news:publication_date>
+          <news:title>Отечественная нейросеть поможет находить пропавших людей в Ростове-на-Дону</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_teamly_predstavila_ii-instrument</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:57:12+03:00</news:publication_date>
+          <news:title>Teamly представила ИИ-инструмент для работы с нормативной базой госорганов</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_servis_avito_rasshiril</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:54:12+03:00</news:publication_date>
+          <news:title>Сервис «Авито» расширил возможности для рекламных агентств</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_sistem_elektrik_rasshiryaet</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:52:36+03:00</news:publication_date>
+          <news:title>«Систэм Электрик» расширяет стандартную гарантию на новое поколение однофазных ИБП до 3 лет</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_rutube_zapustit_prodazhu_biletov</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:51:10+03:00</news:publication_date>
+          <news:title>Rutube запустит продажу билетов в кино и диджитал-инвентарь</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_otp_bank_i_gruppa_rubytech_podpisali</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:50:17+03:00</news:publication_date>
+          <news:title>ОТП Банк и группа Rubytech подписали меморандум о стратегическом сотрудничестве</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_notificore_zapustila_integratsiyu</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:49:49+03:00</news:publication_date>
+          <news:title>Notificore запустила интеграцию с amoCRM для автоматизации SMS-коммуникаций</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_gk_vestlink_vypustila</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:46:58+03:00</news:publication_date>
+          <news:title>ГК «ВестЛинк» выпустила обновление экосистемы «Цифровой управленец Linkage» с ИИ-помощником</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_kem_stat_v_kiberbezopasnosti</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:46:11+03:00</news:publication_date>
+          <news:title>Кем стать в кибербезопасности: топ-5 направлений 2026 года</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_kompaniya_mosenergo_zavershila</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:45:48+03:00</news:publication_date>
+          <news:title>Компания «Мосэнерго» завершила внедрение нового хранилища данных на Arenadata DB</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_v_mgu_razrabotali_metod_bolee</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:42:16+03:00</news:publication_date>
+          <news:title>В МГУ разработали метод более точной оценки работы алгоритмов с базами данных</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_gk_solar_hakery_smogli</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:41:29+03:00</news:publication_date>
+          <news:title>ГК «Солар»: хакеры смогли обмануть сотрудника российского госучреждения с помощью фишинга 5 раз</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-19_razrabotchik_astra_linux_preduprezhdaet</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:39:09+03:00</news:publication_date>
+          <news:title>Создатель Astra Linux предупреждает:  В России возник риск кражи  из компаний техники и комплектующих для ПК</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_oborot_internet-magazinov</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:34:07+03:00</news:publication_date>
+          <news:title>Оборот интернет-магазинов вырос на 26%, экспресс-доставка — на 39%: итоги 2025 года в электронной коммерции</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_garda_rasshiryaet_kontrol</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:33:43+03:00</news:publication_date>
+          <news:title>«Гарда» расширяет контроль каналов обмена данными и снижает нагрузку на ИБ</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_infinix_predstavlyaet_flagmanskuyu</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:25:10+03:00</news:publication_date>
+          <news:title>Infinix представляет флагманскую серию Note 60 из трех новых моделей</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_kolichestvo_utechek_dannyh</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:16:59+03:00</news:publication_date>
+          <news:title>Количество утечек данных в финансовой сфере в России выросло в 1,5 раза</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_k2_nejroteh_nazval_ii-trendy</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:16:26+03:00</news:publication_date>
+          <news:title>«К2 НейроТех» назвал ИИ-тренды в здравоохранении: от цифровых ассистентов до предиктивной аналитики</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_messendzher_express_proshel_povtornuyu</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:11:14+03:00</news:publication_date>
+          <news:title>Мессенджер eXpress прошел повторную сертификацию ФСТЭК</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_bolee_15_tysrabochih_mest</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:05:43+03:00</news:publication_date>
+          <news:title>Более 15 тыс. рабочих мест в Курской области переводят на операционные системы «Альт»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_otechestvennyj_server_kompanii</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:05:05+03:00</news:publication_date>
+          <news:title>Отечественный сервер компании «ICL Техно» прошел тестирование на совместимость с инструментами виртуализации «Базис»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_primavera_i_red_soft</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T13:02:40+03:00</news:publication_date>
+          <news:title>«Примавера» и «Ред Софт» заключили соглашение о технологическом партнерстве</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_mts_bank_kontroliruet</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:57:01+03:00</news:publication_date>
+          <news:title>«МТС Банк» контролирует защищенность инфраструктуры с помощью MaxPatrol SIEM</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_iva_technologies_rasshiryaet_stsenarii</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:52:04+03:00</news:publication_date>
+          <news:title>IVA Technologies расширяет сценарии мобильной работы: подтверждена совместимость продуктов с «Ред ОС М»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_infosecurity_hakery_maskiruyut</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:40:30+03:00</news:publication_date>
+          <news:title>Infosecurity: хакеры маскируют вредоносное ПО под проекты договоров и атакуют бизнес</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_analitiki_mts_zafiksirovali</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:38:20+03:00</news:publication_date>
+          <news:title>Аналитики МТС зафиксировали рост интереса к старым iPhone в Нижегородской области</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_uk_sputnik_upravlenie</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:35:31+03:00</news:publication_date>
+          <news:title>УК «Спутник – Управление Капиталом» ведет учет в продуктах «Хомнет:НФО» и «Хомнет:XBRL»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_polzovateli_alisy_ai_ekonomyat</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:31:20+03:00</news:publication_date>
+          <news:title>Пользователи «Алисы AI» экономят в среднем 25% на онлайн-покупках с агентом «Найти дешевле»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_vk_vnedrila_multimodalnuyu</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:29:41+03:00</news:publication_date>
+          <news:title>VK внедрила мультимодальную ИИ-модель в поиск</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-19_haker_vzlomal_servis_bronirovaniya</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:23:59+03:00</news:publication_date>
+          <news:title>Арестован хакер, наловчившийся снимать за 1 евроцент отели ценой 1 тыс. евро за ночь</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_megafon_pridal_4g-uskorenie</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:18:41+03:00</news:publication_date>
+          <news:title>«МегаФон» придал 4G-ускорение крупнейшим городам Брянской области</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_termo_nova_perezapustila</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T12:00:58+03:00</news:publication_date>
+          <news:title>«Термо Нова» перезапустила культуру и собрала команду на трех локациях за три месяца с помощью HR-платформы «МояКоманда»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_bft-holding_i_galaktika</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T11:48:15+03:00</news:publication_date>
+          <news:title>«БФТ-Холдинг» и «Галактика» заключили соглашение о партнерстве в области продвижения ERP-систем</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_mnogodetnym_semyam_podmoskovya</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T11:33:28+03:00</news:publication_date>
+          <news:title>Многодетным семьям Подмосковья стало проще получать выплату при рождении третьего ребенка</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-19_itogi_2025_goda_nekteh_novye</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T11:29:51+03:00</news:publication_date>
+          <news:title>Итоги 2025 года «НЭК.Тех»: новые разработки, собственная ЭКБ и расширение географии</news:title>
+        </news:news>
+    </url>
+    <url>
         <loc>https://www.cnews.ru/news/line/2026-02-19_volonterstvo_novogo_urovnya</loc>
         <news:news>
           <news:publication>
@@ -9,6 +460,17 @@
           </news:publication>
           <news:publication_date>2026-02-19T11:24:47+03:00</news:publication_date>
           <news:title>Волонтерство нового уровня: теперь можно научиться цифровой помощи</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-19_budet_mnogo_zhertvdefitsit</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T11:23:16+03:00</news:publication_date>
+          <news:title>«Будет много жертв». Дефицит флеш-памяти грозит гибелью производителей электроники</news:title>
         </news:news>
     </url>
     <url>
@@ -31,6 +493,17 @@
           </news:publication>
           <news:publication_date>2026-02-19T11:20:28+03:00</news:publication_date>
           <news:title>Служба каталогов Multidirectory и менеджер паролей BearPass совместимы</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-19_konferentsiya_cnews_rossijskie</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T11:20:10+03:00</news:publication_date>
+          <news:title>Конференция CNews «Российские ERP-системы» состоится 19 марта 2026 года</news:title>
         </news:news>
     </url>
     <url>
@@ -108,6 +581,17 @@
           </news:publication>
           <news:publication_date>2026-02-19T10:56:18+03:00</news:publication_date>
           <news:title>Еще 10 тыс. жителей Кировского района Новосибирска получили гигабитный интернет от МТС</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-19_schetnaya_palata_vyyavila_neobosnovannuyu</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T10:48:19+03:00</news:publication_date>
+          <news:title>Счетная палата заявила о лишних тратах на связь в глубинке</news:title>
         </news:news>
     </url>
     <url>
@@ -295,6 +779,17 @@
           </news:publication>
           <news:publication_date>2026-02-19T09:23:20+03:00</news:publication_date>
           <news:title>МТС выяснила, какие умные часы и колонки чаще всего сдают по трейд-ин в Хакасии</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-19_biznes_prosit_uzakonit</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-19T09:21:47+03:00</news:publication_date>
+          <news:title>Бизнес просит узаконить обмен обезличенными данными для обучения ИИ</news:title>
         </news:news>
     </url>
     <url>
@@ -8303,501 +8798,6 @@
           </news:publication>
           <news:publication_date>2026-02-10T09:04:56+03:00</news:publication_date>
           <news:title>Postgres Professional выпустила обновление ProGate 1.1 с поддержкой отказоустойчивых кластеров для крупного бизнеса</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_mts_zashchitila_kirovchan_ot</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T09:02:31+03:00</news:publication_date>
-          <news:title>МТС защитила кировчан от девяти лет спама</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/top/2026-02-06_v_surgutneftegaze_podveli</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T09:00:58+03:00</news:publication_date>
-          <news:title>Переход с SAP на Global ERP: «Сургутнефтегаз» раскрыл промежуточные результаты импортозамещения</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_7_iz_10_ekonomicheski_aktivnyh</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T09:00:35+03:00</news:publication_date>
-          <news:title>7 из 10 экономически активных россиян нравится идея считать отпуска в рабочих днях</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_cicada8_moshenniki_maskiruyutsya</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T08:57:53+03:00</news:publication_date>
-          <news:title>Cicada8: мошенники маскируются под Европол для обмана россиян</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_na_kamchatke_mts_zablokirovala</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T08:48:21+03:00</news:publication_date>
-          <news:title>На Камчатке МТС заблокировала более 10 млн нежелательных звонков за год</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_yugorchane_smogut_zashchitit</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:55:59+03:00</news:publication_date>
-          <news:title>Югорчане смогут защитить от мошеннических звонков детей и пожилых родителей</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_na_platforme_koinovo_otkrylsya</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:40:25+03:00</news:publication_date>
-          <news:title>На платформе «Коиново» открылся 3D-музей полотенца</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_predstavlen_novyj_izognutyj</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:35:42+03:00</news:publication_date>
-          <news:title>Представлен новый изогнутый монитор 5К Acer Nitro EI491CURS — один вместо двух</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_svep_proektiruet_elektrosetevuyu</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:31:15+03:00</news:publication_date>
-          <news:title>СВЭП проектирует электросетевую инфраструктуру в ОЭЗ «Алабуга»</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_v_serii_realme_c85_predstavlen</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:27:44+03:00</news:publication_date>
-          <news:title>В серии Realme C85 представлен IP69 Pro - новый стандарт защиты от влаги</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_podavlyayushchee_bolshinstvo</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:23:20+03:00</news:publication_date>
-          <news:title>Подавляющее большинство россиян ищут квартиру на разных онлайн-ресурсах</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_v_prikame_snizilas_aktivnost</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:19:54+03:00</news:publication_date>
-          <news:title>В Прикамье снизилась активность телефонных мошенников</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_novosibirtsy_stali_chashche_sdavat</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:16:58+03:00</news:publication_date>
-          <news:title>Новосибирцы стали чаще сдавать гаджеты в трейд-ин</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_megafon_usilil_lte_v_kujtunskom</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:14:06+03:00</news:publication_date>
-          <news:title>«МегаФон» усилил LTE в Куйтунском районе</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_mts_predupredit_zhitelej</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:11:28+03:00</news:publication_date>
-          <news:title>МТС предупредит жителей Якутии о мошеннических звонках членам семьи</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_mts_uskorila_internet_na</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T07:06:28+03:00</news:publication_date>
-          <news:title>МТС ускорила интернет на горнолыжном курорте «Горный воздух»</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-10_v_produkte_datasan_poyavilsya</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-10T06:59:56+03:00</news:publication_date>
-          <news:title>В продукте «Датасан» появился модуль для ускоренного обезличивания</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_u_vas_proizoshla_utechka_personalnyh</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T17:48:58+03:00</news:publication_date>
-          <news:title>«У вас произошла утечка персональных данных!». Анатомия мошеннического звонка</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_mts_nizhegorodtsy_smogut_poluchat</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T17:44:02+03:00</news:publication_date>
-          <news:title>МТС: нижегородцы смогут получать уведомления о мошеннических звонках близким</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_vnedrit_ii_v_rabotu_otdela</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T17:41:30+03:00</news:publication_date>
-          <news:title>Внедрить ИИ в работу отдела закупок теперь можно за 5 минут</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/top/2026-02-09_s_dochki_krupnejshego_chipovogo</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T17:35:53+03:00</news:publication_date>
-          <news:title>С «дочки» крупнейшего микроэлектронного холдинга «Элемент» приставы взыскали долги на десятки миллионов</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_iek_group_nachala_prodazhi_modulya</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T16:35:12+03:00</news:publication_date>
-          <news:title>IEK Group начала продажи модуля мониторинга ITK IQData</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_v_bilajne_startovala_novaya</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T16:06:25+03:00</news:publication_date>
-          <news:title>В Билайне стартовала новая акция «3в1»</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_issledovanie_telfinokocrm</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T15:49:29+03:00</news:publication_date>
-          <news:title>Исследование «Телфин», OkoCRM, Unisender: бизнес переходит к «осознанным коммуникациям»</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_analitika_getpayall_kakie_inostrannye</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T15:38:55+03:00</news:publication_date>
-          <news:title>Аналитика GetPayAll: какие иностранные цифровые сервисы стали самыми популярными у россиян в 2025 году</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/top/2026-02-09_rezko_vyrosli_tseny_na_defitsitnoe</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T15:29:49+03:00</news:publication_date>
-          <news:title>Резко выросли цены на сверхтонкое стекловолокно, нужное для производства чипов. Мировой монополист повышает цены, но не объемы выпуска</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_yandeks_market_zapuskaet</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T15:29:01+03:00</news:publication_date>
-          <news:title>«Яндекс Маркет» запускает новый формат ПВЗ</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_v_novoj_versii_platformy</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T15:01:30+03:00</news:publication_date>
-          <news:title>В новой версии платформы Security Vision улучшены визуализация, журналирование и администрирование</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_gaskar_predstavila_obnovlennyj</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T14:59:27+03:00</news:publication_date>
-          <news:title>«Гаскар» представила обновленный цифровой полигон «Небо-22» для подготовки операторов БПЛА</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_obem_zakupok_goszakazchikov</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T14:50:59+03:00</news:publication_date>
-          <news:title>Объем закупок госзаказчиков у малых технологических компаний в 2025 году вырос на 13% и достиг почти 200 млрд рублей</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_issledovanie_ldm_tri_iz_chetyreh</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T14:39:23+03:00</news:publication_date>
-          <news:title>Исследование LDM: три из четырех российских компаний рискуют потерять юридическую силу кадровых документов из-за неверного хранения</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_k2_nejroteh_ii_vyhodit</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T14:34:59+03:00</news:publication_date>
-          <news:title>«К2 НейроТех»: ИИ выходит из пилотов — компании готовы к системной трансформации</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_fix_price_avtomatiziruet_biznes-protsessy</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T14:23:32+03:00</news:publication_date>
-          <news:title>Fix Price автоматизирует бизнес-процессы в Белоруссии</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/top/2026-02-09_v_stane_programmistov_zreet</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T14:11:44+03:00</news:publication_date>
-          <news:title>В стане программистов зреет революция. Разработчики готовятся сбросить Python с первого места в мире по популярности</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_regiony_dopolnitelno_snizhayut</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T14:05:00+03:00</news:publication_date>
-          <news:title>Регионы дополнительно снижают ставки по ИТ-ипотеке</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/top/2026-02-09_navsegda_prekrashchena_razrabotka</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:56:08+03:00</news:publication_date>
-          <news:title>Навсегда прекращена разработка ядра Linux 6, потому что у создателя Linux «закончились пальцы на руках и ногах»</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_richat_zapustila_konstruktor</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:55:45+03:00</news:publication_date>
-          <news:title>Richat запустила конструктор ИИ-ассистентов для бизнеса без программирования</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/top/2026-02-09_veon_zarabotal_127_mln_na_aktsiyah</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:52:59+03:00</news:publication_date>
-          <news:title>Veon заработал $127 млн на акциях украинского телеком-гиганта</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_pochti_27_tysyach_chasov_naletali</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:52:29+03:00</news:publication_date>
-          <news:title>Почти 27 тысяч часов налетали пилоты на тренажерах S7 Airlines в 2025 году</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_volgogradtsy_smogut_poluchat</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:45:15+03:00</news:publication_date>
-          <news:title>Волгоградцы смогут получать уведомления о мошеннических звонках близким</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_trouver_vypustil_robot-pylesos</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:35:50+03:00</news:publication_date>
-          <news:title>Trouver выпустил робот-пылесос, который использует сразу несколько типов насадок для влажной уборки</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_mts_astrahantsy_smogut_poluchat</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:35:43+03:00</news:publication_date>
-          <news:title>МТС: астраханцы смогут получать уведомления о мошеннических звонках близким</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_gid-sekretar_poluchil</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:30:48+03:00</news:publication_date>
-          <news:title>«ГИД-Секретарь» получил функцию автоматического участия во встречах</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_trikolor_vnedril_sobstvennuyu</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:28:10+03:00</news:publication_date>
-          <news:title>«Триколор» внедрил собственную систему обработки персональных данных</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-09_klyuch_k_bezopasnosti_uchenye</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-09T13:28:09+03:00</news:publication_date>
-          <news:title>Ключ к безопасности: ученые усилили квантовую криптографию с помощью нейросети</news:title>
         </news:news>
     </url>
     <url>
