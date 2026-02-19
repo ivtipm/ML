@@ -38,8 +38,7 @@ with sqlite3.connect(path.join(config.DATA_DIR, config.SQL_FILENAME)) as conn:
 
     # если нет таблицы для содержимого, то создаём
     conn.execute(config.CREATE_PAGES_TABLE)
-        #content_hash - хеш содержимого страницы
-        #download_dt - время скачивания страницы
+
 
     # Получаем все страницы со статусом "new"
     cursor = conn.execute(f"SELECT id, url FROM {config.URL_TABLE} WHERE state = ?", (config.UrlStates.TO_PROCESS,))

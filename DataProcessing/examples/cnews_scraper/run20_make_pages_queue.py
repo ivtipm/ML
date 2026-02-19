@@ -5,7 +5,7 @@
 
 import sqlite3
 from os import path
-from config import DATA_DIR, SQL_FILENAME, URL_TABLE, UrlStates, UrlTypes
+from config import DATA_DIR, SQL_FILENAME, CREATE_URLS_TABLE, URL_TABLE, UrlStates, UrlTypes
 
 SITEMAP_FILENAME = path.join(DATA_DIR, "sitemap.xml")
 
@@ -13,13 +13,7 @@ SITEMAP_FILENAME = path.join(DATA_DIR, "sitemap.xml")
 with sqlite3.connect(path.join(DATA_DIR, SQL_FILENAME)) as conn:
     print (f"Создана БД {SQL_FILENAME}")
     # Создаем таблицу с для списка страниц
-    conn.execute("CREATE TABLE IF NOT EXISTS " + URL_TABLE + '''(
-         id INTEGER PRIMARY KEY AUTOINCREMENT
-        ,url TEXT NOT NULL UNIQUE
-        ,type TEXT
-        ,state TEXT
-        ,note TEXT
-    )''')
+    conn.execute(CREATE_URLS_TABLE)
     conn.commit()
 
     print (f"Создана таблица {URL_TABLE}")

@@ -21,12 +21,22 @@ PAGES_HTML_TABLE = "pages_content"
 PAGES_HTML_TABLE = "news"
 """Таблица для хранения данных, полученных после парсинга HTML файлов"""
 
+CREATE_URLS_TABLE = "CREATE TABLE IF NOT EXISTS " + URL_TABLE + '''(
+     id INTEGER PRIMARY KEY AUTOINCREMENT
+    ,url TEXT NOT NULL UNIQUE
+    ,type TEXT
+    ,state TEXT
+    ,note TEXT
+)'''
+
 CREATE_PAGES_TABLE = "CREATE TABLE IF NOT EXISTS " + PAGES_HTML_TABLE + '''(
       id INTEGER PRIMARY KEY AUTOINCREMENT
      ,content TEXT
      ,url TEXT
      ,content_hash TEXT
      ,download_dt TEXT )'''
+     #content_hash - хеш содержимого страницы
+     #download_dt - время когда страница была скачена
 
 
 class UrlStates(str, Enum):
