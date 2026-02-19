@@ -42,7 +42,3 @@ print(f"first item: {items[0].text}")
 items =  soup_example.select("ul.items > li.item")
 print(f"selected items: {len(items)}")
 print(f"first item: {items[0].text}")
-
-
-
-# 5.
