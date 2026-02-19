@@ -40,7 +40,7 @@ with sqlite3.connect(path.join(DATA_DIR, SQL_FILENAME)) as conn:
 
     # итог по статусам
     url_states = conn.execute(f"SELECT state, COUNT(*) FROM {URL_TABLE} GROUP BY state").fetchall()
-    print (f"URL states distribution:")
+    print ("URL states distribution:")
     for state in url_states:
         print(f"{state[0]}: {state[1]}")
 
