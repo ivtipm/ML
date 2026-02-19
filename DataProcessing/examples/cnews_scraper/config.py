@@ -21,6 +21,13 @@ PAGES_HTML_TABLE = "pages_content"
 PAGES_HTML_TABLE = "news"
 """Таблица для хранения данных, полученных после парсинга HTML файлов"""
 
+CREATE_PAGES_TABLE = "CREATE TABLE IF NOT EXISTS " + PAGES_HTML_TABLE + '''(
+      id INTEGER PRIMARY KEY AUTOINCREMENT
+     ,content TEXT
+     ,url TEXT
+     ,content_hash TEXT
+     ,download_dt TEXT )'''
+
 
 class UrlStates(str, Enum):
     """перечисление для состояний обработки страниц (url)"""
