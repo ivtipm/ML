@@ -58,7 +58,7 @@ with sqlite3.connect(path.join(config.DATA_DIR, config.SQL_FILENAME)) as conn:
             else:
                 print(f"{url}. [FAIL] Status code: {resp.status_code}")
 
-        except KeyboardInterrupt as e:
+        except KeyboardInterrupt:
             print(f"Downloaded: {n}")
         # todo: обработка отдельных видов исключений
         except Exception as e:
