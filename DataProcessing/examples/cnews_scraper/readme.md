@@ -5,8 +5,8 @@
 ### Структура
 - `config.py` — параметры: адрес сайта, папка данных, настройки базы sqlite и задержка между запросами.
 - `get_meta.py` — получает `robots.txt`, находит ссылку на sitemap и скачивает его в `data/`. Также выводит количество ссылок и примерную информацию.
-- `make_pages_queue.py` — парсит скачанную карту, сохраняет уникальные `loc` в таблицу `pages_urls` и помечает их состоянием `new`.
-- `download_pages.py` — извлекает все значения `state = 'new'`, скачивает HTML через `httpx`, сохраняет содержимое с хешем и временем в `pages_content`, переводит строку в `downloaded`.
+- `make_pages_queue.py` — парсит скачанную карту, сохраняет уникальные `loc` в таблицу `Url` и помечает их состоянием `new`.
+- `download_pages.py` — извлекает все значения `state = 'new'`, скачивает HTML через `httpx`, сохраняет содержимое с хешем и временем в `pages_content`, переводит строки таблицы `Url` в `downloaded`.
 
 ### Подготовка
 1. Создайте виртуальное окружение и установите зависимости:
@@ -19,15 +19,15 @@
 
 ### Использование
 1. `python get_meta.py` — скачивает `robots.txt`, определяет sitemap и сохраняет его. После завершения внутри `data/` появится `robots.txt`, `sitemap.xml`.
-2. `python make_pages_queue.py` — парсит `data/sitemap.xml`, записывает ссылки в БД SQLite, в таблицу `pages_urls`.
-3. `python download_pages.py` — проходит по таблице `pages_urls`, скачивает HTML, сохраняет их в отдельную таблицу в этой же БД, обновляет статус каждой записи в исходной таблице.
+2. `python make_pages_queue.py` — парсит `data/sitemap.xml`, записывает ссылки в БД SQLite, в таблицу `Url`.
+3. `python download_pages.py` — проходит по таблице `Url`, скачивает HTML, сохраняет их в отдельную таблицу в этой же БД, обновляет статус каждой записи.
 
 ### Состояние базы
-- `pages_urls` — `id`, `url`, `type`, `state`, `note`. `state` принимает `new`, `downloaded`.
-- `pages_content` — `id`, `content`, `url`, `hash`, `datetime`. Хеш вычисляется через `blake2s`.
+-- `Url` — `id`, `url`, `type`, `state`, `note`. `state` принимает `new`, `downloaded`.
+- `pages_content` — `id`, `content`, `url`, `content_hash`, `download_dt`. `content_hash` вычисляется через `blake2s`, `download_dt` хранит ISO-метку времени.
 Проверить статистику можно командой:
 ```sh
-sqlite3 data/database.sqlite "SELECT state, count(*) FROM pages_urls GROUP BY state;"
+sqlite3 data/database.sqlite "SELECT state, count(*) FROM Url GROUP BY state;"
 ```
 
 ### Расширения
@@ -36,3 +36,9 @@ sqlite3 data/database.sqlite "SELECT state, count(*) FROM pages_urls GROUP BY st
 
 
 # TODO
+
+
+# Шпаргалка
+## SQLite
+- `.tables` - показать список таблиц
+- `.mode table` - рисовать ASCII таблицу в ответ на запрос

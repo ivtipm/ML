@@ -2,7 +2,7 @@
 Получает robots.txt и карту сайта
 """
 import requests
-from lxml import etree  # pyright: ignore[reportMissingImports]
+from lxml import etree  # для парсинга XML файла с картой сайта  # pyright: ignore[reportAttributeAccessIssue]
 from os import path
 
 from config import DATA_DIR, SITE_URL

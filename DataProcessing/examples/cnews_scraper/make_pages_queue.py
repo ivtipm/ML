@@ -5,7 +5,7 @@
 
 import sqlite3
 from os import path
-from config import DATA_DIR, SQL_FILENAME, PAGES_URL_TABLE
+from config import DATA_DIR, SQL_FILENAME, URL_TABLE, UrlStates, UrlTypes
 
 SITEMAP_FILENAME = path.join(DATA_DIR, "sitemap.xml")
 
@@ -13,7 +13,7 @@ SITEMAP_FILENAME = path.join(DATA_DIR, "sitemap.xml")
 with sqlite3.connect(path.join(DATA_DIR, SQL_FILENAME)) as conn:
     print (f"Создана БД {SQL_FILENAME}")
     # Создаем таблицу с для списка страниц
-    conn.execute("CREATE TABLE IF NOT EXISTS " + PAGES_URL_TABLE + '''(
+    conn.execute("CREATE TABLE IF NOT EXISTS " + URL_TABLE + '''(
          id INTEGER PRIMARY KEY AUTOINCREMENT
         ,url TEXT NOT NULL UNIQUE
         ,type TEXT
@@ -22,7 +22,7 @@ with sqlite3.connect(path.join(DATA_DIR, SQL_FILENAME)) as conn:
     )''')
     conn.commit()
 
-    print (f"Создана таблица {PAGES_URL_TABLE}")
+    print (f"Создана таблица {URL_TABLE}")
 
     # Добавляем страницы из sitemap в БД
     with open(path.join(SITEMAP_FILENAME), "r") as f:
@@ -30,9 +30,9 @@ with sqlite3.connect(path.join(DATA_DIR, SQL_FILENAME)) as conn:
             if "<loc>" in line:
                 url = line.split("<loc>")[1].split("</loc>")[0].strip()
                 try:
-                    utl_state = "new"   # ещё не обработана
-                    url_type = "item"   # отдельная статья, не страница со статьями (catalog)
-                    conn.execute(f"INSERT INTO {PAGES_URL_TABLE} (url, type, state) VALUES (?, ?, ?)", (url, url_type, utl_state))
+                    utl_state = UrlStates.TO_PROCESS   # ещё не обработана
+                    url_type = UrlTypes.NEWS_ITEM   # отдельная статья, не страница со статьями (catalog)
+                    conn.execute(f"INSERT INTO {URL_TABLE} (url, type, state) VALUES (?, ?, ?)", (url, url_type, utl_state))
                 except sqlite3.IntegrityError:
                     print(f"URL {url} already exists in the database.")
 
