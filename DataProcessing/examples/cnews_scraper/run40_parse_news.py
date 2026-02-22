@@ -3,8 +3,6 @@
 Сохраняет в БД
 """
 
-%pwd
-
 import httpx
 
 from os import path
@@ -28,4 +26,5 @@ with sqlite3.connect( path.join(config.DATA_DIR, config.SQL_FILENAME) ) as conn:
 
         print(f"page title {id} {url}")
         print(page_soup.title)
-        # todo:
+
+        # todo: парсинг данных с веб страниц
