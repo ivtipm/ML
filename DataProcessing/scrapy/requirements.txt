@@ -1,0 +1,2 @@
+scrapy==2.14.1
+# также установится lxml, requests, twisted

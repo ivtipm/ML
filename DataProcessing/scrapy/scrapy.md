@@ -40,3 +40,51 @@ Twisted — это асинхронный сетевой фреймворк дл
 
 # Ссылки
 - https://docs.scrapy.org/en/latest/intro/tutorial.html
+
+
+# Структура проекта
+
+Создание шаблона проекта
+```bash
+scrapy startproject myproject
+cd myproject
+```
+
+Будут созданы папки и файлы
+```
+myproject/
+  scrapy.cfg
+  myproject/
+    spiders/
+    settings.py
+    items.py
+    pipelines.py
+```
+
+
+Пример простого скрапера simple_spider.py внутри папки myproject/spiders/
+```py
+import scrapy
+
+class SimpleSpider(scrapy.Spider):
+    name = "simple"                  # имя, по которому запускается паук;
+    start_urls = ["https://quotes.toscrape.com/"]  # сайт для примера
+
+    # метод, куда Scrapy передает ответ и где мы извлекаем данные.
+    def parse(self, response):
+        # собираем все цитаты на странице
+        for quote in response.css("div.quote"):
+            yield {
+                "text": quote.css("span.text::text").get(),
+                "author": quote.css("small.author::text").get(),
+            }
+```
+
+
+Запуск паука
+```bash
+scrapy crawl simple
+
+# запуск с сохранением данных в файл
+scrapy crawl simple -o output.csv
+```
