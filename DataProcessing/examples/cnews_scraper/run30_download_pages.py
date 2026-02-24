@@ -28,7 +28,7 @@ def upd_and_insert_page(page_content:str, con: sqlite3.Connection):
     """Обновляет таблицы в БД после скачивания страницы"""
     content_hash = blake2s(page_content.encode('utf-8')).hexdigest()
     dt = datetime.now().isoformat()
-    conn.execute(f"INSERT INTO {config.PAGES_HTML_TABLE} (id, content, url, content_hash, download_dt) VALUES (?, ?, ?, ?, ?)", (page_id, page_content, url, content_hash, dt))
+    conn.execute(f"INSERT INTO {config.HTML_TABLE_PAGES} (id, content, url, content_hash, download_dt) VALUES (?, ?, ?, ?, ?)", (page_id, page_content, url, content_hash, dt))
     # Обновляем статус страницы на "Готово"
     conn.execute(f"UPDATE  {config.URL_TABLE}  SET state = ? WHERE id = ?", (config.UrlStates.DONE, page_id,))
     conn.commit()

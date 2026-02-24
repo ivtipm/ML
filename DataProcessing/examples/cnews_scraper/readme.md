@@ -36,7 +36,8 @@ sqlite3 data/database.sqlite "SELECT state, count(*) FROM Url GROUP BY state;"
 
 
 # TODO
-
+- см. в коде
+- Сделать карточку данных
 
 # Шпаргалка
 ## SQLite

@@ -16,9 +16,9 @@ SQL_FILENAME = "database.sqlite"
 # Таблицы из БД
 URL_TABLE = "Url"
 """Таблица для хранения списка обработанных и ещё не обработанных URL """
-PAGES_HTML_TABLE = "pages_content"
+HTML_TABLE_PAGES = "pages"
 """Таблица для содержимого HTML файлов"""
-PAGES_HTML_TABLE = "news"
+HTML_TABLE_NEWS = "news"
 """Таблица для хранения данных, полученных после парсинга HTML файлов"""
 
 CREATE_URLS_TABLE = "CREATE TABLE IF NOT EXISTS " + URL_TABLE + '''(
@@ -29,7 +29,7 @@ CREATE_URLS_TABLE = "CREATE TABLE IF NOT EXISTS " + URL_TABLE + '''(
     ,note TEXT
 )'''
 
-CREATE_PAGES_TABLE = "CREATE TABLE IF NOT EXISTS " + PAGES_HTML_TABLE + '''(
+CREATE_PAGES_TABLE = "CREATE TABLE IF NOT EXISTS " + HTML_TABLE_PAGES + '''(
       id INTEGER PRIMARY KEY AUTOINCREMENT
      ,content TEXT
      ,url TEXT
@@ -38,6 +38,20 @@ CREATE_PAGES_TABLE = "CREATE TABLE IF NOT EXISTS " + PAGES_HTML_TABLE + '''(
      #content_hash - хеш содержимого страницы
      #download_dt - время когда страница была скачена
 
+
+CREATE_NEWS_TABLE = "CREATE TABLE IF NOT EXISTS " + HTML_TABLE_NEWS + '''(
+      id INTEGER PRIMARY KEY AUTOINCREMENT
+     ,url TEXT
+     ,title TEXT
+     ,text TEXT
+     ,date TEXT
+     ,author TEXT
+     ,topics TEXT
+     ,note TEXT
+)'''
+     # text - полный текст новости
+     # date - дата публикации
+     # topics - темы/теги, можно хранить через запятую или в виде JSON
 
 class UrlStates(str, Enum):
     """перечисление для состояний обработки страниц (url)"""
