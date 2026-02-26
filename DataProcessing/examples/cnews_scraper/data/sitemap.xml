@@ -1,6 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_iva_technologies_predstavila_reliz</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T18:22:59+03:00</news:publication_date>
+          <news:title>IVA Technologies представила релиз платформы IVA One 1.2: расширенные инструменты для совместной работы и повышенный уровень безопасности</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_mts_nachala_prinimat_predzakazy</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T18:15:12+03:00</news:publication_date>
+          <news:title>МТС начала принимать предзаказы на все модели Samsung Galaxy S26</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-26_v_rossii_paradoks_polovina</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T18:11:17+03:00</news:publication_date>
+          <news:title>Российский парадокс: Половина бизнеса использует иностранные решения для ИБ, покупая их через серые схемы</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_kliniki_sibirskogo_meduniversiteta</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T18:09:34+03:00</news:publication_date>
+          <news:title>Клиники Сибирского медуниверситета запустили бот для быстрой записи к врачам через мессенджер Mах</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_rossijskij_dataset_yambda_pozvolil</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T18:03:49+03:00</news:publication_date>
+          <news:title>Российский датасет Yambda позволил ученым из Европы добиться рекордного ускорения в обучении ИИ-рекомендаций — в 60 раз</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-26_minpromtorg_oshtrafoval_dizajn-tsentr</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T17:58:31+03:00</news:publication_date>
+          <news:title>Власти оштрафовали дизайн-центр почти на полмиллиарда за просрочку производства микросхем</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_kompaniya_softlajn_resheniya</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T17:57:45+03:00</news:publication_date>
+          <news:title>Компания «Софтлайн Решения» (ГК Softline) вновь подтвердила статус золотого партнера SimpleOne</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_pochemu_klassicheskoe_obuchenie</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T17:51:36+03:00</news:publication_date>
+          <news:title>Почему классическое обучение ИИ больше не работает. X5 Tech и AI Talent Hub протестировали новый подход к подготовке инженеров</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_86_rossijskih_aeroportov</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T17:46:39+03:00</news:publication_date>
+          <news:title>86% российских аэропортов фиксирует рост кибератак</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_mts_postroila_set_na_stantsii</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T17:45:09+03:00</news:publication_date>
+          <news:title>МТС построила сеть на станции петербургского метро «Горный институт»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_srednie_zarplatnye_predlozheniya</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T17:41:26+03:00</news:publication_date>
+          <news:title>Средние зарплатные предложения для сушистов за год выросли на треть — «Авито Работа»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/line/2026-02-26_analitika_kion_stroki</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T17:29:28+03:00</news:publication_date>
+          <news:title>Аналитика «Кион Строки»: читаемость французской классики у россиян выросла в 3 раза</news:title>
+        </news:news>
+    </url>
+    <url>
         <loc>https://www.cnews.ru/news/line/2026-02-26_ozon_sekonomit_9_mlrd_za_2_goda</loc>
         <news:news>
           <news:publication>
@@ -9,6 +141,17 @@
           </news:publication>
           <news:publication_date>2026-02-26T17:23:49+03:00</news:publication_date>
           <news:title>Ozon сэкономит 9 млрд за 2 года на ручной модерации контента с помощью ИИ</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-26_sotovyj_operator_t2_poteryal</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T17:23:19+03:00</news:publication_date>
+          <news:title>Сотовый оператор Т2 потерял часть пользователей «из-за регуляторных требований»</news:title>
         </news:news>
     </url>
     <url>
@@ -287,17 +430,6 @@
         </news:news>
     </url>
     <url>
-        <loc>https://www.cnews.ru/news/top/2026-02-26_sovetnik_trampa_predyavil</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-26T13:41:47+03:00</news:publication_date>
-          <news:title>Советник Трампа: Apple врет о переносе производства iPhone в США</news:title>
-        </news:news>
-    </url>
-    <url>
         <loc>https://www.cnews.ru/news/line/2026-02-26_novoe_slovo_v_avtomatizatsii</loc>
         <news:news>
           <news:publication>
@@ -364,17 +496,6 @@
         </news:news>
     </url>
     <url>
-        <loc>https://www.cnews.ru/news/top/2026-02-26_obnovlenie_proshivki_prevrashchaet</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-26T13:23:08+03:00</news:publication_date>
-          <news:title>Обновление прошивки превращает смартфоны Xiaomi, Redmi и Poco в «кирпичи». Коснуться может каждого. Есть секретное «лекарство»</news:title>
-        </news:news>
-    </url>
-    <url>
         <loc>https://www.cnews.ru/news/line/2026-02-26_falkon_teh_perenesla</loc>
         <news:news>
           <news:publication>
@@ -416,6 +537,17 @@
           </news:publication>
           <news:publication_date>2026-02-26T13:18:13+03:00</news:publication_date>
           <news:title>Подтверждена совместимость СУБД Jatoba и ПК «Альта-ГТД»</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-26_rossijskie_marketplejsy</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T13:14:21+03:00</news:publication_date>
+          <news:title>В российских онлайн-магазинах впервые в истории снизилось число продавцов</news:title>
         </news:news>
     </url>
     <url>
@@ -584,6 +716,17 @@
         </news:news>
     </url>
     <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-26_v_rossii_sozdali_ischezayushchie</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T11:11:21+03:00</news:publication_date>
+          <news:title>В России создали «исчезающие» импланты для лечения переломов и готовят их серийный выпуск</news:title>
+        </news:news>
+    </url>
+    <url>
         <loc>https://www.cnews.ru/news/line/2026-02-26_beeline_cloud_rasskazal_kak_zashchitit</loc>
         <news:news>
           <news:publication>
@@ -727,6 +870,17 @@
         </news:news>
     </url>
     <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-26_sovetnik_trampa_predyavil</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T10:11:47+03:00</news:publication_date>
+          <news:title>Советник Трампа: Apple врет о переносе производства iPhone в США</news:title>
+        </news:news>
+    </url>
+    <url>
         <loc>https://www.cnews.ru/news/line/2026-02-26_rostelekom_predstavil</loc>
         <news:news>
           <news:publication>
@@ -757,6 +911,17 @@
           </news:publication>
           <news:publication_date>2026-02-26T10:05:09+03:00</news:publication_date>
           <news:title>Wheelies разработал систему стабилизации мультикоптеров на высотах до 200 метров</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://www.cnews.ru/news/top/2026-02-26_obnovlenie_proshivki_prevrashchaet</loc>
+        <news:news>
+          <news:publication>
+            <news:name>CNews</news:name>
+            <news:language>ru</news:language>
+          </news:publication>
+          <news:publication_date>2026-02-26T10:03:08+03:00</news:publication_date>
+          <news:title>Обновление прошивки превращает смартфоны Xiaomi, Redmi и Poco в «кирпичи». Коснуться может каждого. Есть секретное «лекарство»</news:title>
         </news:news>
     </url>
     <url>
@@ -8633,171 +8798,6 @@
           </news:publication>
           <news:publication_date>2026-02-16T07:53:55+03:00</news:publication_date>
           <news:title>«МегаФон» усилил связь в столице Гипербореи</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-16_dlya_bystroj_raboty_s_dokumentami</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-16T07:43:54+03:00</news:publication_date>
-          <news:title>Для быстрой работы с документами и таблицами: клавиатура A4Tech Fstyler FK20</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-16_tsifrovaya_meditsinaii_i_bioinformatika</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-16T07:26:46+03:00</news:publication_date>
-          <news:title>Цифровая медицина, ИИ и биоинформатика: совместный кампус Центра имени В. А. Алмазова и «Школы 21» открывает новые возможности для студентов и профессионалов со всей страны в области медицины</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-16_na_baze_yuugmu_poyavitsya_laboratoriya</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-16T07:20:08+03:00</news:publication_date>
-          <news:title>На базе ЮУГМУ появится лаборатория для клинической оценки и доработки медицинского ИИ</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-16_mts_razognala_lte_v_krupnom</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-16T07:02:07+03:00</news:publication_date>
-          <news:title>МТС разогнала LTE в крупном транспортном узле Якутии</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-16_mts_prinyala_v_svoyu_domashnyuyu</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-16T06:58:30+03:00</news:publication_date>
-          <news:title>МТС приняла в свою домашнюю сеть еще несколько районов Уссурийска</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_reklamnye_agentstva_stavyat</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:51:03+03:00</news:publication_date>
-          <news:title>Рекламные агентства ставят на ИИ: 100% используют нейросети, но потребитель не всегда согласен</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_v_moskovskom_politehe_nauchat</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:45:40+03:00</news:publication_date>
-          <news:title>В Московском Политехе научат автомобиль подстраивать давление в шинах под тип грунта</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_kazhdyj_pyatyj_chitatel_yandeks</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:39:30+03:00</news:publication_date>
-          <news:title>Каждый пятый читатель «Яндекс Книг» просит искусственный интеллект напомнить содержание книги</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_administrirovanie_i_informatsionnaya</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:33:51+03:00</news:publication_date>
-          <news:title>Администрирование и информационная безопасность: «Базальт СПО» и Ideco открыли учебно-исследовательскую лабораторию в Армавирском юридическом техникуме</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_yadro_obyavlyaet_o_podderzhke</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:28:11+03:00</news:publication_date>
-          <news:title>YADRO объявляет о поддержке ускорителей NVIDIA H200 и NVIDIA RTX PRO 6000 Blackwell Server Edition в серверных платформах собственного производства</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_avito_zapustil_nabor_na</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:20:32+03:00</news:publication_date>
-          <news:title>«Авито» запустил набор на две стажировки</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_eksperty_mts_nazvali_samye</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:16:55+03:00</news:publication_date>
-          <news:title>Эксперты МТС назвали самые популярные гаджеты для сдачи в трейн-ин у югорчан</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_v_yakutii_drony_dostavili</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:12:49+03:00</news:publication_date>
-          <news:title>В Якутии дроны доставили более 660 кг грузов через реку Лена</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_megafon_otsifroval_samyj</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:08:11+03:00</news:publication_date>
-          <news:title>«МегаФон» оцифровал самый крупный торговый центр Ростова Великого</news:title>
-        </news:news>
-    </url>
-    <url>
-        <loc>https://www.cnews.ru/news/line/2026-02-13_nejroinvest_vypustil_novuyu</loc>
-        <news:news>
-          <news:publication>
-            <news:name>CNews</news:name>
-            <news:language>ru</news:language>
-          </news:publication>
-          <news:publication_date>2026-02-13T18:03:54+03:00</news:publication_date>
-          <news:title>«Нейроинвест» выпустил новую версию ИИ-инвесткомитета</news:title>
         </news:news>
     </url>
     <url>

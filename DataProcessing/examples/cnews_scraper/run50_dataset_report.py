@@ -18,7 +18,8 @@ with sqlite3.connect( path.join(config.DATA_DIR, config.SQL_FILENAME) ) as conn:
     # Строим гистограмму по длинам текстов
     text_lengths = df['text'].apply(len)
     text_lengths.plot(kind='hist', bins=30, figsize=(12, 6))
+    plt.grid(True)
     plt.title('Histogram of Text Lengths')
     plt.xlabel('Text Length')
     plt.ylabel('Frequency')
-    plt.show()
+    plt.savefig(path.join( config.DATA_DIR, "hist.png") )
