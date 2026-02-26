@@ -16,7 +16,7 @@ import config
 
 @dataclass
 class NewsItem:
-    """Новость"""
+    """Новость. В экземпляры этого класса нужно записывать новость после парсинга HTML страницы с текстом новости"""
     id:int = 0
     url:str = ""
     title:str = ""
@@ -37,7 +37,7 @@ def parse_page(html_content:str, url:str, id:int) -> NewsItem | None:
         title = page_soup.title.getText(strip=True)
         # .getText(strip=True) - получить текстовое содержимое элемента DOM (тега), с обрезкой пробельных символов (strip)
         text_div = page_soup.select_one(".news_container")  # выборе элемента по CSS классу; этот элемент содержит параграфы (<p>) с текстом статьи
-
+        # todo: обработка рекламных статей, там другие элементы
         # извлечение текста из параграфов, getText также обработает ссылки внутри p, отбросив адрес
         paragraphs_list = []
         for p in text_div.select("p"):
