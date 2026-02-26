@@ -4,6 +4,7 @@
 """
 
 from playwright.sync_api import sync_playwright
+# pip install playwright
 # дополнительно потребуется установить компоненты (драйверы) для управления браузерами
 # playwright install
 # или только одним браузером
@@ -13,7 +14,7 @@ from playwright.sync_api import sync_playwright
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
     page = browser.new_page()
-    page.goto("https://example.com")
+    page.goto("https://zabgu.ru")
 
     print(page.title())
 

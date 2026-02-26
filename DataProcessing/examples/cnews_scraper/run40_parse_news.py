@@ -43,11 +43,11 @@ def parse_page(html_content:str, url:str, id:int) -> NewsItem | None:
         for p in text_div.select("p"):
             paragraphs_list.append( p.getText(strip=True) )
 
-        # склеим все параграфы в одну строку, будем добавлять пробел между параграфами
+
         text = " ".join( paragraphs_list )
         # print(text)
 
-        return NewsItem(id, url,title, text[:10], "-", "-", "-", "-")
+        return NewsItem(id, url,title, text, "-", "-", "-", "-")
     except Exception as e:
         print(f"{id}: {url}. {e}")
         return None
