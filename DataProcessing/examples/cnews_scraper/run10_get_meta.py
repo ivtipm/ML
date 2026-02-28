@@ -27,29 +27,35 @@ def print_sitemap_info(sitemap_filename:str):
 
 
 
+def download_robots(site_url:str):
+    """Скачивает и сохраняет robots.txt c сайта site_url,
+    :returns: содержимое robots.txt"""
+    RobotsURL = site_url + "robots.txt"
+    robots_filename = path.join(DATA_DIR, "robots.txt")
+    response = requests.get(RobotsURL)
+    # проверка
+    if response.status_code != 200:
+        print(f"Failed to download robots.txt. Status code: {response.status_code}")
+        return None
+    else:
+        # сохранить в файл
+        with open(robots_filename, "w") as f:
+            f.write(response.text)
+        print("robots.txt downloaded successfully")
+        return response.text
+
+
 # 1. получить и скачать robots.txt
-RobotsURL = SITE_URL + "robots.txt"
-robots_filename = path.join(DATA_DIR, "robots.txt")
-response = requests.get(RobotsURL)
-# проверка
-
-if response.status_code != 200:
-    print(f"Failed to download robots.txt. Status code: {response.status_code}")
-else:
-    # сохранить в файл
-    with open(robots_filename, "w") as f:
-        f.write(response.text)
-    print("robots.txt downloaded successfully")
-
+robots_content = download_robots(SITE_URL)
 
 # 2. Получить адрес карты сайта из robots.txt
-robots_content = response.text
 SitemapURLs = []
-for line in robots_content.splitlines():
-    if "Sitemap:" in line:
-        url = line.split("Sitemap:")[1].strip()
-        SitemapURLs.append ( url )
-        print(f"Sitemap URL: {url}")
+if robots_content:
+    for line in robots_content.splitlines():
+        if "Sitemap:" in line:
+            url = line.split("Sitemap:")[1].strip()
+            SitemapURLs.append ( url )
+            print(f"Sitemap URL: {url}")
 
 
 # 3. Скачать карту сайта
