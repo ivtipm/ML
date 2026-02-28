@@ -5,13 +5,14 @@
 
 # %% Cell 1
 
+import sqlite3
 from dataclasses import astuple, dataclass
 from os import path
-from bs4 import BeautifulSoup
-import sqlite3
-from tqdm import tqdm   # чтобы рисовать индикатор прогресса
 
 import config
+from config import HTML_TABLE_NEWS, HTML_TABLE_PAGES
+from bs4 import BeautifulSoup
+from tqdm import tqdm  # чтобы рисовать индикатор прогресса
 
 
 @dataclass
@@ -60,10 +61,15 @@ with sqlite3.connect( path.join(config.DATA_DIR, config.SQL_FILENAME) ) as conn:
     # если нет таблицы для содержимого, то создаём
     conn.execute(config.CREATE_NEWS_TABLE)
 
-    cursor = conn.execute(f"SELECT id, url, content from {config.HTML_TABLE_PAGES}")
+    # cursor = conn.execute(f"SELECT id, url, content from {config.HTML_TABLE_PAGES}")
+    # выбрать только новые скаченные страницы, из которых ещё не извлечены новости
+    cursor = conn.execute(f"SELECT t1.id, t1.url, t1.content from {HTML_TABLE_PAGES} t1 "\
+                                    f"left join {HTML_TABLE_NEWS} t2 on t1.id = t2.id "\
+                                    f"where t2.id is NULL")
     pages = cursor.fetchall()
 
     print(f"Pages to process: {len(pages)}")
+
 
     for id, url,content in tqdm(pages):
         item = parse_page(content, url, id)
@@ -80,5 +86,5 @@ with sqlite3.connect( path.join(config.DATA_DIR, config.SQL_FILENAME) ) as conn:
 
 
 # Часть новостей - рекламные. У них другая компоновка и парсер их не может обработать
-# todo: разобраться с рекламными новостями
-# todo: повторно не парсить уже добавленные в таблицу news новости
+#TODO разобраться с рекламными новостями
+#TODO повторно не парсить уже добавленные в таблицу news новости
