@@ -62,16 +62,17 @@ def parse_page(html_content:str, url:str, id:int) -> NewsItem | None:
     except Exception as e:
         print(f"{id}: {url}. {e}")
         return None
+    #FIX: исправить склейку слов в одно в некоторых местах
 
 
 
-def parse_all_news(html_pages:list[str]):
+def parse_all_news(html_pages:list[str], con:sqlite3.Connection):
     """Парсит все html страницы (тексты страницы) из списка html_pages и записывает извлечённые данные в таблицу с новостями"""
-    for id, url,content in tqdm(new_pages):
-        item = parse_page(content, url, id)
+    for id, url,content in tqdm(html_pages):
+        item = parse_page(content, url, int(id) )
         # запрос с ? имеет защиту от SQL инъекций, строки экранируются и передаются в таблицу как байты
         if item:
-            conn.execute(f"INSERT INTO {config.TABLE_NEWS}"\
+            con.execute(f"INSERT INTO {config.TABLE_NEWS}"\
                 "(id,   url, title, text,   date, author, topics,   note) VALUES (?,  ?,?,?,  ?,?,?,  ? )"
                 ,astuple(item)  )
         # astuple - делает кортеж из экземпляра dataclass
@@ -80,17 +81,21 @@ def parse_all_news(html_pages:list[str]):
 
 
 # %% Cell 2
-with sqlite3.connect( path.join(config.DATA_DIR, config.SQL_FILENAME) ) as conn:
-    # если нет таблицы для содержимого, то создаём
-    conn.execute(config.CREATE_NEWS_TABLE)
+def main():
+    with sqlite3.connect( path.join(config.DATA_DIR, config.SQL_FILENAME) ) as conn:
+        # если нет таблицы для содержимого, то создаём
+        conn.execute(config.CREATE_NEWS_TABLE)
 
-    # cursor = conn.execute(f"SELECT id, url, content from {config.HTML_TABLE_PAGES}")
-    cursor = conn.execute( SELECT_NEW_HTML_PAGES.format(table_news=TABLE_NEWS, table_html_pages = TABLE_HTML_PAGES))
-    new_pages = cursor.fetchall()
+        # cursor = conn.execute(f"SELECT id, url, content from {config.HTML_TABLE_PAGES}")
+        cursor = conn.execute( SELECT_NEW_HTML_PAGES.format(table_news=TABLE_NEWS, table_html_pages = TABLE_HTML_PAGES))
+        new_pages = cursor.fetchall()
 
-    print(f"Pages to process: {len(new_pages)}")
-    parse_all_news( new_pages )
+        print(f"Pages to process: {len(new_pages)}")
+        parse_all_news( new_pages, conn )
 
+
+if __name__ == "__main__":
+    main()
 
 # Часть новостей - рекламные. У них другая компоновка и парсер их не может обработать
 #TODO разобраться с рекламными новостями
