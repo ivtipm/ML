@@ -16,9 +16,9 @@ SQL_FILENAME = "database.sqlite"
 # Таблицы из БД
 URL_TABLE = "Url"
 """Таблица для хранения списка обработанных и ещё не обработанных URL """
-HTML_TABLE_PAGES = "pages"
+TABLE_HTML_PAGES = "pages"
 """Таблица для содержимого HTML файлов"""
-HTML_TABLE_NEWS = "news"
+TABLE_NEWS = "news"
 """Таблица для хранения данных, полученных после парсинга HTML файлов"""
 
 CREATE_URLS_TABLE = "CREATE TABLE IF NOT EXISTS " + URL_TABLE + '''(
@@ -29,7 +29,7 @@ CREATE_URLS_TABLE = "CREATE TABLE IF NOT EXISTS " + URL_TABLE + '''(
     ,note TEXT
 )'''
 
-CREATE_PAGES_TABLE = "CREATE TABLE IF NOT EXISTS " + HTML_TABLE_PAGES + '''(
+CREATE_PAGES_TABLE = "CREATE TABLE IF NOT EXISTS " + TABLE_HTML_PAGES + '''(
       id INTEGER PRIMARY KEY AUTOINCREMENT
      ,content TEXT
      ,url TEXT
@@ -39,7 +39,7 @@ CREATE_PAGES_TABLE = "CREATE TABLE IF NOT EXISTS " + HTML_TABLE_PAGES + '''(
      #download_dt - время когда страница была скачена
 
 
-CREATE_NEWS_TABLE = "CREATE TABLE IF NOT EXISTS " + HTML_TABLE_NEWS + '''(
+CREATE_NEWS_TABLE = "CREATE TABLE IF NOT EXISTS " + TABLE_NEWS + '''(
       id INTEGER PRIMARY KEY AUTOINCREMENT
      ,url TEXT
      ,title TEXT
