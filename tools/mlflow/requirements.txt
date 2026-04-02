@@ -1,0 +1,11 @@
+# основные пакеты
+mlflow
+scikit-learn
+joblib
+pip
+
+
+# для удобного запуска
+jupyter
+ipykernel
+seaborn
