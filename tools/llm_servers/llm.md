@@ -45,12 +45,17 @@ todo: формула softmax с temperature
 
 &nbsp;
     
-- Имеет консольный интерфейс; для windows есть GUI
+- **UI**
+  - Имеет консольный интерфейс; для windows есть GUI
+  - Есть режим чата прямо в консоли 
+- **Сервер**
+  - Запускает мультимольные LLM
+  - Запускает модели эмбеддингов
+  - Предоставляет доступ к моделям через OpenAPI (REST API по протоколу HTTP); API во многом похож на те, что используются в аналогичных серверах.
 - Может скачивать файлы LLM из 
   - собственного репозитория (ollama.com) 
   - hugging face, если LLM записано в GGUF формате
-- Работает как сервер, предоставляя доступ к моделям через OpenAPI (REST API по протоколу HTTP); API во многом похож на те, что используются в аналогичных серверах.
-- Есть режим чата прямо в консоли 
+  - Может работать как прокси для облачных моделей Ollama.com (есть бесплатный тариф с хорошими лимитами)
 - Может использовать GPU
 
 Установка в Linux:
@@ -200,16 +205,37 @@ ollama run qwen3:8b --verbose
 * **eval_rate** — скорость генерации токенов. Главный показатель производительности LLM.
 
 
-#### Другие возможности
+### Другие возможности
 
-**Одиночный запрос без интерактивной оболочки**
+#### Одиночный запрос без интерактивной оболочки
+
+
+```bash
+ollama run qwen3.5:0.8b "Что такое LLM?"
+```
+
+Или через конвейер
 ```bash
 echo "Who are you?" | ollama run qwen3.5:0.8b --think=false
 ```
-
 `--think=false` — задать уровень размышлений, здесь false -- полностью отключить 
 
-**Эмбеддинги текстов**
+
+#### Суммаризация файла
+```bash
+ollama run llama3.2 "Summarize the content of this file in 50 words." < input.txt
+```
+`input.txt` — путь к файлу, который нужно резюмировать.
+
+
+#### Записать вывод в файл
+```bash
+ollama run llama3.2 "Tell me about renewable energy." > output.txt
+```
+`output.txt` — путь к файлу, в который нужно записать вывод.
+
+
+#### Эмбеддинги текстов
 Ollama также поддерживает модели для создания эмбеддингов текстов: https://ollama.com/blog/embedding-models
 
 Для этого используются специальные модели. Например:
@@ -218,7 +244,7 @@ Ollama также поддерживает модели для создания 
 ollama pull mxbai-embed-large
 ```
 
-Доступ по REST API:
+#### Доступ по REST API
 ```bash
 curl http://localhost:11434/api/embed -d '{
   "model": "mxbai-embed-large",
@@ -226,7 +252,30 @@ curl http://localhost:11434/api/embed -d '{
 }
 ```
 
-**Вызов функций**\
+#### Библиотеки для Python
+```bash
+pip install ollama
+```
+
+```py
+import ollama
+response = ollama.generate(model='gemma:2b', prompt='what is a qubit?')
+print(response['response'])
+
+
+# Веб поиск через сервис ollama.com
+# terminal: export OLLAMA_API_KEY="your_api_key"
+response = ollama.web_search("What is Ollama?")
+print(response)
+
+
+# Получение данных веб страницы
+from ollama import web_fetch
+result = web_fetch('https://ollama.com')
+print(result)
+```
+
+#### Вызов функций\
 https://ollama.com/blog/tool-support
 
 Модели с такими возможностями в библиотеке ollama приведены с тегом `tools`.\
