@@ -95,7 +95,7 @@ ollama serve
 Проверить сервер можно по адресу: http://127.0.0.1:11434/
 
 URL для обращения по REST API:
-- http://localhost:11434/api/generate - ответ на промпт
+- http://localhost:11434/api/generate - ответ на промт
 - http://localhost:11434/api/chat - режим чата
 - http://localhost:11434/api/tags - доступные модели
 
