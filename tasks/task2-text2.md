@@ -38,6 +38,7 @@
 
 Экспериментируйте с различными LLM, температурой и промтом чтобы достичь наилучшего качества.
 
+Пример: [NLP/text_classification_llm.py](NLP/text_classification_llm.py)
 
 
 ## Датасеты
