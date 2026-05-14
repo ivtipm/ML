@@ -10,8 +10,10 @@ from tqdm import tqdm
 import ollama
 from pydantic import BaseModel
 
+
+# Загрузка датасета ( отхывы на фильмы, 2 класса: позитивный и негативный)
 data = pd.read_csv('../datasets/IMDB Dataset.csv').sample(100, random_state=0)
-data['y'] = data['sentiment'].map({'positive': 1, 'negative': 0})
+data['y'] = data['sentiment'].map( {'positive': 1, 'negative': 0} )
 
 print(f"{len(data)=}")
 
@@ -19,21 +21,29 @@ print(f"{len(data)=}")
 MODEL = 'qwen3.5:0.8b'
 
 class ClassLabel(BaseModel):
+    """Класс для описания класса (метки) текста;
+    label = 0 (текст с негативной коннотацией), label = 1 (тест позитивный)"""
     label: int
+
 schema = ClassLabel.model_json_schema()
 
-system_prompt = 'Определи к какой категории относится данный текст. Категории на выбор: негативный (класс 0), позитивный (класс 1); Ответ дай в виде JSON, для обозначения класса используй 0 или 1 '
+system_prompt = 'Определи к какой категории относится данный текст. Категории на выбор: негативный (класс 0), позитивный (класс 1); Ответ дай в виде JSON, для обозначения класса используй 0 или 1'
 
 data
 
+# %% Cell 2
 
+schema
+{'Label' : 1 }
 
 
 # %% Cell 5
 # проверка
-r = ollama.generate(model=MODEL, system=system_prompt, prompt="Ping!", think=False, format=schema)
+r = ollama.generate(model=MODEL, system=system_prompt, prompt="Фильм очень хороший. Мне понравилось. Я рад, что его посмотрел", think=False, format=schema)
 label = ClassLabel.model_validate_json(r.response)
 label.label
+
+
 
 # %% Cell 10
 y_pred = np.zeros_like( data['y'] )
@@ -48,3 +58,6 @@ print(classification_report(data['y'], y_pred))
 # %% Cell 20
 
 print(classification_report(data['y'], y_pred))
+
+
+#
