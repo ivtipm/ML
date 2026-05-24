@@ -10,3 +10,6 @@ lab.*
 lab/
 cspell.json
 datasets/IMDB Dataset.csv
+
+.claude
+CLAUDE.md
