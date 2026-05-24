@@ -460,7 +460,7 @@
 
 # Лекция 13. Отбор признаков. Деплой моделей
 
-- [Отбор и создание признаков](../examples/features.ipynb)
+- [Отбор и создание признаков](../DataProcessing/features.ipynb)
 - [Gradio](../examples/gradio.ipynb)
 - Создание docker контейнеров
 
