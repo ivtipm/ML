@@ -23,13 +23,13 @@
       "index": "a0",
       "roundness": null,
       "seed": 596165198,
-      "version": 614,
-      "versionNonce": 1345962578,
+      "version": 615,
+      "versionNonce": 1789576278,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1759337548255,
+      "boundElements": [],
+      "updated": 1790350003039,
       "link": null,
-      "locked": false,
+      "locked": true,
       "status": "pending",
       "fileId": "a0daadacef6ead290d85aa94f79c801cbea76e75",
       "scale": [
@@ -196,7 +196,7 @@
       "type": "text",
       "x": 1524.1603869684923,
       "y": -118.26053558760518,
-      "width": 456.8490295410156,
+      "width": 488.1611328125,
       "height": 43.2,
       "angle": 0,
       "strokeColor": "#343a40",
@@ -211,20 +211,25 @@
       "index": "a9",
       "roundness": null,
       "seed": 76061473,
-      "version": 498,
-      "versionNonce": 1182482703,
+      "version": 509,
+      "versionNonce": 572036170,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1759167086596,
+      "boundElements": [
+        {
+          "id": "Z7yTaeJ3IdQNR6bs4JLhu",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790351164270,
       "link": null,
       "locked": false,
-      "text": "Задать роль (ты профессионал в области Х)\nили стиль \\ тон \\ жан ( как в научной статье, как в учебнике)",
+      "text": "Задать роль (ты профессионал в области Х)\nили стиль \\ тон \\ жанр (\"как в научной статье\", \"как в учебнике\")",
       "fontSize": 16,
       "fontFamily": 6,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Задать роль (ты профессионал в области Х)\nили стиль \\ тон \\ жан ( как в научной статье, как в учебнике)",
+      "originalText": "Задать роль (ты профессионал в области Х)\nили стиль \\ тон \\ жанр (\"как в научной статье\", \"как в учебнике\")",
       "autoResize": true,
       "lineHeight": 1.35
     },
@@ -248,11 +253,16 @@
       "index": "aA",
       "roundness": null,
       "seed": 1390746190,
-      "version": 642,
-      "versionNonce": 223017362,
+      "version": 643,
+      "versionNonce": 56516182,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1759337600642,
+      "boundElements": [
+        {
+          "id": "101FFcdmS-7W3fPq-Cm8N",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790351468137,
       "link": null,
       "locked": false,
       "text": "\"Манипуляция\" с эмоциями: \n\"Это очень важно для моей карьеры\"",
@@ -414,7 +424,7 @@
       "lineHeight": 1.35
     },
     {
-      "id": "xnH0zGAhqC-odf8OxVpfD",
+      "id": "h5ps1Y0VggBb-Wibzxd6A",
       "type": "text",
       "x": 1524.1603868290517,
       "y": 115.05679393679571,
@@ -432,12 +442,17 @@
       "frameId": null,
       "index": "aG",
       "roundness": null,
-      "seed": 81695887,
-      "version": 645,
-      "versionNonce": 762183649,
+      "seed": 722558538,
+      "version": 648,
+      "versionNonce": 540366858,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1759167152085,
+      "boundElements": [
+        {
+          "id": "ERUXbNbrJyRlzQaPJw1EE",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790350994666,
       "link": null,
       "locked": false,
       "text": "Rephrase and Respond (RaR): Перефразируй и уточни вопрос, а затем дай ответ;\nМожно в одно или в два сообщения в чат",
@@ -470,11 +485,16 @@
       "index": "aH",
       "roundness": null,
       "seed": 210442895,
-      "version": 684,
-      "versionNonce": 691329505,
+      "version": 685,
+      "versionNonce": 588777686,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1759167194496,
+      "boundElements": [
+        {
+          "id": "09iRnuVIcgvexODkxIfr4",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790351076492,
       "link": null,
       "locked": false,
       "text": "Re-reading (RE2): Еще раз прочитай вопрос",
@@ -488,7 +508,7 @@
       "lineHeight": 1.35
     },
     {
-      "id": "kGSL_uGSBWtHLV9iWRbh-",
+      "id": "G-xQWNcNbHpffkRT8-T5V",
       "type": "text",
       "x": 1524.1603868290513,
       "y": 244.9001879367957,
@@ -506,12 +526,12 @@
       "frameId": null,
       "index": "aI",
       "roundness": null,
-      "seed": 925084690,
-      "version": 746,
-      "versionNonce": 2135578126,
+      "seed": 2136088842,
+      "version": 748,
+      "versionNonce": 1864617110,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1759337694491,
+      "updated": 1790352206200,
       "link": null,
       "locked": false,
       "text": "Просим LLM задать уточняющие вопросы к исходному промпту, \nсамостоятельно ответить на них и только после этого дать ответ",
@@ -525,10 +545,10 @@
       "lineHeight": 1.35
     },
     {
-      "id": "-42TukGi-e-2lgYiFIHE6",
+      "id": "tzF0v6TEUc6o72ZfIz5w6",
       "type": "text",
-      "x": 2000.164659455641,
-      "y": -118.26053629651696,
+      "x": 1764.8281664823614,
+      "y": -274.125014148692,
       "width": 34.9375,
       "height": 37.800000000000004,
       "angle": 0,
@@ -543,12 +563,12 @@
       "frameId": null,
       "index": "aL",
       "roundness": null,
-      "seed": 350154511,
-      "version": 63,
-      "versionNonce": 1612090721,
+      "seed": 862481046,
+      "version": 144,
+      "versionNonce": 1133721674,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1759167301883,
+      "boundElements": null,
+      "updated": 1790351960202,
       "link": null,
       "locked": false,
       "text": "🔥",
@@ -562,7 +582,7 @@
       "lineHeight": 1.35
     },
     {
-      "id": "VsXxKwEMhnaCMuFFuEb0T",
+      "id": "FkOuOhfr9HeEcPmdyTKWM",
       "type": "text",
       "x": 2035.102159455641,
       "y": 244.9001877034831,
@@ -580,12 +600,17 @@
       "frameId": null,
       "index": "aM",
       "roundness": null,
-      "seed": 1028974351,
-      "version": 184,
-      "versionNonce": 613566031,
+      "seed": 1062474826,
+      "version": 188,
+      "versionNonce": 1380372438,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1759167304419,
+      "boundElements": [
+        {
+          "id": "u53zJbrYvFiJnlofM14sF",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790353648229,
       "link": null,
       "locked": false,
       "text": "🔥",
@@ -621,7 +646,7 @@
       "version": 511,
       "versionNonce": 1173338706,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759339773392,
       "link": null,
       "locked": false,
@@ -711,7 +736,7 @@
       "version": 150,
       "versionNonce": 655421202,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759337581533,
       "link": null,
       "locked": false
@@ -739,7 +764,7 @@
       "version": 765,
       "versionNonce": 993196942,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759338889338,
       "link": null,
       "locked": false,
@@ -813,7 +838,7 @@
       "version": 876,
       "versionNonce": 876947474,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759338192507,
       "link": null,
       "locked": false,
@@ -828,11 +853,11 @@
       "lineHeight": 1.35
     },
     {
-      "id": "3QnVLje4UhIZPk-Wh7ivs",
+      "id": "6mJik5Lt7MsRvOSLoTUuK",
       "type": "text",
       "x": 1140.8382381649533,
       "y": 746.9632242249676,
-      "width": 708.03369140625,
+      "width": 715.185546875,
       "height": 64.80000000000001,
       "angle": 0,
       "strokeColor": "#343a40",
@@ -846,21 +871,21 @@
       "frameId": null,
       "index": "aU",
       "roundness": null,
-      "seed": 846638241,
-      "version": 1340,
-      "versionNonce": 1919896462,
+      "seed": 662794262,
+      "version": 1412,
+      "versionNonce": 345514774,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1759338305522,
+      "boundElements": null,
+      "updated": 1790354022810,
       "link": null,
       "locked": false,
-      "text": "Перед примерами можно не приводить явной инструкции.\nЕсли примеры достаточно хороши, то LLM определит свою задачу и будет решать её лучше, \nчем в случае когда приводится явная инструкция.",
+      "text": "Внимательный выбор инструкции. Перед примерами можно не приводить явной инструкции.\nЕсли примеры достаточно хороши, то LLM определит свою задачу и будет решать её лучше, \nчем в случае когда приводится явная инструкция, которая может ограничить модель. ",
       "fontSize": 16,
       "fontFamily": 6,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Перед примерами можно не приводить явной инструкции.\nЕсли примеры достаточно хороши, то LLM определит свою задачу и будет решать её лучше, \nчем в случае когда приводится явная инструкция.",
+      "originalText": "Внимательный выбор инструкции. Перед примерами можно не приводить явной инструкции.\nЕсли примеры достаточно хороши, то LLM определит свою задачу и будет решать её лучше, \nчем в случае когда приводится явная инструкция, которая может ограничить модель. ",
       "autoResize": true,
       "lineHeight": 1.35
     },
@@ -889,7 +914,7 @@
       "version": 769,
       "versionNonce": 1279688014,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759338615973,
       "link": null,
       "locked": false,
@@ -935,7 +960,7 @@
       "version": 226,
       "versionNonce": 694526862,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759338615973,
       "link": null,
       "locked": false
@@ -965,7 +990,7 @@
       "version": 534,
       "versionNonce": 1548091854,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759338615973,
       "link": null,
       "locked": false
@@ -997,7 +1022,7 @@
       "version": 684,
       "versionNonce": 134256654,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759338615973,
       "link": null,
       "locked": false
@@ -1025,7 +1050,7 @@
       "version": 190,
       "versionNonce": 1376810638,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759339888921,
       "link": null,
       "locked": false,
@@ -1062,7 +1087,7 @@
       "version": 350,
       "versionNonce": 549269074,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759381045918,
       "link": null,
       "locked": false,
@@ -1099,7 +1124,7 @@
       "version": 94,
       "versionNonce": 1726301326,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759338664993,
       "link": null,
       "locked": false,
@@ -1136,7 +1161,7 @@
       "version": 121,
       "versionNonce": 1674350606,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759338767710,
       "link": null,
       "locked": false,
@@ -1173,7 +1198,7 @@
       "version": 820,
       "versionNonce": 771283794,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759338836532,
       "link": null,
       "locked": false,
@@ -1215,7 +1240,7 @@
       "version": 1133,
       "versionNonce": 1468528850,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759339036903,
       "link": null,
       "locked": false,
@@ -1254,7 +1279,7 @@
       "version": 265,
       "versionNonce": 761292114,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759339835766,
       "link": null,
       "locked": false,
@@ -1293,7 +1318,7 @@
       "version": 912,
       "versionNonce": 1250683666,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759339835766,
       "link": null,
       "locked": false,
@@ -1337,7 +1362,7 @@
       "version": 339,
       "versionNonce": 1270921426,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759339835766,
       "link": null,
       "locked": false,
@@ -1374,7 +1399,7 @@
       "version": 835,
       "versionNonce": 399220366,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759339834062,
       "link": null,
       "locked": false,
@@ -1416,7 +1441,7 @@
       "version": 442,
       "versionNonce": 1737960082,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759339917133,
       "link": null,
       "locked": false,
@@ -1453,7 +1478,7 @@
       "version": 117,
       "versionNonce": 592165646,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759380810386,
       "link": null,
       "locked": false,
@@ -1490,7 +1515,7 @@
       "version": 342,
       "versionNonce": 947981522,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759380963142,
       "link": null,
       "locked": false,
@@ -1527,7 +1552,7 @@
       "version": 263,
       "versionNonce": 1332392590,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759381011980,
       "link": null,
       "locked": false,
@@ -1564,7 +1589,7 @@
       "version": 524,
       "versionNonce": 934937938,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759381011980,
       "link": null,
       "locked": false,
@@ -1712,7 +1737,7 @@
       "version": 409,
       "versionNonce": 1959895886,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1759381052171,
       "link": null,
       "locked": false,
@@ -1723,6 +1748,1039 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "CoT с примерами",
+      "autoResize": false,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "3v-w0vr1Qoh68dwESzBBa",
+      "type": "freedraw",
+      "x": 468.452204371265,
+      "y": -540.7794958397744,
+      "width": 46.23573271009809,
+      "height": 1.5773428128203477,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 40,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ax",
+      "roundness": null,
+      "seed": 1407412118,
+      "version": 27,
+      "versionNonce": 1668553866,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790350275782,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1.1772453161332805,
+          -0.10001535728054023
+        ],
+        [
+          2.654572771673145,
+          -0.5924458199388027
+        ],
+        [
+          4.131900227212952,
+          -0.5924458199388027
+        ],
+        [
+          8.071416063609263,
+          -0.5924458199388027
+        ],
+        [
+          12.010967967570423,
+          -1.0849123501620852
+        ],
+        [
+          14.965622878650095,
+          -1.0849123501620852
+        ],
+        [
+          19.397605245269574,
+          -1.0849123501620852
+        ],
+        [
+          22.352260156349246,
+          -1.5773428128203477
+        ],
+        [
+          25.306915067428918,
+          -1.5773428128203477
+        ],
+        [
+          28.26156997850859,
+          -1.5773428128203477
+        ],
+        [
+          29.738897434048397,
+          -1.5773428128203477
+        ],
+        [
+          30.723794426929885,
+          -1.5773428128203477
+        ],
+        [
+          31.954888617358165,
+          -1.5773428128203477
+        ],
+        [
+          33.43221607289797,
+          -1.5773428128203477
+        ],
+        [
+          35.401973991096156,
+          -1.5773428128203477
+        ],
+        [
+          36.879301446635964,
+          -1.5773428128203477
+        ],
+        [
+          37.37176797685913,
+          -1.5773428128203477
+        ],
+        [
+          39.09529262994573,
+          -1.5773428128203477
+        ],
+        [
+          41.06508661570871,
+          -1.5773428128203477
+        ],
+        [
+          42.542414071248515,
+          -1.5773428128203477
+        ],
+        [
+          44.51217198944664,
+          -1.5773428128203477
+        ],
+        [
+          45.49706898232819,
+          -1.5773428128203477
+        ],
+        [
+          45.98949944498645,
+          -1.5773428128203477
+        ],
+        [
+          46.23573271009809,
+          -1.5773428128203477
+        ],
+        [
+          46.23573271009809,
+          -1.5773428128203477
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        46.23573271009809,
+        -1.5773428128203477
+      ]
+    },
+    {
+      "id": "pAAtGtVOwVfG3vBuiTnNc",
+      "type": "freedraw",
+      "x": 575.5584402016054,
+      "y": -541.2719263024328,
+      "width": 49.92905134894761,
+      "height": 0.592481887503709,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 40,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ay",
+      "roundness": null,
+      "seed": 1261680214,
+      "version": 22,
+      "versionNonce": 221321238,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790350279228,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.9310120510216393,
+          -0.10001535728042654
+        ],
+        [
+          1.4234425136799018,
+          -0.10001535728042654
+        ],
+        [
+          3.885666962101368,
+          -0.10001535728042654
+        ],
+        [
+          6.840321873180983,
+          -0.10001535728042654
+        ],
+        [
+          12.25720123268195,
+          -0.10001535728042654
+        ],
+        [
+          17.181614061959863,
+          -0.592481887503709
+        ],
+        [
+          22.598493421460716,
+          -0.592481887503709
+        ],
+        [
+          27.522906250738515,
+          -0.592481887503709
+        ],
+        [
+          31.954888617358165,
+          -0.592481887503709
+        ],
+        [
+          34.417113065779404,
+          -0.592481887503709
+        ],
+        [
+          38.35662890217577,
+          -0.592481887503709
+        ],
+        [
+          40.81885335059701,
+          -0.592481887503709
+        ],
+        [
+          42.788611268795194,
+          -0.592481887503709
+        ],
+        [
+          44.265938724335,
+          -0.592481887503709
+        ],
+        [
+          45.74326617987481,
+          -0.592481887503709
+        ],
+        [
+          46.72816317275647,
+          -0.592481887503709
+        ],
+        [
+          48.4517238934078,
+          -0.592481887503709
+        ],
+        [
+          49.43658481872444,
+          -0.592481887503709
+        ],
+        [
+          49.92905134894761,
+          -0.592481887503709
+        ],
+        [
+          49.92905134894761,
+          -0.592481887503709
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        49.92905134894761,
+        -0.592481887503709
+      ]
+    },
+    {
+      "id": "LxpLl6ztSYtExbonnW-00",
+      "type": "text",
+      "x": 2283.8100892347857,
+      "y": -9.233570085382667,
+      "width": 396.5958468019344,
+      "height": 129.60000000000002,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b01",
+      "roundness": null,
+      "seed": 1073532810,
+      "version": 1031,
+      "versionNonce": 319502486,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "ERUXbNbrJyRlzQaPJw1EE",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790351150917,
+      "link": null,
+      "locked": false,
+      "text": "Повышает точность работы в ботах и сервисах, где\nпромпты пишут обычные пользователи. Там могут\nбыть грамматические ошибки, опечатки,\nдвусмысленности или непоследовательный текст.\nТакже полезно при обработке устной речи\n(запросов введёных голосом).",
+      "fontSize": 16,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Повышает точность работы в ботах и сервисах, где промпты пишут обычные пользователи. Там могут быть грамматические ошибки, опечатки, двусмысленности или непоследовательный текст.\nТакже полезно при обработке устной речи (запросов введёных голосом).",
+      "autoResize": false,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "-42TukGi-e-2lgYiFIHE6",
+      "type": "text",
+      "x": 2092.054300414865,
+      "y": 84.02648241519219,
+      "width": 34.9375,
+      "height": 37.800000000000004,
+      "angle": 0,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b04",
+      "roundness": null,
+      "seed": 350154511,
+      "version": 163,
+      "versionNonce": 1496185878,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "ERUXbNbrJyRlzQaPJw1EE",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790351043275,
+      "link": null,
+      "locked": false,
+      "text": "🔥",
+      "fontSize": 28,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "🔥",
+      "autoResize": true,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "ERUXbNbrJyRlzQaPJw1EE",
+      "type": "arrow",
+      "x": 2141.6045820028403,
+      "y": 128.64657159989324,
+      "width": 124.93971839113783,
+      "height": 56.122941570497744,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 40,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b05",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 626695498,
+      "version": 84,
+      "versionNonce": 1682502806,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790351426462,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          124.93971839113783,
+          -56.122941570497744
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "-42TukGi-e-2lgYiFIHE6",
+        "focus": 1.4898645625631017,
+        "gap": 14.612781587974732
+      },
+      "endBinding": {
+        "elementId": "LxpLl6ztSYtExbonnW-00",
+        "focus": 0.4429130677287435,
+        "gap": 13.833501994201015
+      },
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "elbowed": false
+    },
+    {
+      "id": "itw4DNeP3Ky1e8oh05bkb",
+      "type": "text",
+      "x": 2283.8100900812397,
+      "y": 173.03052141012606,
+      "width": 396.5958468019344,
+      "height": 64.80000000000001,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b06",
+      "roundness": null,
+      "seed": 595923478,
+      "version": 1163,
+      "versionNonce": 1386163850,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "ERUXbNbrJyRlzQaPJw1EE",
+          "type": "arrow"
+        },
+        {
+          "id": "09iRnuVIcgvexODkxIfr4",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790351263879,
+      "link": null,
+      "locked": false,
+      "text": "Бывает полезно в сложных задачах.\nМеханизм внимание особенно хорошо работает на\nдублированном фрагменте",
+      "fontSize": 16,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Бывает полезно в сложных задачах.\nМеханизм внимание особенно хорошо работает на дублированном фрагменте",
+      "autoResize": false,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "09iRnuVIcgvexODkxIfr4",
+      "type": "arrow",
+      "x": 1860.4348391678,
+      "y": 198.42956120545608,
+      "width": 414.4003701939778,
+      "height": 0.6955127205606004,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 40,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b07",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 915444938,
+      "version": 109,
+      "versionNonce": 1169471434,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790351263879,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          414.4003701939778,
+          -0.6955127205606004
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "u7qs6NQ4AP6_It4hQgbuk",
+        "focus": 0.3902732014408066,
+        "gap": 7.5697404246859605
+      },
+      "endBinding": {
+        "elementId": "itw4DNeP3Ky1e8oh05bkb",
+        "focus": 0.2834273827332595,
+        "gap": 8.870895243365794
+      },
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "elbowed": false
+    },
+    {
+      "id": "xROjdmyKjudvRz_6I6YpI",
+      "type": "text",
+      "x": 2283.8100904961334,
+      "y": -210.0605357245684,
+      "width": 396.5958468019344,
+      "height": 64.80000000000001,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b08",
+      "roundness": null,
+      "seed": 1535857226,
+      "version": 1211,
+      "versionNonce": 142165782,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "ERUXbNbrJyRlzQaPJw1EE",
+          "type": "arrow"
+        },
+        {
+          "id": "Z7yTaeJ3IdQNR6bs4JLhu",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790351426462,
+      "link": null,
+      "locked": false,
+      "text": "Для современных LLM \"Роль\" задаёт скорее стиль,\nчем заставляет модель делать более\n\"профессиональный\" ответ.",
+      "fontSize": 16,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Для современных LLM \"Роль\" задаёт скорее стиль, чем заставляет модель делать более \"профессиональный\" ответ.",
+      "autoResize": false,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "Z7yTaeJ3IdQNR6bs4JLhu",
+      "type": "arrow",
+      "x": 2016.0170218596336,
+      "y": -88.74323220398153,
+      "width": 250.83922589379245,
+      "height": 64.21000454463848,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 40,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b09",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1650286026,
+      "version": 171,
+      "versionNonce": 933884374,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790351426462,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          250.83922589379245,
+          -64.21000454463848
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "bt_QHuKAnyM0BmHnGP49c",
+        "focus": 0.8466393900236449,
+        "gap": 3.6955020786413115
+      },
+      "endBinding": {
+        "elementId": "xROjdmyKjudvRz_6I6YpI",
+        "focus": 0.3471427098248808,
+        "gap": 17.32527914191496
+      },
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "elbowed": false
+    },
+    {
+      "id": "xnH0zGAhqC-odf8OxVpfD",
+      "type": "text",
+      "x": 2286.5589144516744,
+      "y": 266.0291275138625,
+      "width": 373.6693825535972,
+      "height": 43.2,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0A",
+      "roundness": null,
+      "seed": 81695887,
+      "version": 1278,
+      "versionNonce": 1708537302,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "ERUXbNbrJyRlzQaPJw1EE",
+          "type": "arrow"
+        },
+        {
+          "id": "09iRnuVIcgvexODkxIfr4",
+          "type": "arrow"
+        },
+        {
+          "id": "u53zJbrYvFiJnlofM14sF",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790351308351,
+      "link": null,
+      "locked": false,
+      "text": "Также полезно в сложных задачах, в поисковых\nсистемах и в агентских сценариях",
+      "fontSize": 16,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Также полезно в сложных задачах, в поисковых системах и в агентских сценариях",
+      "autoResize": false,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "u53zJbrYvFiJnlofM14sF",
+      "type": "arrow",
+      "x": 2083.1251249226275,
+      "y": 270.13894183689047,
+      "width": 192.39353331206576,
+      "height": 18.0535982317121,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 40,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0B",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 2062294538,
+      "version": 40,
+      "versionNonce": 1487508118,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790353648229,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          192.39353331206576,
+          18.0535982317121
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "FkOuOhfr9HeEcPmdyTKWM",
+        "focus": 0,
+        "gap": 14.689477197374256
+      },
+      "endBinding": {
+        "elementId": "xnH0zGAhqC-odf8OxVpfD",
+        "focus": 0.07649835520650138,
+        "gap": 11.040256216981106
+      },
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "elbowed": false
+    },
+    {
+      "id": "Jollbp0SF1B_iHCOvYt0-",
+      "type": "text",
+      "x": 2286.558914173508,
+      "y": -314.38656113034483,
+      "width": 599.4128664773709,
+      "height": 86.4,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0D",
+      "roundness": null,
+      "seed": 848433034,
+      "version": 1701,
+      "versionNonce": 1564872394,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "ERUXbNbrJyRlzQaPJw1EE",
+          "type": "arrow"
+        },
+        {
+          "id": "Z7yTaeJ3IdQNR6bs4JLhu",
+          "type": "arrow"
+        },
+        {
+          "id": "101FFcdmS-7W3fPq-Cm8N",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790351982249,
+      "link": null,
+      "locked": false,
+      "text": "Актуально для ~2024 года.\nСовременные LLM могут выдавать более поддерживающие ответы, но без\nповышения качества анализа или самого ответа. Но может быть полеpен для\njailbreak (обхода ограничений)",
+      "fontSize": 16,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Актуально для ~2024 года.\nСовременные LLM могут выдавать более поддерживающие ответы, но без повышения качества анализа или самого ответа. Но может быть полеpен для jailbreak (обхода ограничений)",
+      "autoResize": false,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "101FFcdmS-7W3fPq-Cm8N",
+      "type": "arrow",
+      "x": 1813.7794791842734,
+      "y": -214.1374891868691,
+      "width": 462.051209661804,
+      "height": 56.97424463309446,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 40,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0E",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1170038154,
+      "version": 429,
+      "versionNonce": 1005430154,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790351982250,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          462.051209661804,
+          -56.97424463309446
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "gNhDiXFo4doJhm64FkS7b",
+        "focus": 0.8146324432602808,
+        "gap": 3.906506766562643
+      },
+      "endBinding": {
+        "elementId": "Jollbp0SF1B_iHCOvYt0-",
+        "focus": 0.4766208531545042,
+        "gap": 10.728225327430664
+      },
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "elbowed": false
+    },
+    {
+      "id": "kGSL_uGSBWtHLV9iWRbh-",
+      "type": "text",
+      "x": 1150.7898988998968,
+      "y": 391.85980998766007,
+      "width": 435.08456159283355,
+      "height": 43.2,
+      "angle": 0,
+      "strokeColor": "#868e96",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0G",
+      "roundness": null,
+      "seed": 925084690,
+      "version": 844,
+      "versionNonce": 739989654,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1790352236695,
+      "link": null,
+      "locked": false,
+      "text": "Exemplar — это идеальная модель или образец,\nдостойный подражания. Example — просто пример.",
+      "fontSize": 16,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Exemplar — это идеальная модель или образец, достойный подражания. Example — просто пример.",
+      "autoResize": false,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "7flVckNb81RwaLV7hs-67",
+      "type": "text",
+      "x": 2283.8100904868106,
+      "y": 443.51730892737277,
+      "width": 395.87112164268547,
+      "height": 108,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0H",
+      "roundness": null,
+      "seed": 1521938954,
+      "version": 1698,
+      "versionNonce": 988263882,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790353131896,
+      "link": null,
+      "locked": false,
+      "text": "На момент осени 2026 года примеры важны\nприемущественно в узких задачах, редких или\nспециальных форматах.\nЛишние примеры в распространённых задачх\nмогут ухудшать рассуждения.",
+      "fontSize": 16,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "На момент осени 2026 года примеры важны приемущественно в узких задачах, редких или специальных форматах.\nЛишние примеры в распространённых задачх могут ухудшать рассуждения.",
+      "autoResize": false,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "3QnVLje4UhIZPk-Wh7ivs",
+      "type": "text",
+      "x": 1985.4734399338063,
+      "y": 576.3850476770442,
+      "width": 667.5485168864393,
+      "height": 129.60000000000002,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0I",
+      "roundness": null,
+      "seed": 846638241,
+      "version": 2213,
+      "versionNonce": 235336650,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1790353612237,
+      "link": null,
+      "locked": false,
+      "text": "Не актуально. \nRAG и DSPy заменяют эти техники.\n\nDSPy - фреимворк, заменяющий ручное составление системного промпта,\nавтоматическим, на основе правил и набора метрик для оценки. DSPy происходит на\nэтапе разработки ИИ системы.",
+      "fontSize": 16,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Не актуально. \nRAG и DSPy заменяют эти техники.\n\nDSPy - фреимворк, заменяющий ручное составление системного промпта, автоматическим, на основе правил и набора метрик для оценки. DSPy происходит на этапе разработки ИИ системы.",
+      "autoResize": false,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "VsXxKwEMhnaCMuFFuEb0T",
+      "type": "text",
+      "x": 1888.1818440167813,
+      "y": 770.9262027768369,
+      "width": 34.9375,
+      "height": 37.800000000000004,
+      "angle": 0,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#2f9e44",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0J",
+      "roundness": null,
+      "seed": 1028974351,
+      "version": 215,
+      "versionNonce": 275190486,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "u53zJbrYvFiJnlofM14sF",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1790353649238,
+      "link": null,
+      "locked": false,
+      "text": "🔥",
+      "fontSize": 28,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "🔥",
+      "autoResize": true,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "wPb-xS4PfadHp8Ks6XYJT",
+      "type": "text",
+      "x": 1146.6272547670208,
+      "y": 837.9716911482259,
+      "width": 443.40985107421875,
+      "height": 37.800000000000004,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 90,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0K",
+      "roundness": null,
+      "seed": 1705547914,
+      "version": 51,
+      "versionNonce": 857453526,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790353712914,
+      "link": null,
+      "locked": false,
+      "text": "Structured Outputs / JSON Schema",
+      "fontSize": 28,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Structured Outputs / JSON Schema",
+      "autoResize": true,
+      "lineHeight": 1.35
+    },
+    {
+      "id": "nBu857Bl-_msJ7WMVxyX3",
+      "type": "text",
+      "x": 672.0081907721778,
+      "y": 1844.9446317526495,
+      "width": 837.9050598144529,
+      "height": 113.4,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 90,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0L",
+      "roundness": null,
+      "seed": 55727946,
+      "version": 122,
+      "versionNonce": 1824924106,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790354238250,
+      "link": null,
+      "locked": false,
+      "text": "Cбор нескольких вариантов ответа (например, через Self-\nConsistency с разной температурой) и выборе итогового\nрезультата с помощью голосования или модели-судьи",
+      "fontSize": 28,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Cбор нескольких вариантов ответа (например, через Self-Consistency с разной температурой) и выборе итогового результата с помощью голосования или модели-судьи",
       "autoResize": false,
       "lineHeight": 1.35
     }
