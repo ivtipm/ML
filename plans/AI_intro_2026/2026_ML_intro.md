@@ -42,7 +42,7 @@
     - Кодирование: унитарный код -- one-hot (OneHotEncoder, .get_dummies), числовое кодирование (LabelEncoder, .map, .apply))
     - *Пайплайны (конвейеры) обработки данных и применение модели*
         - sklearn.pipeline.Pipeline, sklearn.compose.ColumnTransformer, sklearn.preprocessing.FunctionTransformer
-        - Кодирования + масштабирования данных 
+        - Кодирования + масштабирования данных
 
 7. Другие парадигмы в ИИ (Обзор): обучение без учителя (Unsupervised Learning), кластеризация; обучение с подкреплением (Reinforcement Learning), агент, среда, вознаграждение; краткий обзор других направлений.
 
@@ -55,7 +55,10 @@
     - https://github.com/ivtipm/ML/blob/main/examples/docker-api
 
 
-**См. также** [план по Языкам программирования для МО](https://github.com/VetrovSV/Programming/blob/master/plans/ML/readme.md)
+**См. также** [план по Языкам программирования для МО](https://github.com/VetrovSV/)
+
+
+
 
 # Задания
 
@@ -71,7 +74,7 @@
     - Приведите ссылку на задание, текст задания.
 
 1. Загрузите и сделайте выборку из данных:
-   - Источник: 
+   - Источник:
    - Как делать выборку:
      ```py
     ```
