@@ -94,8 +94,10 @@
 7. Практика: задание 1 — [tasks/task_LLM_use.md](tasks/task_LLM_use.md)
 
 
-### Тема 2. Агенты на основе LLM
-
+### Тема 2. Принципы работы LLM и Агенты
+1. Устройство LLM и окружения\
+   Слайды 1: https://docs.google.com/presentation/d/1y_R99DlMprkxNmDjhekuONVODyO0CUCpOD2AmyMaZhs/edit?usp=sharing\
+   Слайды 2: https://docs.google.com/presentation/d/1DMAws01QZB-uQC1vCTuASi0T6tIjxIIH5OQGH9mFHmY/edit?usp=sharing
 1. Концепция агентов
    - LLM + инструменты + память + планирование
    - чем агент отличается от простого чата
