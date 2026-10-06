@@ -1,7 +1,7 @@
 ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fivtipm%2FML%2Fedit%2Fmain%2FREADME.md&label=Visitors&icon=github&color=%230a58ca)
 
 **[Магистратура. Очное. 2026. Осень. NLP и LLM](plans/2026_LLM/LLM_2026_plan.md)**\
-**[Магистратура. Очное. 2026. Осень. Нейросети](plans/2026_NN.md)**
+**[Магистратура. Очное. 2026. Осень. Нейросети](plans/2026_NN.md)**\
 **[Магистратура. Очное. 2026. Осень. Введение в разработку интеллектуальных систем](plans/AI_intro_2026/2026_ML_intro.md)**
 
 # Машинное обучение
