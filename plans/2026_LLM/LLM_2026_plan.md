@@ -87,7 +87,7 @@
    - воспроизводимость, сравнение моделей
 6. Безопасность
    - prompt injection, приватность данных
-7. Практика: задание 1 — [tasks/task_LLM_use.md](tasks/task_LLM_use.md)
+7. Практика: задание 1 — [/tasks/task_LLM_use.md](/tasks/task_LLM_use.md)
 
 
 ### Тема 2. Принципы работы LLM и Агенты
