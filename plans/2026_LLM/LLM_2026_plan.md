@@ -92,8 +92,9 @@
 
 ### Тема 2. Принципы работы LLM и Агенты
 1. Устройство LLM и окружения\
-   Слайды 1: https://docs.google.com/presentation/d/1y_R99DlMprkxNmDjhekuONVODyO0CUCpOD2AmyMaZhs/edit?usp=sharing\
-   Слайды 2: https://docs.google.com/presentation/d/1DMAws01QZB-uQC1vCTuASi0T6tIjxIIH5OQGH9mFHmY/edit?usp=sharing
+   Слайды 1: https://docs.google.com/presentation/d/1y_R99DlMprkxNmDjhekuONVODyO0CUCpOD2AmyMaZhs\
+   Слайды 2: https://docs.google.com/presentation/d/1DMAws01QZB-uQC1vCTuASi0T6tIjxIIH5OQGH9mFHmY\
+   Слайды 3: https://docs.google.com/presentation/d/1G2KGJdfgGPJ3_BlOBQhzzWUVpKFrIMq459yr2lvNbm4\
 1. Концепция агентов
    - Агент = LLM + инструменты + память + планирование
    - чем агент отличается от простого чата
