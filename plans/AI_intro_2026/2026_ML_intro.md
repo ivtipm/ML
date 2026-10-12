@@ -29,6 +29,7 @@
 4. Обучения с учителем: задачи регрессии и классификации; разделение данных на обучающую (train) и тестовую (test) выборки. [слайды - 1](https://docs.google.com/presentation/d/11zFsnGJAaCzFGGVAjrd_OyNGD-fB6uLr3R-azaof0Qk)
 
 5. Простые модели: линейная и логистическая регрессия. Функции потерь: MSE, LogLoss. Использование scikit-learn: fit, predict.
+    - [Введение в scikit-learn (шпаргалка)](../../sklearn.md)
     - Линейная регрессия: модель и пример: https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx
     - [Короткая шпаргалка по линейной регрессии](https://github.com/ivtipm/ML/blob/main/slides%20etc/linreg/ML_intro_linreg.png?raw=true)
     - Логистическая регрессия: модель и пример:
@@ -64,7 +65,7 @@
 
 ## Линейная регрессия. Синтетические данные.
 
-Используйте библиотеку sklearn.
+Используйте библиотеку sklearn. См. [Введение в scikit-learn (шпаргалка)](../../sklearn.md).
 
 1. Освойте работу в google colaboratory или VS Code с файлами Jupyter Notebook
     - Как создавать ячейки? Какие виды ячеек бывают?
