@@ -153,7 +153,7 @@ flowchart TD
     fit --> model[("Обученная модель")]
     model --> predict["Предсказать<br/>(predict)"]
     test --> predict
-    predict --> metrics[/"Метрики на тесте"/]
+    predict --> metrics[/"Метрики на тесте и трейне"/]
 ```
 
 ```python
