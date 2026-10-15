@@ -14,7 +14,6 @@
   sklearn.show_versions()   # полезно для диагностики окружения
   ```
 
----
 
 # 2. Основные модули
 
@@ -44,7 +43,6 @@ sklearn разбита на модули по назначению. Ниже —
   - [`sklearn.dummy`](https://scikit-learn.org/stable/api/sklearn.dummy.html) — baseline для сравнения (`DummyClassifier`, `DummyRegressor`)
   - [`sklearn.pipeline`](https://scikit-learn.org/stable/api/sklearn.pipeline.html) — объединение шагов обработки в один объект (`Pipeline`, `make_pipeline`) —
 
----
 
 # 3. Данные в sklearn
 
@@ -89,7 +87,6 @@ sklearn работает с **табличными данными**. Строк�
 
 **Примеры:** [разведочный анализ и подготовка данных (Colab)](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR), [синтетические данные и EDA (Colab)](https://colab.research.google.com/drive/18YGaumubomt-Rtg_9_VT_nf1GwbMlEx8). Датасеты курса — в папке [`datasets/`](datasets/).
 
----
 
 # 4. Общий API
 
@@ -100,14 +97,12 @@ sklearn работает с **табличными данными**. Строк�
 - **clusterer** — содержит метод  `fit_predict` (без учителя).
 
 ## Основные методы
-| Метод | Что делает |
-|---|---|
-| `fit(X, y)` | обучает модель на данных |
-| `predict(X)` | предсказывает ответ для новых данных |
-| `predict_proba(X)` | вероятности классов (у классификаторов) |
-| `transform(X)` | преобразует данные (у трансформеров) |
-| `fit_transform(X, y)` | `fit` + `transform` за один вызов |
-| `score(X, y)` | оценка качества «из коробки» |
+- `fit(X, y)` — обучает модель на данных;
+- `predict(X)` — предсказывает ответ для новых данных;
+- `predict_proba(X)` — вероятности классов (у классификаторов);
+- `transform(X)` — преобразует данные (у трансформеров);
+- `fit_transform(X, y)` — `fit` + `transform` за один вызов;
+- `score(X, y)` — оценка качества «из коробки».
 
 ## Соглашения
 - **Гиперпараметры** — настройки модели, которые задаёт исследователь до обучения (например, `C` у логистической регрессии). Их задают в конструкторе: `LogisticRegression(C=1.0)`.
@@ -133,7 +128,6 @@ y_pred = model.predict(X_test)
 
 **Примеры:** [линейная регрессия (Colab)](https://colab.research.google.com/drive/1YadlNYk9_WkCQY6L-HKP9SI7xZjuzIMx). Кратко о модели — [шпаргалка по линейной регрессии](<slides etc/linreg/ML_intro_linreg.png>).
 
----
 
 # 5. Разделение данных и оценка
 
@@ -187,7 +181,6 @@ scores.mean(), scores.std()
 
 **Примеры:** [логистическая регрессия и метрики (Colab)](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh), [kNN и кросс-валидация (Colab)](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk).
 
----
 
 # 6. Предобработка
 
@@ -202,10 +195,8 @@ X_test_scaled  = scaler.transform(X_test)        # только transform на t
 ```
 Документация: [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html). Подробнее — [Preprocessing data](https://scikit-learn.org/stable/modules/preprocessing.html).
 
-| Модель | Нужен масштаб? |
-|---|---|
-| Линейная/логистическая регрессия с регуляризацией, SVM, kNN, PCA, нейросети | да |
-| Деревья, случайный лес, бустинг | нет |
+- Масштаб нужен: линейная/логистическая регрессия с регуляризацией, SVM, kNN, PCA, нейросети.
+- Масштаб не нужен: деревья, случайный лес, бустинг.
 
 ## Кодирование категориальных признаков
 Категориальные признаки (строки, категории) нужно превратить в числа.
@@ -225,7 +216,6 @@ from sklearn.impute import SimpleImputer   # strategy="mean" | "median" | "most_
 
 **Примеры и материалы:** [EDA и подготовка данных (Colab)](https://colab.research.google.com/drive/1kLfmJ4q81BNZtMs-oVX9cKJGsT3mYWmR), [пайплайн обработки (Colab)](https://colab.research.google.com/drive/1S1pylOPMxXIwRRVtl6vxSNAtwTBvKDcZ), [отбор и создание признаков](DataProcessing/features.ipynb), [логарифмирование признаков](DataProcessing/log_transformation.ipynb).
 
----
 
 # 7. Метрики
 
@@ -233,11 +223,9 @@ from sklearn.impute import SimpleImputer   # strategy="mean" | "median" | "most_
 ```python
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 ```
-| Метрика | Смысл |
-|---|---|
-| [`mean_absolute_error`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html) (MAE) | средняя абсолютная ошибка |
-| [`mean_squared_error`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html) (MSE) | средняя квадратичная ошибка |
-| [`r2_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html) (R²) | доля объяснённой дисперсии (1 — идеал) |
+- [`mean_absolute_error`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html) (MAE) — средняя абсолютная ошибка;
+- [`mean_squared_error`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html) (MSE) — средняя квадратичная ошибка;
+- [`r2_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html) (R²) — доля объяснённой дисперсии (1 — идеал).
 
 ## Классификация
 ```python
@@ -246,14 +234,12 @@ from sklearn.metrics import (
     confusion_matrix, classification_report,
 )
 ```
-| Метрика | Смысл |
-|---|---|
-| [`accuracy_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html) | доля верных ответов |
-| [`precision_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html) | точность (из предсказанных «положительных» — сколько верных) |
-| [`recall_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) | полнота (из всех «положительных» — сколько нашли) |
-| [`f1_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) | гармоническое среднее precision и recall |
-| [`confusion_matrix`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) | матрица ошибок |
-| [`classification_report`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html) | сводка precision/recall/F1 по классам |
+- [`accuracy_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html) — доля верных ответов;
+- [`precision_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html) — точность (из предсказанных «положительных» — сколько верных);
+- [`recall_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) — полнота (из всех «положительных» — сколько нашли);
+- [`f1_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) — гармоническое среднее precision и recall;
+- [`confusion_matrix`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) — матрица ошибок;
+- [`classification_report`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html) — сводка precision/recall/F1 по классам.
 
 Подробнее — [Metrics and scoring](https://scikit-learn.org/stable/modules/model_evaluation.html).
 
@@ -266,15 +252,12 @@ from sklearn.metrics import (
 
 **Примеры:** [логистическая регрессия и метрики (Colab)](https://colab.research.google.com/drive/1AdbtsRkX0jRVByuAKJxchYPcciTgFpqh), [несбалансированные выборки](DataProcessing/class_balancing.ipynb).
 
----
 
 # 8. Выбор модели
 
-| Задача | Модели |
-|---|---|
-| Регрессия | [`LinearRegression`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html), [`Ridge`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html), [`Lasso`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html), [`DecisionTreeRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html), [`RandomForestRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) |
-| Классификация | [`LogisticRegression`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), [`KNeighborsClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html), [`SVC`](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html), [`DecisionTreeClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html), [`RandomForestClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), [`GaussianNB`](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html) |
-| Снижение размерности | [`PCA`](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) |
+- Регрессия — [`LinearRegression`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html), [`Ridge`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html), [`Lasso`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html), [`DecisionTreeRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html), [`RandomForestRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html);
+- Классификация — [`LogisticRegression`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), [`KNeighborsClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html), [`SVC`](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html), [`DecisionTreeClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html), [`RandomForestClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), [`GaussianNB`](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html);
+- Снижение размерности — [`PCA`](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html).
 
 - Baseline (простейшее решение для сравнения): [`DummyClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html), [`DummyRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyRegressor.html).
   ```python
@@ -284,7 +267,6 @@ from sklearn.metrics import (
 
 **Примеры:** [kNN и SVM (Colab)](https://colab.research.google.com/drive/1oh7-ID00MN-AoJtAm4uL-bj0sqf5ieuk), [деревья и ансамбли (Colab)](https://colab.research.google.com/drive/1Bin_h7BPSfnxs4Pea7eibceNMkOEcKmg), [уменьшение размерности и PCA (Colab)](https://colab.research.google.com/drive/1SzAlYDLpjf65nnRbTVRtFxUWuyJnA8_s), [кластеризация (Colab)](https://colab.research.google.com/drive/1OjrSLj2hWx-0AqZtTc4ydOH5d22DFDxf). Материалы: [kNN и SVM](<ML/[Методы_МО]_kNN,_SVM.ipynb>).
 
----
 
 # 9. Сохранение модели
 
@@ -299,7 +281,6 @@ model = joblib.load("model.joblib")    # загрузить
 
 **См. также:** [сохранение моделей МО](tools/models_persistence/readme.md), [веб-интерфейс на Gradio](examples/gradio.ipynb), [API на FastAPI](examples/FastAPI), [приложение в Docker](examples/docker-ML-web).
 
----
 
 # 10. Частые ошибки
 
@@ -311,26 +292,20 @@ model = joblib.load("model.joblib")    # загрузить
 - Масштабирование выполнено до разделения на train/test.
 - Забыт `random_state` — результат не воспроизводится.
 
----
 
 # 11. Быстрый справочник
 
 ## Импорты по задачам
-| Что нужно | Откуда |
-|---|---|
-| Модели | `sklearn.linear_model`, `sklearn.tree`, `sklearn.ensemble`, `sklearn.svm`, `sklearn.neighbors`, `sklearn.naive_bayes` |
-| Предобработка | `sklearn.preprocessing`, `sklearn.impute` |
-| Разделение и CV | `sklearn.model_selection` |
-| Метрики | `sklearn.metrics` |
-| Датасеты | `sklearn.datasets` |
+- Модели — `sklearn.linear_model`, `sklearn.tree`, `sklearn.ensemble`, `sklearn.svm`, `sklearn.neighbors`, `sklearn.naive_bayes`;
+- Предобработка — `sklearn.preprocessing`, `sklearn.impute`;
+- Разделение и CV — `sklearn.model_selection`;
+- Метрики — `sklearn.metrics`;
+- Датасеты — `sklearn.datasets`.
 
 ## Метрика → функция
-| Задача | Функция |
-|---|---|
-| Регрессия | `mean_absolute_error`, `mean_squared_error`, `r2_score` |
-| Классификация | `accuracy_score`, `precision_score`, `recall_score`, `f1_score`, `classification_report` |
+- Регрессия — `mean_absolute_error`, `mean_squared_error`, `r2_score`;
+- Классификация — `accuracy_score`, `precision_score`, `recall_score`, `f1_score`, `classification_report`.
 
----
 
 # Ссылки
 - Getting Started: https://scikit-learn.org/stable/getting_started.html
