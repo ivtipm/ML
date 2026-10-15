@@ -1,72 +1,100 @@
-# Пример вызова инструментов LLM
+# Пример вызова инструментов (tools / function calling) для LLM.
+#
+# Главная идея: модель НЕ выполняет код сама. Она только «просит» вызвать
+# функцию, а сам вызов делает наш код. Затем результат возвращается модели,
+# и она формулирует ответ пользователю.
+#
+# Один шаг выглядит так:
+#   user  ->  LLM решает вызвать функцию  ->  tool_calls
+#         ->  наш код выполняет функцию   ->  результат
+#         ->  результат уходит обратно в LLM  ->  финальный ответ
 
 from random import randint
 import ollama
 
 
+# Docstring функции важен: ollama-python превращает его в JSON-схему инструмента
+# (описание + параметры). Чем понятнее описание и примеры, тем точнее модель
+# выбирает функцию и её аргументы.
 def dice(max: int) -> int:
     """Roll a die and return a random integer from 1 to max.
 
-    Use this function when the user asks to roll a die , throw dice,
+    Use this function when the user asks to roll a die, throw dice,
     or get a random number up to a given maximum.
-    Examples: "roll a dice 10", max = 10; "roll d20", max = 20
+
+    Examples:
+           "roll a die with 12 sides"    -> max = 12
+           "roll a d20"                  -> max = 20
+           "roll a die with 6 sides"     -> max = 6
+           "throw a dice 10"             -> max = 10
+           "random number from 1 to 100" -> max = 100
 
     Args:
         max (int): maximum number of sides / the upper bound of the roll
-
-    Returns:
-        int: random integer from 1 to max
-        if max == 0, return 9999
-
     """
     if max == 0:
+        # Заглушка для теста "roll d0": randint(1, 0) упал бы с ValueError.
         return 9999
     else:
         return randint(1, max)
 
 
-# MODEL_TOOLS = "functiongemma:latest"
-# qwen3.5:0.8b
-MODEL_TOOLS = "granite4.2:3b"
-MODEL_ANSWER = "granite4.2:3b"
+# Используем две модели: одна выбирает инструмент (должна быть обучена этому), другая формулирует ответ.
+# Так можно взять быструю модель для tools и модель получше для текста.
+# Но модели могут быть и одинаковыми, тогда главное чтобы обе были обучены на вызов инструментов и могли отвечать обычным текстом
+# MODEL_TOOLS = "granite4.2:3b"
+MODEL_TOOLS = "functiongemma:latest"
+MODEL_ANSWER = "lfm2.5-thinking:1.2b"
 
 
-def test_call(message: str = "roll d20") -> list[dict]:
-    Messages = [{'role': 'user', 'content': message}]
+def test_call(message: str = "roll d20") -> str:
+    messages = [
+        # Системный промпт задаёт роль и просит опираться на результат инструмента.
+        {'role': 'system', 'content': 'You are a helpful assistant. Use the tool result to answer the user.'},
+        {'role': 'user', 'content': message},
+    ]
 
-    r = ollama.chat(model=MODEL_TOOLS, messages=Messages, tools=[dice])
-    # Используем chat, а не generate так как будет несколько обращений к LLM
+    # Первый вызов: передаём список инструментов в параметре tools.
+    # tools есть только у chat (у generate такого параметра нет),
+    # поэтому используем именно chat.
+    r = ollama.chat(model=MODEL_TOOLS, messages=messages, tools=[dice], options={'temperature': 0.0} )
+    # если передавать tools, то в системный прмпт будет добавлено опсиание того, что LLM должна вызывать инструмент
 
     if r.message.tool_calls:
-        # print(r.message)
+        # Модель не выполнила функцию, а попросила нас это сделать.
+        # В tool_calls лежат имя функции и аргументы.
         call = r.message.tool_calls[0]
-        # print( f"Вызовы: {r.message.tool_calls}")
-        # print( f"Аргументы: {call.function.arguments}")
-        print(f"> вызываем функцию с аргументом {call.function.arguments}")
-        result = dice(**call.function.arguments)      # выполняем сами
+        print(f"> вызываем функцию с аргументом {call.function.arguments}; ", end="")
+
+        # Выполняем функцию сами и получаем результат.
+        result = dice(**call.function.arguments)
         print(f"> Функция выдала: {result}")
 
-        Messages.append(r.message)      # LLM важно видеть не только результат (что ниже), но и сам факт вызова функции
-        Messages.append({'role': 'tool', 'content': str(result)})
-        r = ollama.chat(model=MODEL_ANSWER, messages=Messages, tools=[dice])
-        print("===Ответ:")
+        # Возвращаем модели ход диалога: сначала её ответ с tool_calls,
+        # затем результат работы функции. Без сообщения ассистента модель
+        # не поймёт, откуда взялся результат, и ответ может быть пустым.
+        messages.append(r.message)
+        messages.append({'role': 'tool', 'tool_name': call.function.name, 'content': str(result)})
+
+        # Второй вызов: просим сформулировать ответ. Инструменты больше не нужны,
+        # иначе модель может вызвать функцию повторно вместо ответа.
+        # Если модель reasoning-типа, ответ может уйти в thinking — тогда
+        # помогает think=False.
+        r = ollama.chat(model=MODEL_ANSWER, messages=messages)
+        print("===Ответ===")
         print(r.message.content)
-        print("===")
-        return Messages
-    else:
-        print("> Нет вызова функции :(")
-        return Messages
+        return r.message.content
+
+    # Модель не захотела вызывать функцию.
+    print("> Нет вызова функции :(")
+    return ""
 
 
-
-TEST_PROMPTS = ["roll a die with max=10 and tell me the result.",
-                "roll d20",
-                "roll d2", "roll d0",
-                "tell me a joke",
-                "rolling stones"]
-
+# Прогоняем несколько формулировок, чтобы увидеть, как модель выбирает
+# функцию и аргументы. "roll d0" — крайний случай (некорректный аргумент).
+TEST_PROMPTS = ["roll a die with 12 sides", "throw a dice 10", "roll d20", "roll d20", "roll d2", "roll d6", "roll d0"]
 for prompt in TEST_PROMPTS:
     print(f"prompt: {prompt}")
-    chat_history = test_call(prompt)
-    print(chat_history)
+    try: test_call(prompt)
+    except Exception as e: print(f"\nerror: {e}")
     print("\n")
