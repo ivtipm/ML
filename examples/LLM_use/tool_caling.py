@@ -26,8 +26,10 @@ def dice(max: int) -> int:
            "roll a die with 12 sides"    -> max = 12
            "roll a d20"                  -> max = 20
            "roll a die with 6 sides"     -> max = 6
+           "roll a die"                  -> max = 6
            "throw a dice 10"             -> max = 10
            "random number from 1 to 100" -> max = 100
+           "🎲"                          -> max = 10
 
     Args:
         max (int): maximum number of sides / the upper bound of the roll
@@ -86,15 +88,18 @@ def test_call(message: str = "roll d20") -> str:
         return r.message.content
 
     # Модель не захотела вызывать функцию.
-    print("> Нет вызова функции :(")
-    return ""
+    raise Exception("No function call")
 
 
 # Прогоняем несколько формулировок, чтобы увидеть, как модель выбирает
 # функцию и аргументы. "roll d0" — крайний случай (некорректный аргумент).
-TEST_PROMPTS = ["roll a die with 12 sides", "throw a dice 10", "roll d20", "roll d20", "roll d2", "roll d6", "roll d0"]
+TEST_PROMPTS = ["roll a die with 12 sides", "throw a dice 10", "roll a die", "🎲", "roll d20", "roll d20", "roll d2", "roll d6", "roll d0"]
+Errors = 0
 for prompt in TEST_PROMPTS:
     print(f"prompt: {prompt}")
     try: test_call(prompt)
-    except Exception as e: print(f"\nerror: {e}")
+    except Exception as e: print(f"\nerror: {e}"); Errors += 1
     print("\n")
+
+
+print(f"всего вызовов {len(TEST_PROMPTS)}, ошибок {Errors}")
