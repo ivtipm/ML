@@ -100,8 +100,10 @@
    - чем агент отличается от простого чата
 2. ReAct
    - цикл «мысль → действие → наблюдение»
+   - пример: [agent.py](../../examples/agents/agent.py) — минимальный агент без фреймворков: LLM + инструменты + цикл
 3. Инструменты и function calling
    - поиск, калькулятор, выполнение кода, работа с файлами
+   - пример: [tool_calling.py](../../examples/LLM_use/tool_calling.py) — вызов инструментов (function calling) на примере генератора случайных чисел
 4. Фреймворки
    - LangChain: chains, tools, memory
    - LlamaIndex, AutoGen, CrewAI

@@ -268,7 +268,7 @@ print(r.message.content)
 
 - `message.tool_calls` — список вызовов; у каждого `function.name` и `function.arguments` (dict).
 - Цикл повторяется, пока модель не вернёт обычный ответ без `tool_calls`.
-- Пример-основа: `public/examples/LLM_use/tool_caling.py`.
+- Пример-основа: `public/examples/LLM_use/tool_calling.py`.
 
 
 ## 10. Эмбеддинги
