@@ -9,6 +9,7 @@
 #         ->  наш код выполняет функцию   ->  результат
 #         ->  результат уходит обратно в LLM  ->  финальный ответ
 
+from ollama._utils import convert_function_to_tool
 from random import randint
 import ollama
 
@@ -52,7 +53,7 @@ MODEL_ANSWER = "lfm2.5-thinking:1.2b"
 def test_call(message: str = "roll d20") -> str:
     messages = [
         # Системный промпт задаёт роль и просит опираться на результат инструмента.
-        {'role': 'system', 'content': 'You are a helpful assistant. Use the tool result to answer the user.'},
+        # {'role': 'system', 'content': 'You are a helpful assistant. Use the tool result to answer the user.'},
         {'role': 'user', 'content': message},
     ]
 
