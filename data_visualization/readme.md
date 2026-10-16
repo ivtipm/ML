@@ -41,13 +41,8 @@ seaborn.despine()         # удалить рамку
 
 Тема, в отличии от стиля, определяет в основном размеры элементов. Полезно если нужно создать графики для презентации (большие подписи) и для статьи (маленькие).
 
-| `set_style` || `set_theme` |
-| :------------- || :------------- |
-| darkgrid (default) || - paper|
-| whitegrid || - notebook |
-| dark || - talk |
-| white || - poster |
-| ticks ||  |
+- `set_style`: `darkgrid` (по умолчанию), `whitegrid`, `dark`, `white`, `ticks`.
+- `set_theme`: `paper`, `notebook`, `talk`, `poster`.
 
 
 # Литература
