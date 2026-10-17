@@ -27,7 +27,7 @@ MODEL = "qwen3.5:0.8b"
 
 # Режим размышлений. Требует модель с тегом `thinking` (qwen3, deepseek-r1,
 # gpt-oss). У обычных моделей оставьте False.
-THINK = False
+THINK = True
 
 
 # --- 2. Инструменты ----------------------------------------------------
@@ -95,7 +95,7 @@ def run_agent(user_message: str, max_steps: int = 5) -> str:
         print(f"\n--- шаг {step} ---")
 
         # Запрос к LLM: передаём историю сообщений и список инструментов.
-        response = ollama.chat( model=MODEL, messages=messages, tools=TOOLS, think=THINK )
+        response = ollama.chat( model=MODEL, messages=messages, tools=TOOLS, think=THINK, options={'temperature': 0.0} )
         message = response.message
 
         # Размышления модели (если включены и поддерживаются моделью).
@@ -132,4 +132,8 @@ def run_agent(user_message: str, max_steps: int = 5) -> str:
 
 
 if __name__ == "__main__":
-    run_agent("Какая сейчас погода в Москве? И сколько будет 17 * 23?")
+    # run_agent("Какая сейчас погода в Москве? И сколько будет 17 * 23?")
+    # run_agent("Какая сейчас погода в Москве? Какая сейчас погода в Сочи?")
+    # run_agent("5*(28/11) = 12")
+    # run_agent("5*(28/11) = Moscow")
+    run_agent("Узнай погоду в Москве и Сочи. Потом перемножь температуры и добавь к ним 1000")
