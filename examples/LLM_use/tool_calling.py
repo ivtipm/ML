@@ -51,8 +51,9 @@ def dice(max: int) -> int:
 # Так можно взять быструю модель для tools и модель получше для текста.
 # Но модели могут быть и одинаковыми, тогда главное чтобы обе были обучены на вызов инструментов и могли отвечать обычным текстом
 # MODEL_TOOLS = "granite4.2:3b"
-MODEL_TOOLS = "functiongemma:latest"
-MODEL_ANSWER = "lfm2.5-thinking:1.2b"
+MODEL_TOOLS = "qwen3.5:0.8b"
+# MODEL_ANSWER = "lfm2.5-thinking:1.2b"
+MODEL_ANSWER = "qwen3.5:0.8b"
 
 
 def test_call(message: str = "roll d20") -> str:
@@ -99,7 +100,7 @@ def test_call(message: str = "roll d20") -> str:
 
 # Прогоняем несколько формулировок, чтобы увидеть, как модель выбирает
 # функцию и аргументы. "roll d0" — крайний случай (некорректный аргумент).
-TEST_PROMPTS = ["roll a die with 12 sides", "throw a dice 10", "roll a die", "🎲", "roll d20", "roll d20", "roll d2", "roll d6", "roll d0"]
+TEST_PROMPTS = ["roll a d15 ", "roll a d15 ", "roll a die with 12 sides", "throw a dice 10", "🎲", "roll d20", "roll d20", "roll d2", "roll d6", "roll d0"]
 Errors = 0
 for prompt in TEST_PROMPTS:
     print(f"prompt: {prompt}")
