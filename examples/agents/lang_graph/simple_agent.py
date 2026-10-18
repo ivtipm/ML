@@ -83,7 +83,10 @@ agent = builder.compile()       # -> CompiledStateGraph
 agent
 
 # %% Cell 20
-Messages = [{'role': 'user', 'content': "Какая погода в Москве? И сколько будет 17 * 23?"}]
+Messages = [
+#    {'role': 'user', 'content': "Какая погода в Москве? И сколько будет 17 * 23?"},
+    {'role': 'user', 'content': "Какая погода в Москве? Прибавь к ней 3, а потом Умножь её на 100"},
+]
 result = agent.invoke( { "messages": Messages } )
 # Итоговое состояние хранит всю историю сообщений
 for m in result["messages"]:
