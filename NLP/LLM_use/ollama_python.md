@@ -395,6 +395,7 @@ asyncio.run(main())
 - Конспект по официальному Python-клиенту OpenAI (тот же протокол, но `base_url` указывает на Ollama) — [«Пакет `openai` для Python»](openai_python.md).
 - Это совместимость со стороны сервера Ollama. Обратное не следует автоматически: `ollama-python` ожидает Ollama REST API и не становится клиентом LM Studio или OpenRouter при смене `host`.
 - Для цепочек и пайплайнов можно использовать обёртки вроде LangChain (`ChatOllama`) или LlamaIndex; они добавляют слой абстракции и не устраняют различия в возможностях моделей и API.
+- Подробнее про ресурсы, эндпоинты и методы REST API — в конспекте [«API»](https://github.com/VetrovSV/Programming/blob/master/API/readme.md).
 
 
 ## 17. Типичные ошибки и советы
