@@ -142,7 +142,72 @@ print([m.id for m in client.models.list()])
 **Что возвращает вызов create.** Результат — объект ответа, а сам текст лежит в `response.choices[0].message.content`. Поле `choices` — список вариантов ответа (по умолчанию один), `message` — сообщение модели с ролью и содержимым, `content` — его текст.
 
 
-## 5. Устройство API: `client.chat.completions` и смежные ресурсы
+## 4. Вызов инструментов (tools / function calling)
+
+Инструменты (tools) — это функции, которые модель не выполняет сама, а просит вызвать ваш код: модель возвращает имя функции и аргументы, код выполняет вызов и возвращает результат модели. Так LLM получает доступ к действиям, которые ей недоступны: вычисления, запросы к базе данных, внешние API.
+
+Пример — генерация случайного числа (кубик):
+
+```python
+import json
+import openai
+from openai import OpenAI
+from pydantic import BaseModel
+from random import randint
+
+client = OpenAI(base_url='http://localhost:11434/v1', api_key='ollama')
+
+def dice(max: int) -> int:
+    """Roll a die and return a random integer from 1 to max."""
+    return randint(1, max)
+
+# Схему инструмента строит pydantic_function_tool из модели pydantic:
+# поля модели становятся параметрами, имя и описание задаются аргументами
+class DiceArgs(BaseModel):
+    max: int
+
+tools = [openai.pydantic_function_tool(
+    DiceArgs,
+    name='dice',
+    description='Roll a die and return a random integer from 1 to max.',
+)]
+
+messages = [{'role': 'user', 'content': 'roll d20'}]
+
+r = client.chat.completions.create(
+    model='qwen3:0.6b',
+    messages=messages,
+    tools=tools,
+)
+
+if r.choices[0].message.tool_calls:
+    tool_call = r.choices[0].message.tool_calls[0]
+    args = json.loads(tool_call.function.arguments)   # строка JSON -> dict
+    result = dice(**args)
+
+    messages.append(r.choices[0].message)             # ответ ассистента с tool_calls
+    messages.append({
+        'role': 'tool',
+        'tool_call_id': tool_call.id,                 # связывает результат с вызовом
+        'content': str(result),
+    })
+
+    r = client.chat.completions.create(model='qwen3:0.6b', messages=messages)
+    print(r.choices[0].message.content)
+```
+
+**Инструмент описывается JSON-схемой.** Модель получает не код функции, а её описание: имя, пояснение и параметры. Здесь схему строит `openai.pydantic_function_tool` из модели pydantic — поля модели становятся параметрами, имя и описание передаются аргументами. Схему можно написать и вручную, словарём с полями `type`, `function`, `name`, `description`, `parameters`; так приходится делать, когда инструмент не укладывается в модель pydantic или сервер не принимает сгенерированную схему.
+
+**Модель возвращает запрос на вызов.** В `message.tool_calls` лежит список вызовов; у каждого есть `id`, имя функции и аргументы. Аргументы приходят строкой JSON — её нужно распарсить `json.loads` и передать в функцию.
+
+**Результат возвращается сообщением с ролью `tool`.** В историю добавляются ответ ассистента с `tool_calls` и сообщение с результатом; поле `tool_call_id` связывает результат с конкретным вызовом. Без ответа ассистента модель не поймёт, откуда взялся результат.
+
+**Второй вызов без инструментов.** После выполнения функции модель формулирует ответ обычным запросом — инструменты больше не передаются, иначе она может вызвать функцию повторно.
+
+Аналогичный пример с пакетом `ollama` — [tool_calling.py](../../examples/LLM_use/tool_calling.py): там инструмент передаётся самой функцией (`tools=[dice]`), а схема строится из сигнатуры и docstring.
+
+
+## 6. Устройство API: `client.chat.completions` и смежные ресурсы
 
 **Ресурс (Resource)** — понятие REST. Это сущность, доступная по собственному адресу (URL), над которой выполняют действия HTTP-методами (`GET`, `POST`, `DELETE`). 
 
@@ -168,7 +233,7 @@ client
 ```
 
 
-## 6. Ссылки
+## 7. Ссылки
 
 - Документация: https://github.com/openai/openai-python
 - API-справочник: https://platform.openai.com/docs/api-reference
