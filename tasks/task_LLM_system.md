@@ -28,6 +28,7 @@
 ## Этап 0. Тестовый стенд и доступ к LLM
 
 1. Настройте окружение и доступ к LLM. Используйте локальный запуск через ollama, LM Studio и т.п. или используйте облачных провайдеров: GigaChat, proxyapi.ru, ollama, mistral, openrouter и т.п.
+   Работа с Ollama из Python — [ollama_python.md](../NLP/LLM_use/ollama_python.md).
 
 Не рекомендуется устанавливать SSL сертификат минцифры глобально. Владелец корневого сертификата, имеет полную техническую власть над зашифрованным трафиком устройства. 
 
@@ -88,7 +89,8 @@
 
 1. **Нативный tool calling.** Реализуйте вызов инструментов через `ollama.chat(..., tools=[...])`.
    Разберитесь, как docstring и аннотации типов превращаются в JSON-схему. Смотрите пример
-   [tool_calling.py](../../examples/LLM_use/tool_calling.py).
+   [tool_calling.py](../../examples/LLM_use/tool_calling.py) и обзор пакета
+   [ollama_python.md](../NLP/LLM_use/ollama_python.md).
 2. **Тест-набор.** Составьте 20–40 запросов с ожидаемым инструментом и аргументами.
    Считайте: точность выбора инструмента, точность аргументов, долю успешных вызовов.
 3. **Сложные случаи.** Проверьте, как система ведёт себя, когда:
@@ -229,6 +231,7 @@
 - Доска с приёмами промпт-инжиниринга:
   [promt_enginering_systematic](../../NLP/prompt_enginering/promt_enginering_systematic.excalidraw.png)
 - Ollama: https://ollama.com/ (модели, теги `tools` и `thinking`)
+- Пакет `ollama` для Python: [ollama_python.md](../NLP/LLM_use/ollama_python.md)
 - Sentence Transformers: https://www.sbert.net/
 - FAISS: https://github.com/facebookresearch/faiss, Chroma: https://www.trychroma.com/
 - RAGAS: https://docs.ragas.io/

@@ -109,6 +109,8 @@ URL для обращения по REST API:
 
 Пакет для Python - обёртка над REST API Ollama: https://github.com/ollama/ollama-python
 
+Обзор пакета `ollama` для Python: [ollama_python.md](../../NLP/LLM_use/ollama_python.md)
+
 Модель, запущенная на сервере, не имеет состояния. Что типично для большинства LLM сервером. При обращении к LLM по API необходимо передавать весь необходимый контекст или историю чата.
 
 
