@@ -135,6 +135,7 @@
    - API Ollama, OpenAI-совместимые API
    - подключение из кода и сторонних приложений
    - пакет `ollama` для Python: [ollama_python.md](../../NLP/LLM_use/ollama_python.md)
+   - пакет `openai` для Python: [openai_python.md](../../NLP/LLM_use/openai_python.md)
 6. Hugging Face
    - hub, datasets, transformers, pipelines
    - скачивание и запуск моделей
