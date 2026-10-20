@@ -7,17 +7,17 @@
 
 **Таблица 1. Малые модели, рассматриваемые в разделе**
 
-| Модель | Год | Размер | Контекст | Возможности | Intelligence Index |
+| Модель | Год | Размер, Гб | Контекст | Возможности | Intelligence Index |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Qwen3.5 0.8B](https://ollama.com/library/qwen3.5) | 2026 | 1.3 ГБ | 256K | think, tools, vision | ≈5 |
-| [Qwen3.5 2B](https://ollama.com/library/qwen3.5) | 2026 | 2.7 ГБ | 256K | think, tools, vision | ≈5 |
-| [Qwen3.5 4B](https://ollama.com/library/qwen3.5) | 2026 | ~8 ГБ | 256K | think, tools, vision | ≈13 |
-| [Nemotron 3 Nano 4B](https://ollama.com/library/nemotron-3-nano) | 2026 | 2.8 ГБ | 256K | think, tools | ≈7 |
-| [Gemma 4 E2B (QAT)](https://ollama.com/library/gemma4) | 2026 | 4.3 ГБ | 128K | think, tools, vision, audio | 8 |
-| [Granite 4.1 3B](https://ollama.com/library/granite4.1) | 2026 | 2.1 ГБ | 128K | tools | ≈4 |
-| [Granite 4.2 3B](https://ollama.com/library/granite4.2) | 2026 | 2.2 ГБ | 128K | think, tools | 9 |
-| [Bonsai 2 2B / 4B](https://ollama.com/library/bonsai-2) | 2026 | — | 256K | think, tools, vision | — |
-| [LFM2.5 1.2B Thinking](https://ollama.com/library/lfm2.5-thinking) | 2026 | <1 ГБ | 32K | think, tools | ≈5 |
+| [Qwen3.5 0.8B](https://ollama.com/library/qwen3.5) | 2026 | 1.3 | 256K | think, tools, vision | ≈5 |
+| [Qwen3.5 2B](https://ollama.com/library/qwen3.5) | 2026 | 2.7 | 256K | think, tools, vision | ≈5 |
+| [Qwen3.5 4B](https://ollama.com/library/qwen3.5) | 2026 | ~8 | 256K | think, tools, vision | ≈13 |
+| [Nemotron 3 Nano 4B](https://ollama.com/library/nemotron-3-nano) | 2026 | 2.8 | 256K | think, tools | ≈7 |
+| [Gemma 4 E2B (QAT)](https://ollama.com/library/gemma4) | 2026 | 4.3 | 128K | think, tools, vision, audio | 8 |
+| [Granite 4.1 3B](https://ollama.com/library/granite4.1) | 2026 | 2.1 | 128K | tools | ≈4 |
+| [Granite 4.2 3B](https://ollama.com/library/granite4.2) | 2026 | 2.2 | 128K | think, tools | 9 |
+| [Bonsai 2 2B / 4B / 9b](https://ollama.com/library/bonsai-2) | 2026 | 0.9 / 1.6 / 3.2 | 256K | think, tools, vision | — |
+| [LFM2.5 1.2B Thinking](https://ollama.com/library/lfm2.5-thinking) | 2026 | 0.7 | 32K | think, tools | ≈5 |
 
 Название модели — ссылка на страницу в библиотеке Ollama. Контекст — обученное окно модели; 256K — это 262 144 токена. Значения Intelligence Index — рейтинг [Artificial Analysis](https://artificialanalysis.ai/) версии 4.3.2 (октябрь 2026); знак `≈` отмечает оценку — независимого измерения по бенчмаркам для модели ещё нет, и балл может измениться. Размер — занимаемая память при типичной квантизации, а не исходный размер модели (см. раздел «Квантизация и качество»).
 
@@ -31,9 +31,9 @@
 
 **Artificial Analysis Intelligence Index** — сводный балл от независимой организации Artificial Analysis, которая сравнивает модели на одинаковых условиях. Это не один бенчмарк, а взвешенное среднее по десяти оценочным наборам, сгруппированным в четыре категории разного веса (версия индекса 4.3.2, сентябрь 2026):
 - агентные задачи (Agents) — 30%,
-- программирование (Coding) — 20%, 
-- общие способности (General) — 30% 
-- рассуждение в научных задачах (Scientific Reasoning) — 20%. 
+- программирование (Coding) — 20%,
+- общие способности (General) — 30%
+- рассуждение в научных задачах (Scientific Reasoning) — 20%.
 
 В набор входят десять бенчмарков: агентные задачи — AA-Briefcase, GDPval-AA и AutomationBench-AA; программирование — Terminal-Bench 4.0 и SciCode; общие способности — AA-Omniscience (знания и склонность к галлюцинациям), GDP.pdf и AA-LCR (длинный контекст); научное рассуждение — Humanity's Last Exam и CritPt. Итоговый балл масштабирован в диапазон 0–100.
 
@@ -84,12 +84,12 @@
 
 ## Области применения
 
-Области применения удобно рассматривать по двум критериям. 
+Области применения удобно рассматривать по двум критериям.
 Первый — **роль модели в пайплайне**: она либо преобразует вход в выход по правилу, либо достаёт данные, либо вызывает инструменты, либо генерирует текст.
 
 *Чем меньше в задаче степеней свободы — когда ответ однозначно задаётся входом и правилом (классифицировать, извлечь поле, переписать по шаблону), — тем предсказуемее работает малая модель*.
 
-И наоборот, чем планирование, несколько шагов рассуждения, генерация нового текста по произвольным правилом, работает тем хуже. 
+И наоборот, чем планирование, несколько шагов рассуждения, генерация нового текста по произвольным правилом, работает тем хуже.
 
 Второй критерий — **место развёртывания**: на устройстве пользователя, на edge-сервере или в частном облаке, либо в облачном каскаде рядом с большой моделью. Именно второй критерий объясняет, зачем вообще брать малую модель вместо вызова API: латентность (скорость отклика), приватность, цена на больших объёмах, работа без сети.
 
