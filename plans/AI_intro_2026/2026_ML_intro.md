@@ -11,7 +11,7 @@
 
 * Сериализовать модель и подготовить минимальный интерфейс/API (Gradio/FastAPI) для демонстрации результата.
 
-См. также курс по программированию для МО: https://github.com/VetrovSV/Programming/blob/master/plans/ML/readme.md
+См. также курс по программированию для МО: https://github.com/VetrovSV/Programming/blob/master/plans/ML/readme_2026.md
 
 
 # План
