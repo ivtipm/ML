@@ -13,3 +13,6 @@ datasets/IMDB Dataset.csv
 
 .claude
 CLAUDE.md
+
+# Stakpak session files
+.stakpak/session*
