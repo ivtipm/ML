@@ -55,10 +55,6 @@ uv pip install langgraph langchain langchain-ollama
 Соберём того же агента, что в `agent.py`. Используем те же инструменты, ту же модель, но цикл «цель → действие → наблюдение» станет графом. Узел `llm` вызывает модель, условное ребро направляет выполнение в узел `tools`, если модель запросила инструмент, иначе — к ответу.
 
 ```mermaid
----
-config:
-  theme: neutral
----
 flowchart TD
     START(["Начало"]) --> llm["llm: вызов модели"]
     llm --> cond{"Последнее сообщение содержит tool_calls?"}
@@ -118,7 +114,7 @@ def llm_call(state: MessagesState):
     """LLM decides whether to call a tool or answer."""
     # Узел читает состояние и возвращает обновления; add_messages добавляет ответ в историю
     messages = state["messages"]
-    result = llm.invoke()
+    result = llm.invoke(messages)
     return {"messages": [result]}
 
 
