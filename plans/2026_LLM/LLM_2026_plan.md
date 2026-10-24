@@ -105,7 +105,7 @@
    - поиск, калькулятор, выполнение кода, работа с файлами
    - пример: [tool_calling.py](../../examples/LLM_use/tool_calling.py) — вызов инструментов (function calling) на примере генератора случайных чисел
 4. Фреймворки
-   - LangChain: chains, tools, memory
+   - LangChain, [LangGraph](/NLP/LLM_use/langgraph.md).
    - LlamaIndex, AutoGen, CrewAI
 5. Агентские системы и вайбкодинг
    - Claude Code, Codex, Zed, VS Code
