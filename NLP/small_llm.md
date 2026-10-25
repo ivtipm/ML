@@ -263,6 +263,86 @@
 
 **Где место decision-модели.** Она занимает нишу между классическим ML и LLM. Классификатор, обученный на своих данных, быстр и дёшев, но под каждый новый вопрос нужен новый датасет и переобучение. LLM отвечает на любой вопрос, но генерирует токен за токеном. На это тратится время и деньги, а текст ещё нужно разобрать. Decision-модель принимает вопрос на естественном языке, как обычная LLM, и отвечает как классификатор, без обучения и без последующего парсинга ответа. Такая модель закрывает потребности в задачах, для которых обычный LLM слишком дорог, а свой классификатор — слишком трудоёмок.
 
+**Пример: бинарная классификация документа.** Задача, знакомая по курсу машинного обучения: отнести текст к одному из двух классов, например спам или не спам. Классическое решение — обучить свой классификатор на размеченных данных. Decision-модель даёт тот же результат без обучения и без разметки: документ передаётся как `state`, а классы описываются словами в поле `criteria`. Пример ниже использует открытую модель d1 локально через Ollama. Текст примера приведён на английском языке для лучшей совместимости с большинством моделей.
+
+Подготовка — установить Ollama 0.35 или новее, скачать модель и поставить SDK:
+
+```bash
+ollama pull d1
+pip install typesafe-sdk
+```
+
+Запрос через Python SDK, направленный на локальный сервер Ollama (ключ обязателен для SDK, но Ollama его игнорирует, поэтому подойдёт любая строка):
+
+```python
+from typesafe_sdk import TypeSafeClient, Choice
+
+client = TypeSafeClient(
+    base_url="http://localhost:11434",
+    api_key="ollama",
+)
+
+document = """
+    Dear Customer,
+    We noticed unusual sign-in activity on your account. To protect your security, we have temporarily limited your access. Please verify your identity within 24 hours or your account will be permanently closed.
+    [Click here to verify your account](e-corp.com/verify)
+    Sincerely,
+    Security Team
+"""
+
+MODEL  = "tev1:0.8b"
+# https://ollama.com/library/tev1
+
+result = client.system_one(
+    model=MODEL,
+    state=document,
+    questions={
+        "category": Choice(
+            instructions="Which class does this document belong to?",
+            criteria={
+                "spam": "Advertising, fraud, phishing, or attempts to solicit data or money",
+                "ham": "Normal business or personal correspondence",
+            },
+        ),
+    },
+)
+
+print(result.answers["category"].choice)        # spam
+print(result.answers["category"].confidence)    # 0.41
+print(result.model_dump_json(indent=2))
+```
+
+Ответ
+```json
+spam
+0.4062743341109083
+{
+  "model": "tev1:0.8b",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 0
+  },
+  "answers": {
+    "category": {
+      "type": "choice",
+      "choice": "spam",
+      "confidence": 0.4062743341109083,
+      "probabilities": {
+        "spam": 0.7031371670554541,
+        "ham": 0.2968628329445458
+      }
+    }
+  }
+}
+```
+- `output_tokens` всегда равен нулю. Модель не генерирует текст, весь ответ вычисляется за один прямой проход; локально вызов не стоит ничего, на hosted API — доли цента;
+- кроме выбранного класса модель возвращает полное распределение и `confidence` — по ним неуверенные случаи можно отдавать человеку или большой модели;
+- тот же вопрос можно задать проще, типом `noul` (да/нет): «Это спам?» вернёт одно число — вероятность того, что утверждение истинно.
+
+Без кода модель можно быстро проверить через CLI: `ollama run tev1:0.8b --ask "Is this spam?" < document.txt`.
+
+
+
 **Таблица 4. Decision-модели (все — сентябрь–октябрь 2026)**
 
 | Модель | Вендор | Размер | Доступ |
@@ -322,5 +402,6 @@
 - S. Willison. [Jev introduces a new shape of LLM—System One, aka Decision Models](https://simonwillison.net/2026/Sep/21/jev) (21 сентября 2026).
 - K. Waehner. [How Decision Models Became a New AI Category After Jev](https://www.kai-waehner.de/blog/2026/10/20/how-decision-models-became-a-new-ai-category-after-jev) (20 октября 2026).
 - Wikipedia. [Jev (AI model)](https://en.wikipedia.org/wiki/Jev_(AI_model)).
-- Liquid AI. [Каталог моделей LFM2.5](https://www.liquid.ai/models) (специализированные и decision-модели).
+- Liquid AI. [Каталог моделей LFM2.5](https://www.liquid.ai/models) (специализированные и decision-модели), [документация d1](https://docs.liquid.ai/lfm/models/d1) (формат запроса и примеры).
+- Ollama. [Страница модели d1](https://ollama.com/library/d1) (эндпоинт `/v1/systemone`, CLI и примеры), [поддержка decision-моделей](https://ollama.com/blog/ollama-now-supports-jev-style-decision-models) с версии 0.35.
 - Google DeepMind. [Варианты Gemma](https://deepmind.google/models/gemma) (TranslateGemma, FunctionGemma, EmbeddingGemma, MedGemma, ShieldGemma).
