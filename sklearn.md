@@ -270,7 +270,7 @@ from sklearn.metrics import (
 
 # 9. Сохранение модели
 
-Модель сохраняют через `joblib` ([документация](https://joblib.readthedocs.io/)).
+Обученную модель сохраняют, чтобы не обучать её заново и использовать в другом приложении или на другой машине. Стандартный способ — `joblib` ([документация](https://joblib.readthedocs.io/)).
 
 ```python
 import joblib
@@ -279,7 +279,23 @@ joblib.dump(model, "model.joblib")     # сохранить
 model = joblib.load("model.joblib")    # загрузить
 ```
 
-**См. также:** [сохранение моделей МО](tools/models_persistence/readme.md), [веб-интерфейс на Gradio](examples/gradio.ipynb), [API на FastAPI](examples/FastAPI), [приложение в Docker](examples/docker-ML-web).
+Если модель работает вместе с препроцессингом, сохраняйте весь `Pipeline` целиком. Модель без scaler и кодировщика, сохранённая отдельно, на сырых данных предсказывать не сможет:
+
+```python
+from sklearn.pipeline import make_pipeline
+
+pipe = make_pipeline(StandardScaler(), LogisticRegression())
+pipe.fit(X_train, y_train)
+joblib.dump(pipe, "model.joblib")
+```
+
+Что важно помнить:
+
+- файл привязан к версии scikit-learn: при загрузке из другой версии появляется `InconsistentVersionWarning`, корректная работа не гарантируется;
+- pickle и joblib не сохраняют код кастомных классов — при загрузке они должны быть импортируемы по тому же пути;
+- после загрузки полезно проверить модель на фиксированных данных (smoke-тест).
+
+**Подробнее:** [сохранение моделей МО](tools/models_persistence/readme.md) — что сохраняется и что нет, разница pickle и joblib, совместимость версий, формат skops, ONNX. Живой пример с записью версий в имя файла — [house_price_predict.ipynb](plans/AI_intro_2026/examples/house_price_predict.ipynb). Сохранённую модель можно развернуть: [веб-интерфейс на Gradio](examples/gradio.ipynb), [API на FastAPI](examples/FastAPI), [приложение в Docker](examples/docker-ML-web).
 
 
 # 10. Частые ошибки
