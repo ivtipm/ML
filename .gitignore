@@ -2,6 +2,8 @@ my_venv/
 venv/
 .venv/
 *.pyc
+.ipynb_checkpoints/
+
 ML/example.ipynb
 
 .vscode
