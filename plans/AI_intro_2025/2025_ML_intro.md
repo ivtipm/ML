@@ -47,6 +47,7 @@
 7. Другие парадигмы в ИИ (Обзор): обучение без учителя (Unsupervised Learning), кластеризация; обучение с подкреплением (Reinforcement Learning), агент, среда, вознаграждение; краткий обзор других направлений.
 
 8. Развертывание и использование модели: сериализация модели, концепция API для модели, создание простого веб-приложения с помощью Gradio и FastAPI.
+    - Сериализация модели: [Сохранение моделей МО](../../tools/models_persistence/readme.md)
     - Коротко о RESTful API → OpenAPI → FastAPI: https://github.com/ivtipm/ML/tree/main/examples/FastAPI
     - Создание простого пользовательского интерфейса (Gradio): https://github.com/ivtipm/ML/blob/main/examples/gradio.ipynb
 9. Простейшее приложение в докер-контейнере.\
