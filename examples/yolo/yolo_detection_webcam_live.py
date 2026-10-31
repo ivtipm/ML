@@ -5,9 +5,12 @@ import cv2
 import time
 from ultralytics import YOLO
 from collections import Counter
+from pathlib import Path
+
+MODELS_DIR = Path("models/")
 
 # Загружаем модель (nano - самая быстрая для real-time)
-model = YOLO("yolo26s.pt")
+model = YOLO(MODELS_DIR / "yolo26s.pt")
 
 
 def show_info(annotated_frame):
