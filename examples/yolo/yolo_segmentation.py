@@ -1,7 +1,7 @@
 # %% [markdown]
 # # Сегментация объектов. YOLO26
 #
-# Задача instance segmentation: для каждого объекта находится маска — точный контур объекта, а не прямоугольная рамка как при детекции.
+# Задача instance segmentation: для каждого объекта находится маска.
 #
 # Модель YOLO26 вышла в январе 2026 года (пример детекции — в ноутбуке `yolo.ipynb`).
 # Для сегментации используются модели с суффиксом `-seg`, предобученные на датасете COCO.
@@ -9,14 +9,6 @@
 # Документация:
 # - задача сегментации: https://docs.ultralytics.com/tasks/segment/
 # - класс Results: https://docs.ultralytics.com/reference/engine/results/
-
-# %% [markdown]
-# ### Установка зависимостей
-#
-# Пакеты уже установлены в окружении `~/w/lab/py/venv_ML/`.
-# При необходимости доустановить:
-#
-# `~/w/lab/py/venv_ML/bin/pip install ultralytics pillow`
 
 
 
@@ -27,12 +19,18 @@ import numpy as np
 from PIL import Image, ImageDraw
 from ultralytics import YOLO
 
+from pathlib import Path
+
 # %% [markdown]
 # ### Загрузка предварительно обученной модели
 
 
 # %% Cell 20
-model = YOLO("yolo26n-seg.pt")   # nano — самый быстрый вариант, есть ещё s / m / l / x
+MODELS_DIR = Path("models/")
+IMAGES_DIR = Path("images/")
+MODEL = "yolo26n-seg.pt"   #  nano (n) — самая маленький и быстрый вариант модели, есть ещё s / m / l / x
+model = YOLO( MODELS_DIR / MODEL )
+# если модели по заданному пути нет, то она скачается и сохранится в этой папке
 
 # %%
 # имена классов, которые распознаёт обученная модель (те же 80 классов COCO, что и при детекции)
@@ -44,10 +42,8 @@ LabelNames
 
 # %%
 # изображение для проверки
-!wget https://deepstackpython.readthedocs.io/en/latest/_images/test-image3.jpg
-image_path = "test-image3.jpg"
-image_path = "silicon-valley-season-4.webp"
-# urlretrieve(url, image_path)
+image_path = IMAGES_DIR / "test-image3.jpg"
+image_path = IMAGES_DIR / "silicon-valley-season-4.webp"
 
 Image.open(image_path)
 
@@ -78,7 +74,7 @@ print("размерность тензора масок:", masks.shape)
 
 masks_combined = masks.sum(axis=0)  # сложим все маски
 masks_combined = np.clip( masks_combined*255, a_min=0, a_max=255, dtype=np.uint8)           # приведём сумму масок к яркостям пикселей 0 или 255
-Image.fromarray( m )
+Image.fromarray( masks_combined )
 
 # %%
 # маски только людей (класс person, id 0), без картинки в фоне
