@@ -19,7 +19,7 @@ YOLO (You Only Look Once) — семейство одностадийных де
 - `yolo_detection_webcam_live.py` — real-time детекция с камеры: FPS, время инференса, подсчёт объектов по классам.
 - `yolo_segmentation.py` — instance segmentation: работа с масками (`masks.data`, `masks.xy`), семантическая сегментация, своя отрисовка.
 - `models/` — веса `.pt` (при отсутствии файла модель скачается автоматически).
-- `images/` — тестовые изображения.
+- `../images/` — общая папка с тестовыми изображениями для всех примеров.
 - `requirements.txt` — зависимости (`ultralytics`, `opencv-python`, `pillow`).
 
 ## Базовый инференс
@@ -28,7 +28,7 @@ YOLO (You Only Look Once) — семейство одностадийных де
 from ultralytics import YOLO
 
 model = YOLO("models/yolo26n.pt")   # при отсутствии файла скачается
-results = model("images/peoples_and_dog.jpg")   # список Results, по одному на изображение
+results = model("../images/peoples_and_dog.jpg")   # список Results, по одному на изображение
 
 r = results[0]
 r.boxes.xyxy    # координаты рамок [x1, y1, x2, y2]

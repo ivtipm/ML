@@ -27,7 +27,7 @@ from pathlib import Path
 
 # %% Cell 20
 MODELS_DIR = Path("models/")
-IMAGES_DIR = Path("images/")
+IMAGES_DIR = Path("../images/")   # общая папка с картинками для всех примеров
 MODEL = "yolo26n-seg.pt"   #  nano (n) — самая маленький и быстрый вариант модели, есть ещё s / m / l / x
 model = YOLO( MODELS_DIR / MODEL )
 # если модели по заданному пути нет, то она скачается и сохранится в этой папке

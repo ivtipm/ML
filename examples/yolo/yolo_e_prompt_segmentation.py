@@ -7,7 +7,7 @@ from ultralytics import YOLOE
 # git+https://github.com/ultralytics/CLIP.git
 
 MODELS_DIR = Path("models/")
-IMAGES_DIR = Path("images/")
+IMAGES_DIR = Path("../images/")   # общая папка с картинками для всех примеров
 MODEL = "yoloe-26l-seg.pt"
 
 model = YOLOE(MODELS_DIR / MODEL)
