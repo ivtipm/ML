@@ -1,7 +1,9 @@
+# #  Open Vocabulary segmentation
+
 # %% Cell 10
 from pathlib import Path
 from ultralytics import YOLOE
-# дополнительно, для YOLOE требуется CLIP; может быть установлен автоматически после запуска модели
+# дополнительно, для YOLOE требуется модель CLIP (250 Мб); может быть установлен автоматически после запуска модели
 # git+https://github.com/ultralytics/CLIP.git
 
 MODELS_DIR = Path("models/")
