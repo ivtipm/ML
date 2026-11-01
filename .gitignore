@@ -18,3 +18,7 @@ CLAUDE.md
 
 # Stakpak session files
 .stakpak/session*
+examples/yolo/models/yoloe-26l-seg.pt
+examples/yolo/models/yoloe-26m-seg.pt
+examples/sam/models/sam2.1_t.pt
+examples/yolo/mobileclip2_b.ts
