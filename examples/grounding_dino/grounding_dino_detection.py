@@ -76,7 +76,7 @@ results = processor.post_process_grounded_object_detection(
     target_sizes=[img.size[::-1]],   # PIL хранит (width, height), модели нужен (height, width)
 )
 result = results[0]
-
+result
 
 # %%
 # визуализация: рамки и подписи рисуем средствами PIL
