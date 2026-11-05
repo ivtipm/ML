@@ -2,17 +2,19 @@
 # # Zero-shot детекция по текстовому промпту. Grounding DINO
 #
 # Классический детектор (YOLO, Faster R-CNN) ищет объекты из фиксированного набора классов,
-# заданного при обучении. Grounding DINO (IDEA Research, 2023) — open-set детектор: классы
+# заданного при обучении. Grounding DINO (DETR with Improved dOeNoising anchOr boxes), описано в IDEA Research, 2023 — open-set детектор: классы
 # не фиксированы, объекты задаются текстом в момент инференса. На вход — изображение и фразы
 # вида «person. dog.», на выходе — рамки с оценками уверенности.
 #
-# Архитектурно это DETR-подобный трансформер, в который встроен текстовый энкодер (BERT):
+# Grounding DINO не имеет отношения к DINO, это просто совпадающие аббревиатуры
+#
+# Архитектурно это (DEtection TRansforme) , DETR-подобный трансформер, в который встроен текстовый энкодер (BERT):
 # признаки изображения и текста сливаются на нескольких уровнях (feature enhancer),
 # а декодер сопоставляет объектные запросы со словами промпта. За счёт этого модель
 # достигает 52.5 AP zero-shot на COCO — без дообучения на аннотациях COCO.
 #
 # Типичное применение — автоматическая разметка данных: детектор находит объекты по тексту,
-# а сегментатор (SAM) дорисовывает маски. Эта связка известна как Grounded SAM.
+# а сегментатор (модель с архитектурой SAM) дорисовывает маски. Эта связка известна как Grounded SAM.
 #
 # Здесь используется реализация из Hugging Face `transformers`. Открыты веса оригинальной
 # модели; более новые версии (Grounding DINO 1.5/1.6, DINO-X) доступны только через API.
@@ -22,6 +24,7 @@
 
 # %%
 import torch
+import torchinfo
 from PIL import Image, ImageDraw
 from transformers import AutoModelForZeroShotObjectDetection, AutoProcessor
 
@@ -35,11 +38,12 @@ from transformers import AutoModelForZeroShotObjectDetection, AutoProcessor
 
 # %%
 MODEL_ID = "IDEA-Research/grounding-dino-tiny"
+# https://huggingface.co/IDEA-Research/grounding-dino-tiny
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 processor = AutoProcessor.from_pretrained(MODEL_ID)
 model = AutoModelForZeroShotObjectDetection.from_pretrained(MODEL_ID).to(device)
-
+torchinfo.summary( model )
 # %% [markdown]
 # ### Изображение
 #
@@ -47,7 +51,7 @@ model = AutoModelForZeroShotObjectDetection.from_pretrained(MODEL_ID).to(device)
 
 
 # %%
-IMAGE_PATH = "../images/peoples_and_dog.jpg"
+IMAGE_PATH = "../images/silicon-valley-season-4.webp"
 img = Image.open(IMAGE_PATH).convert("RGB")
 print(f"resolution: {img.width}x{img.height}")
 img
@@ -63,18 +67,21 @@ img
 
 # %%
 PROMPT = "person. dog."
+# для разделения классов используется точка. Класс может быть описан несколькими словами. оригинальная модель обучена на текст в нижнем регистре.
 
 inputs = processor(images=img, text=PROMPT, return_tensors="pt").to(device)
 with torch.no_grad():
-    outputs = model(**inputs)
+    outputs = model(**inputs)       # детекция
 
+# постобработка результатов
 results = processor.post_process_grounded_object_detection(
     outputs,
     inputs.input_ids,
-    threshold=0.4,
-    text_threshold=0.3,
+    threshold=0.4,          # нижний порог соответствия объекта любому из приведённых классов. Чем выше порог, тем меньше объектов
+    text_threshold=0.3,     # нижний порог соответствия объекта конкретному классу
     target_sizes=[img.size[::-1]],   # PIL хранит (width, height), модели нужен (height, width)
 )
+# возможна ситуация, когда обнаруженный объект пройдёт фильтр по threshold, но модель не будет достаточно уверенна на в одном классе
 result = results[0]
 result
 
@@ -107,7 +114,7 @@ for box, score, label in zip(result["boxes"], result["scores"], result["text_lab
 
 
 # %%
-PROMPT = "a dog."
+PROMPT = "a dog. a keyboard. a cup. a laptop. a monitor"
 
 inputs = processor(images=img, text=PROMPT, return_tensors="pt").to(device)
 with torch.no_grad():
@@ -116,7 +123,7 @@ with torch.no_grad():
 result = processor.post_process_grounded_object_detection(
     outputs,
     inputs.input_ids,
-    threshold=0.4,
+    threshold=0.2,
     text_threshold=0.3,
     target_sizes=[img.size[::-1]],
 )[0]
