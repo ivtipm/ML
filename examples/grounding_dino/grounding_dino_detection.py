@@ -39,6 +39,7 @@ from transformers import AutoModelForZeroShotObjectDetection, AutoProcessor
 # %%
 MODEL_ID = "IDEA-Research/grounding-dino-tiny"
 # https://huggingface.co/IDEA-Research/grounding-dino-tiny
+# https://huggingface.co/docs/transformers/en/model_doc/grounding-dino
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 processor = AutoProcessor.from_pretrained(MODEL_ID)
